@@ -8,6 +8,7 @@
 # Description  : 
 # ******************************************************
 
+# 导入必要的库和模块
 import sys
 from dagComps import transaction
 import socket
@@ -23,11 +24,11 @@ import subprocess
 import pickle
 import pandas as pd
 
-# Common Components
+# 导入公共组件
 sys.path.append('../commonComponent')
 import usefulTools
 
-## FL related
+## 联邦学习相关导入
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -47,20 +48,17 @@ import buildModels
 import datetime
 
 
-# Number of tips selected by the leader of shard blockchain
+# 碎片区块链领导者选择的尖端数量
 alpha = 3
-# Number of tips needs to be kept greater than 3
+# 需要保持的尖端数量大于3
 beta = 3
-# Number of tips confirmed by the new transaction
+# 新交易确认的尖端数量
 gamma = 2
 
-# Index of shard network
+# 碎片网络索引
 nodeNum = 1
-# Rounds trained in shard
-# shard_round = 4
 
-# shell envs of Org1
-fabricLocation = "export FabricL=/home/shawn/Documents/fabric-samples/test-network"
+# Fabric环境变量配置
 shellEnv1 = "export PATH=${FabricL}/../bin:$PATH"
 shellEnv2 = "export FABRIC_CFG_PATH=${FabricL}/../config/"
 shellEnv3 = "export CORE_PEER_TLS_ENABLED=true"
@@ -70,15 +68,19 @@ shellEnv6 = "export CORE_PEER_MSPCONFIGPATH=${FabricL}/organizations/peerOrganiz
 shellEnv7 = "export CORE_PEER_ADDRESS=localhost:7051"
 oneKeyEnv = shellEnv1 + " && " + shellEnv2 + " && " + shellEnv3 + " && " + shellEnv4 + " && " + shellEnv5 + " && " + shellEnv6 + " && " + shellEnv7
 
-# Acc and Loss of the model trained by shard
-nodeTestAcc = []
-nodeTestLoss = []
-
-# Acc and Loss on training set
-nodeTrainAcc = []
-nodeTrainLoss = []
+# 模型精度和损失记录列表
+nodeTestAcc = []  # 测试集精度记录
+nodeTestLoss = []  # 测试集损失记录
+nodeTrainAcc = []  # 训练集精度记录
+nodeTrainLoss = []  # 训练集损失记录
 
 def main(aim_addr='149.129.40.183'):
+    """
+    DAG客户端主函数，负责连接DAG服务器并执行联邦学习任务
+    
+    :param aim_addr: DAG服务器地址
+    """
+    # 初始化客户端数据存储目录
     if os.path.exists('./clientS'):
         shutil.rmtree('./clientS')
     os.mkdir('./clientS')
@@ -104,70 +106,23 @@ def main(aim_addr='149.129.40.183'):
     os.mkdir('./clientS/apvJson')
 
 
-    # build model
+    # 构建模型和数据集
     net_glob, args, dataset_train, dataset_test, dict_users = buildModels.modelBuild()
     net_glob.train()
 
-    ## copy weights
+    # 复制模型权重
     w_glob = net_glob.state_dict()
 
-    iteration_count = 0
+    iteration_count = 0  # 迭代计数器
 
-    # selected device
-    ## init the list of device name
-    allDeviceName = []
-    for i in range(args.num_users):
-        allDeviceName.append("device"+("{:0>5d}".format(i)))
-    deviceSelected = []
+    # 选择参与联邦学习的设备
+    idxs_users = [5, 56, 76, 78, 68, 25, 47, 15, 61, 55]  # 预定义的设备索引
 
-    # Randomly select the devices
+    dateNow = datetime.datetime.now().strftime('%Y%m%d%H%M%S')  # 当前时间戳
 
-    # m = max(int(args.frac * args.num_users), 1) # args.frac is the fraction of users
-    # idxs_users = np.random.choice(range(args.num_users), m, replace=False)
+    basic_acc_list = []  # 基础模型精度列表
 
-    # print('\n**************************** Idxs of selected devices *****************************')
-    # print('The idxs of selected devices are\n', idxs_users)
-    # print('*************************************************************************************\n')
-
-    # ## Exchange the info of selected device with fabric
-    # with open('../commonComponent/selectedDeviceIdxs.txt', 'wb') as f:
-    #     pickle.dump(idxs_users, f)
-
-    idxs_users = [ 5, 56, 76, 78, 68, 25, 47, 15, 61, 55]
-    # idxs_users = [60, 37, 27, 70, 79, 34, 18, 88, 57, 98]
-    # idxs_users = [48, 46, 33, 82,  4,  7,  6, 91, 92, 52]
-
-    dateNow = datetime.datetime.now().strftime('%Y%m%d%H%M%S')
-
-    basic_acc_list = []
-
-
-    ## tensorboard Part
-
-    # writer = SummaryWriter()
-    # writer.add_scalars('Acc', {'Acc_with_Check': 0}, 0)
-    # tenfig_data = []
-
-    # writer.add_scalars('Acc', {'Acc_without_Check': 0}, 0)
-    # AWOC_fileName = '/root/shard3/data/shard_3_round3_tenfig_data_cnn_20200821135421.csv'
-    # acc_wo_check_csv = pd.read_csv(AWOC_fileName)
-    # acc_wo_check_data = np.array(acc_wo_check_csv['shard_3'])
-
-
-    # writer.add_scalars('Loss', {'Loss_with_Check': 1}, 0)
-    # tenfig_data_loss = []
-
-    # writer.add_scalars('Loss', {'Loss_without_Check': 1}, 0)
-    # LWOC_fileName = '/root/shard3/data/shard_3_round3_tenfig_data_loss_cnn_20200821135421.csv'
-    # loss_wo_check_csv = pd.read_csv(LWOC_fileName)
-    # loss_wo_check_data = np.array(loss_wo_check_csv['shard_3'])[1:]
-
-    # tensor_iter = 1
-
-    ## tensorboard part
-    
-
-    ## Exchange the info of selected device with fabric: dict_user_fileHash:QmTuvPRDGnLm95fL7uxxhvegoWL3Q9YyAUtEsTK5ZetN4W
+    # 从IPFS获取用户数据分布信息
     dict_users_file = "../commonComponent/dict_users.pkl"
     dict_userf_fileHash = "QmTuvPRDGnLm95fL7uxxhvegoWL3Q9YyAUtEsTK5ZetN4W"
     while 1:
@@ -184,21 +139,28 @@ def main(aim_addr='149.129.40.183'):
     with open(dict_users_file, 'rb') as f:
         dict_users = pickle.load(f)
 
+    # 准备设备选择列表
+    deviceSelected = []
+    allDeviceName = []
+    for i in range(args.num_users):
+        allDeviceName.append("device"+ ("{:0>5d}".format(i)))
+    
     for idx in idxs_users:
         deviceSelected.append(allDeviceName[idx])
-    print('\n**************************** Selected devices *****************************')
-    print('The idxs of selected devices are\n', deviceSelected)
-    print('*****************************************************************************\n')
+    
+    # 主循环：持续执行联邦学习迭代
     while 1:
-        print('\n\n\n**************************** Iteration %d *****************************'%iteration_count)
-        # init the task ID
+        print('\n\n\n**************************** Iteration %d *****************************' % iteration_count)
+        # 初始化任务ID
         taskID = 'task'+str(random.randint(1,10))+str(random.randint(1,10))+str(random.randint(1,10))+str(random.randint(1,10))
 
-        # Choose and require the apv trans
+        # 选择并请求要批准的交易
         apv_trans_cands = []
         if iteration_count == 0:
+            # 第一次迭代，批准创世区块
             apv_trans_cands.append('GenesisBlock')
         else:
+            # 后续迭代，从DAG服务器获取尖端交易列表
             tips_list = 'tip_list'
             tips_file = './clientS/tipsJson/iteration-' + str(iteration_count) + '-' + tips_list + '.json'
             dagClient.client_tips_require(aim_addr, tips_list, tips_file)
@@ -223,12 +185,11 @@ def main(aim_addr='149.129.40.183'):
         print('The candidates tips are ', apv_trans_cands)
         print('********************************************************************************\n')
 
-        # Get the trans file and the model paras file
+        # 获取批准的交易文件和模型参数
         apv_trans_cands_dict = {}
         for apvTrans in apv_trans_cands:
-            apvTransFile =  './clientS/apvJson/' + apvTrans + '.json'
+            apvTransFile = './clientS/apvJson/' + apvTrans + '.json'
             dagClient.client_trans_require(aim_addr, apvTrans, apvTransFile)
-            print('\nThis approved trans is ', apvTrans, ', and the file is ', apvTransFile)
             apvTransInfo = transaction.read_transaction(apvTransFile)
             apvParasFile = './clientS/paras/apvTrans/iteration-' + str(iteration_count) + '-' + apvTrans + '.pkl'
 
@@ -244,16 +205,17 @@ def main(aim_addr='149.129.40.183'):
                     print('\nFailed to download the apv parasfile ' + apvParasFile + ' !\n')
             apv_trans_cands_dict[apvTransInfo.name] = float(apvTransInfo.model_acc)
 
-        # select tips for aggregation of basic model     !!! key function
+        # 根据模型精度选择要聚合的尖端交易
         apv_trans_final = []
         if len(apv_trans_cands_dict) == alpha:
-            sort_dict = sorted(apv_trans_cands_dict.items(),key=lambda x:x[1],reverse=True)
+            # 按模型精度排序，选择前gamma个
+            sort_dict = sorted(apv_trans_cands_dict.items(), key=lambda x:x[1], reverse=True)
             for i in range(gamma):
                 apv_trans_final.append(sort_dict[i][0])
         else:
             apv_trans_final = apv_trans_cands
 
-        # load the apv paras
+        # 加载并聚合批准的交易中的模型参数
         w_apv = []
         for item in apv_trans_final:
             apvParasFile = './clientS/paras/apvTrans/iteration-' + str(iteration_count) + '-' + item + '.pkl'
@@ -264,11 +226,9 @@ def main(aim_addr='149.129.40.183'):
         if len(w_apv) == 1:
             w_glob = w_apv[0]
         else:
-            w_glob = FedAvg(w_apv)
-        baseParasFile = './clientS/paras/baseModelParas-iter'+str(iteration_count)+'.pkl'
-        torch.save(w_glob, baseParasFile)
-
-        # evalute the acc of basic model obtain from DAG
+            w_glob = FedAvg(w_apv)  # 使用联邦平均算法聚合模型
+        
+        # 评估基础模型精度
         basicModelAcc, basicModelLoss = buildModels.evalua(net_glob, w_glob, dataset_test, args)
         basicModelAcc = basicModelAcc.cpu().numpy().tolist()
         
@@ -463,4 +423,4 @@ def main(aim_addr='149.129.40.183'):
     writer.close()
 
 if __name__ == '__main__':
-    main('192.168.2.12')
+    main('192.168.2.12')  # 运行客户端，连接到指定的DAG服务器
