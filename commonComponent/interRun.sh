@@ -31,7 +31,7 @@ function printHelp() {
 
 # prepending $PWD/../bin to PATH to ensure we are picking up the correct binaries
 # this may be commented out to resolve installed version of tools if desired
-export FabricL=/home/vm2/Desktop/ChainFL/fabric-testing/test-network
+export FabricL=/home/vm2/Desktop/ChainFL/ChainsFL-implementation/fabric-testing/test-network
 export PATH=${FabricL}/../bin:$PATH
 export FABRIC_CFG_PATH=$FabricL/configtx
 # Turn on the tls

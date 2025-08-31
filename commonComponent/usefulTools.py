@@ -42,7 +42,7 @@ def queryLocal(lock, taskID, deviceID, currentEpoch, flagSet, localFileName):
     """
     localQuery = subprocess.Popen(args=['../commonComponent/interRun.sh query '+deviceID], shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, encoding='utf-8')
     outs, errs = localQuery.communicate(timeout=15)
-    if localQuery.poll() == 0:
+    if localQuery.poll() == 0 and outs.strip() != '':
         localDetail = json.loads(outs.strip())
         if localDetail['epoch'] == currentEpoch and localDetail['taskID'] == taskID:
             print("The query result of the " + deviceID + " is ", outs.strip())
