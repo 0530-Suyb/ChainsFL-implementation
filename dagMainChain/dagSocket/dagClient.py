@@ -81,7 +81,7 @@ def client_trans_require(aim_addr, trans_name, DAG_file):
     # 关闭套接字连接
     s.close()
 
-# 定义一个函数，用于向服务器请求尖端交易数据并接收文件
+# 定义一个函数，用于向服务器请求tips交易数据并接收文件
 def client_tips_require(aim_addr, tips_list, tips_file):
     try:
         # 创建一个基于 IPv4 和 TCP 协议的套接字对象

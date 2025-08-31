@@ -54,6 +54,8 @@ if __name__ == '__main__':
     net_glob, args, dataset_train, dataset_test, dict_users = buildModels.modelBuild()
     net_glob.train()
 
+    # suyb：既然是本地运行，就直接从clientRun.py中生成的dict_users的文件里去取
+    # dict_users字典对应各个设备及其划分好了的训练集，每次调用modelBuild都随机划分，所以读clientRun.py那边生成的
     with open('../commonComponent/dict_users.pkl', 'rb') as f:
         dict_users = pickle.load(f)
     
@@ -66,7 +68,8 @@ if __name__ == '__main__':
         # taskRelease info template {"taskID":"task1994","epoch":10,"status":"start","usersFrac":0.1}
         while 1:
             taskRelQue, taskRelQueStt = usefulTools.simpleQuery('taskRelease')
-            if taskRelQueStt == 0:
+            print("taskRelQue is ", taskRelQue, " and taskRelQueStt is ", taskRelQueStt)
+            if taskRelQueStt == 0 and taskRelQue != '':
                 taskRelInfo = json.loads(taskRelQue)
                 print('\n*************************************************************************************')
                 print('Latest task release status is %s!'%taskRelQue.strip())
@@ -79,7 +82,9 @@ if __name__ == '__main__':
         taskInfo = {}
         while 1:
             taskInQue, taskInQueStt = usefulTools.simpleQuery(taskID)
-            if taskInQueStt == 0:
+            # fabric合约get如果key不存在有可能直接返回空，所以需要判断一下
+            # 有时候会明明有上传task任务，但是由于存在上链时延，get时还没有上链，所以会返回空
+            if taskInQueStt == 0 and taskInQue != '':
                 taskInfo = json.loads(taskInQue)
                 print('Latest task info is %s!'%taskInQue.strip())
                 print('*************************************************************************************\n')
@@ -97,7 +102,7 @@ if __name__ == '__main__':
                 ## query the task info of current epoch
                 while 1:
                     taskInQueEpo, taskInQueEpoStt = usefulTools.simpleQuery(taskID)
-                    if taskInQueEpoStt == 0:
+                    if taskInQueEpoStt == 0 and taskInQueEpo != '':
                         taskInfoEpo = json.loads(taskInQueEpo)
                         if int(taskInfoEpo['epoch']) == (currentEpoch-1):
                             print('\n****************************** Latest status of %s ******************************'%taskID)

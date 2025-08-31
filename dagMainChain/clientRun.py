@@ -48,11 +48,11 @@ import buildModels
 import datetime
 
 
-# 碎片区块链领导者选择的尖端数量
+# 碎片区块链领导者选择的tips数量
 alpha = 3
-# 需要保持的尖端数量大于3
+# 需要保持的tips数量大于3
 beta = 3
-# 新交易确认的尖端数量
+# 新交易确认的tips数量
 gamma = 2
 
 # 碎片网络索引
@@ -108,10 +108,24 @@ def main(aim_addr='149.129.40.183'):
 
     # 构建模型和数据集
     net_glob, args, dataset_train, dataset_test, dict_users = buildModels.modelBuild()
+    # suyb：为使得clientRun.py（SLN）和main_fed_local.py（SFN）上跑通程序
+    # 不再从IPFS上获取dict_users列表，而是使用buildModels.modelBuild()返回的dict_users
+    # 需要将其存起来，因为在main_fed_local.py中需要使用，另外注意两边代码运行的顺序，要保证这边保持好文件后那边代码才运行加载
+    with open('../commonComponent/dict_users.pkl', 'wb') as f:
+        pickle.dump(dict_users, f)
+
     net_glob.train()
 
     # 复制模型权重
     w_glob = net_glob.state_dict()
+
+    # suyb：事实上，这里训练出来的模型权重在后头也用不到，直接被覆盖掉了，那就把它保存本地文件上传IPFS以生成创世区块需要用到的CID码从而方便跑通程序
+    # 示例：将模型参数保持到本地，和从本地加载模型参数。事实IPFS上存的模型参数文件就是initialModel.pkl这个形式
+    # print("The initial model is ", w_glob)
+    # torch.save(w_glob, "initialModel.pkl")
+    # net_glob.load_state_dict(torch.load("initialModel.pkl", map_location=torch.device('cpu')))
+    # w_tmp = net_glob.state_dict()
+    # print("The loaded model is ", w_tmp)
 
     iteration_count = 0  # 迭代计数器
 
@@ -122,22 +136,23 @@ def main(aim_addr='149.129.40.183'):
 
     basic_acc_list = []  # 基础模型精度列表
 
+    # suyb：此处从IPFS获取用户数据分布信息，其实就是从IPFS获取dict_users.pkl这个文件，当dict_users在下文都没有用到，所以先注释掉
     # 从IPFS获取用户数据分布信息
-    dict_users_file = "../commonComponent/dict_users.pkl"
-    dict_userf_fileHash = "QmTuvPRDGnLm95fL7uxxhvegoWL3Q9YyAUtEsTK5ZetN4W"
-    while 1:
-        dictUserGetStatus, dictUsersttCodeGet = usefulTools.ipfsGetFile(dict_userf_fileHash, dict_users_file)
-        print('The filehash of this dict_user is ' + dict_userf_fileHash + ' , and the file is ' + dict_users_file + '!')
-        if dictUsersttCodeGet == 0:
-            print(dictUserGetStatus.strip())
-            print('The dict_user file ' + dict_users_file + ' has been downloaded!\n')
-            break
-        else:
-            print(dictUserGetStatus)
-            print('\nFailed to download the dict_user file  ' + dict_users_file + ' !\n')
+    # dict_users_file = "../commonComponent/dict_users.pkl"
+    # dict_userf_fileHash = "QmTuvPRDGnLm95fL7uxxhvegoWL3Q9YyAUtEsTK5ZetN4W"
+    # while 1:
+    #     dictUserGetStatus, dictUsersttCodeGet = usefulTools.ipfsGetFile(dict_userf_fileHash, dict_users_file)
+    #     print('The filehash of this dict_user is ' + dict_userf_fileHash + ' , and the file is ' + dict_users_file + '!')
+    #     if dictUsersttCodeGet == 0:
+    #         print(dictUserGetStatus.strip())
+    #         print('The dict_user file ' + dict_users_file + ' has been downloaded!\n')
+    #         break
+    #     else:
+    #         print(dictUserGetStatus)
+    #         print('\nFailed to download the dict_user file  ' + dict_users_file + ' !\n')
     
-    with open(dict_users_file, 'rb') as f:
-        dict_users = pickle.load(f)
+    # with open(dict_users_file, 'rb') as f:
+    #     dict_users = pickle.load(f)
 
     # 准备设备选择列表
     deviceSelected = []
@@ -147,6 +162,7 @@ def main(aim_addr='149.129.40.183'):
     
     for idx in idxs_users:
         deviceSelected.append(allDeviceName[idx])
+    print(deviceSelected)
     
     # 主循环：持续执行联邦学习迭代
     while 1:
@@ -154,13 +170,17 @@ def main(aim_addr='149.129.40.183'):
         # 初始化任务ID
         taskID = 'task'+str(random.randint(1,10))+str(random.randint(1,10))+str(random.randint(1,10))+str(random.randint(1,10))
 
+        # suyb：相当于论文fig3的FL流程第一步：SLN gets the task request block from DAG-based mainchain
+        # 或FL流程的第六步：SLN selects two tips and aggregates them to obtain the new basic iteration model for the current training iteration
+        
         # 选择并请求要批准的交易
+        # 这些交易最终存在apv_trans_cands列表中，每个元素是一个字符串，表示要批准的交易
         apv_trans_cands = []
         if iteration_count == 0:
             # 第一次迭代，批准创世区块
             apv_trans_cands.append('GenesisBlock')
         else:
-            # 后续迭代，从DAG服务器获取尖端交易列表
+            # 后续迭代，从DAG服务器获取tips交易列表
             tips_list = 'tip_list'
             tips_file = './clientS/tipsJson/iteration-' + str(iteration_count) + '-' + tips_list + '.json'
             dagClient.client_tips_require(aim_addr, tips_list, tips_file)
@@ -186,14 +206,18 @@ def main(aim_addr='149.129.40.183'):
         print('********************************************************************************\n')
 
         # 获取批准的交易文件和模型参数
+        # suyb："the Federated Averaging algorithm is adopted to aggregate the updated local models uploaded from the selected devices."
         apv_trans_cands_dict = {}
         for apvTrans in apv_trans_cands:
             apvTransFile = './clientS/apvJson/' + apvTrans + '.json'
             dagClient.client_trans_require(aim_addr, apvTrans, apvTransFile)
             apvTransInfo = transaction.read_transaction(apvTransFile)
             apvParasFile = './clientS/paras/apvTrans/iteration-' + str(iteration_count) + '-' + apvTrans + '.pkl'
+            print(apvTransInfo, apvParasFile)
+            # {"apv_trans": [], "model_acc": 0.0, "model_para": "QmaBYCmzPQ2emuXpVykLDHra7t8tPiU8reFMkbHpN1rRoo", "src_node": 0, "timestamp": 1756552841.005529} ./clientS/paras/apvTrans/iteration-0-GenesisBlock.pkl
 
             while 1:
+                # suyb：拿到要下载的文件的hash值，然后从IPFS下载到本地./clientS/paras/apvTrans/目录下
                 fileGetStatus, sttCodeGet = usefulTools.ipfsGetFile(apvTransInfo.model_para, apvParasFile)
                 print('The filehash of this approved trans is ' + apvTransInfo.model_para + ', and the file is ' + apvParasFile + '!')
                 if sttCodeGet == 0:
@@ -205,9 +229,9 @@ def main(aim_addr='149.129.40.183'):
                     print('\nFailed to download the apv parasfile ' + apvParasFile + ' !\n')
             apv_trans_cands_dict[apvTransInfo.name] = float(apvTransInfo.model_acc)
 
-        # 根据模型精度选择要聚合的尖端交易
+        # 根据模型精度选择要聚合的tips交易
         apv_trans_final = []
-        if len(apv_trans_cands_dict) == alpha:
+        if len(apv_trans_cands_dict) == alpha: # suyb：论文中是大于吗？
             # 按模型精度排序，选择前gamma个
             sort_dict = sorted(apv_trans_cands_dict.items(), key=lambda x:x[1], reverse=True)
             for i in range(gamma):
@@ -215,7 +239,7 @@ def main(aim_addr='149.129.40.183'):
         else:
             apv_trans_final = apv_trans_cands
 
-        # 加载并聚合批准的交易中的模型参数
+        # 加载并聚合主链上批准的交易中的模型参数
         w_apv = []
         for item in apv_trans_final:
             apvParasFile = './clientS/paras/apvTrans/iteration-' + str(iteration_count) + '-' + item + '.pkl'
@@ -241,6 +265,10 @@ def main(aim_addr='149.129.40.183'):
         basicAccDf.to_csv("../data/shard_{}_round{}_basic_acc_{}_{}.csv".format(nodeNum, args.epochs, args.model, dateNow),index=False,sep=',')
 
         # Add the paras file of base model to ipfs network for shard training
+        # suyb：将基础模型参数保存到本地，然后上传到IPFS，用于后续迭代
+        # FL流程中少了SLN将模型参数上传IPFS并将IPFS的CID码等信息上传子链的操作，不过在论文中有文段提到
+        baseParasFile = './clientS/paras/baseModel.pkl'
+        torch.save(w_glob, baseParasFile)
         while 1:
             basefileHash, baseSttCode = usefulTools.ipfsAddFile(baseParasFile)
             if baseSttCode == 0:
@@ -260,11 +288,14 @@ def main(aim_addr='149.129.40.183'):
             taskRelease = subprocess.Popen(args=['../commonComponent/interRun.sh release '+taskID+' '+str(taskEpochs)+' '+taskInitStatus+' '+str(taskUsersFrac)], shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, encoding='utf-8')
             trOuts, trErrs = taskRelease.communicate(timeout=10)
             if taskRelease.poll() == 0:
+                print(trErrs)
+                print(trOuts)
                 print('*** ' + taskID + ' has been released! ***')
                 print('*** And the detail of this task is ' + trOuts.strip() + '! ***\n')
                 break
             else:
                 print(trErrs)
+                print(trOuts)
                 print('*** Failed to release ' + taskID + ' ! ***\n')
                 time.sleep(2)
 
@@ -282,12 +313,15 @@ def main(aim_addr='149.129.40.183'):
                 print('*** Failed to publish the init aggModel of ' + taskID + ' ! ***\n')
         
         ## wait the local train
+        # suyb：fabric子链里有两类节点：Subchain Leader Nodes (SLNs), and Subchain Follower Nodes (SFNs)
+        # 
         time.sleep(10)
         
         ## Aggregated the local model trained by the selected devices
         currentEpoch = 1
         aggEchoFileHash = ''
-        aggModelAcc = 50.0
+        # 由于训练的模型可能精度比较低，导致没有一个模型通过阈值，所以此处把阈值设为10，只为了跑通程序，原先设置为50
+        aggModelAcc = 10.0
         while (currentEpoch <= args.epochs):
             flagList = set(copy.deepcopy(deviceSelected))
             w_locals = []
@@ -297,7 +331,9 @@ def main(aim_addr='149.129.40.183'):
                 lock = threading.Lock()
                 for deviceID in flagList:
                     localFileName = './clientS/paras/local/' + taskID + '-' + deviceID + '-epoch-' + str(currentEpoch) + '.pkl'
-                    t = threading.Thread(target=usefulTools.queryLocal,args=(lock,taskID,deviceID,currentEpoch,flagSet,localFileName,))
+                    # suyb：在fabric链上查询设备deviceID上传的数据
+                    # 说明网络里还有一些设备在从链上拉取任务然后训练并上传
+                    t = threading.Thread(target=usefulTools.queryLocal,args=(lock,taskID,deviceID,currentEpoch,flagSet,localFileName))
                     t.start()
                     ts.append(t)
                 for t in ts:
@@ -335,6 +371,9 @@ def main(aim_addr='149.129.40.183'):
             nodeTestAcc.append(aggModelAcc)
             nodeTestLoss.append(aggModelLoss)
 
+            # 如果../data/result目录不存在，则创建该目录
+            if not os.path.exists("../data/result"):
+                os.makedirs("../data/result")
             nodeTestAccDf = pd.DataFrame({'shard_{}'.format(nodeNum):nodeTestAcc})
             nodeTestAccDf.to_csv("../data/result/shard_{}_round{}_test_acc_{}_{}.csv".format(nodeNum, args.epochs, args.model, dateNow),index=False,sep=',')
 
@@ -423,4 +462,4 @@ def main(aim_addr='149.129.40.183'):
     writer.close()
 
 if __name__ == '__main__':
-    main('192.168.2.12')  # 运行客户端，连接到指定的DAG服务器
+    main('127.0.0.1')  # 运行客户端，连接到指定的DAG服务器

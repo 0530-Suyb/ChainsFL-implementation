@@ -31,9 +31,9 @@ function printHelp() {
 
 # prepending $PWD/../bin to PATH to ensure we are picking up the correct binaries
 # this may be commented out to resolve installed version of tools if desired
-export FabricL=/home/shawn/Documents/fabric-samples/test-network
+export FabricL=/home/vm2/Desktop/ChainFL/fabric-testing/test-network
 export PATH=${FabricL}/../bin:$PATH
-export FABRIC_CFG_PATH=$FabricL/../config/
+export FABRIC_CFG_PATH=$FabricL/configtx
 # Turn on the tls
 export CORE_PEER_TLS_ENABLED=true
 
@@ -49,7 +49,7 @@ setEnvironments() {
     export CORE_PEER_LOCALMSPID="Org2MSP"
     export CORE_PEER_TLS_ROOTCERT_FILE=${FabricL}/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt 
     export CORE_PEER_MSPCONFIGPATH=${FabricL}/organizations/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp
-    export CORE_PEER_ADDRESS=localhost:7051
+    export CORE_PEER_ADDRESS=localhost:9051
   else  
     echo "================== ERROR !!! ORG Unknown =================="                                            
   fi
@@ -58,8 +58,11 @@ setEnvironments() {
 # Release the FL task from fabric
 function taskRelease() {
   ORG=$1
+  # suyb：此处配置的只是主机环境变量，在docker中并没有生效，需要在docker中配置环境变量
+  # 为了方便，启动cli容器时就先配置org1的环境变量
   setEnvironments $ORG
-  invoke="docker exec cli peer chaincode invoke -o orderer.example.com:7050 --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem --peerAddresses peer0.org1.example.com:7051 --tlsRootCertFiles /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses peer0.org2.example.com:9051 --tlsRootCertFiles /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt -C mychannel -n mycc -c '{\"Args\":[\"set\",\"taskRelease\",\"{\\\"taskID\\\":\\\"$2\\\",\\\"epoch\\\":$3,\\\"status\\\":\\\"$4\\\",\\\"usersFrac\\\":$5}\"]}'"
+  invoke="docker exec cli peer chaincode invoke -o orderer.example.com:7050 --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem --peerAddresses peer0.org1.example.com:7051 --tlsRootCertFiles /opt/gopath/src/github.com/hyperledger/fabric/peer/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses peer0.org2.example.com:9051 --tlsRootCertFiles /opt/gopath/src/github.com/hyperledger/fabric/peer/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt -C mychannel -n mycc -c '{\"Args\":[\"set\",\"taskRelease\",\"{\\\"taskID\\\":\\\"$2\\\",\\\"epoch\\\":$3,\\\"status\\\":\\\"$4\\\",\\\"usersFrac\\\":$5}\"]}'"
+  # invoke="peer chaincode invoke -o orderer.example.com:7050 --tls --cafile ${FabricL}/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem --peerAddresses peer0.org1.example.com:7051 --tlsRootCertFiles ${FabricL}/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses peer0.org2.example.com:9051 --tlsRootCertFiles ${FabricL}/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt -C mychannel -n mycc -c '{\"Args\":[\"set\",\"taskRelease\",\"{\\\"taskID\\\":\\\"$2\\\",\\\"epoch\\\":$3,\\\"status\\\":\\\"$4\\\",\\\"usersFrac\\\":$5}\"]}'"
   eval ${invoke}
 }
 
@@ -67,7 +70,8 @@ function taskRelease() {
 function aggModelPub() {
   ORG=$1
   setEnvironments $ORG
-  invoke="docker exec cli peer chaincode invoke -o orderer.example.com:7050 --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem --peerAddresses peer0.org1.example.com:7051 --tlsRootCertFiles /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses peer0.org2.example.com:9051 --tlsRootCertFiles /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt -C mychannel -n mycc -c '{\"Args\":[\"set\",\"${2}\",\"{\\\"epoch\\\":$3,\\\"status\\\":\\\"$4\\\",\\\"paras\\\":\\\"$5\\\"}\"]}'"
+  invoke="docker exec cli peer chaincode invoke -o orderer.example.com:7050 --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem --peerAddresses peer0.org1.example.com:7051 --tlsRootCertFiles /opt/gopath/src/github.com/hyperledger/fabric/peer/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses peer0.org2.example.com:9051 --tlsRootCertFiles /opt/gopath/src/github.com/hyperledger/fabric/peer/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt -C mychannel -n mycc -c '{\"Args\":[\"set\",\"${2}\",\"{\\\"epoch\\\":$3,\\\"status\\\":\\\"$4\\\",\\\"paras\\\":\\\"$5\\\"}\"]}'"
+  # invoke="peer chaincode invoke -o orderer.example.com:7050 --tls --cafile ${FabricL}/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem --peerAddresses peer0.org1.example.com:7051 --tlsRootCertFiles ${FabricL}/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses peer0.org2.example.com:9051 --tlsRootCertFiles ${FabricL}/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt -C mychannel -n mycc -c '{\"Args\":[\"set\",\"${2}\",\"{\\\"epoch\\\":$3,\\\"status\\\":\\\"$4\\\",\\\"paras\\\":\\\"$5\\\"}\"]}'"
   eval ${invoke}
 }
 
@@ -75,7 +79,8 @@ function aggModelPub() {
 function localModelPub() {
   ORG=$1
   setEnvironments $ORG
-  invoke="docker exec cli peer chaincode invoke -o orderer.example.com:7050 --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem --peerAddresses peer0.org1.example.com:7051 --tlsRootCertFiles /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses peer0.org2.example.com:9051 --tlsRootCertFiles /opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt -C mychannel -n mycc -c '{\"Args\":[\"set\",\"${2}\",\"{\\\"taskID\\\":\\\"$3\\\",\\\"epoch\\\":$4,\\\"paras\\\":\\\"${5}\\\"}\"]}'"
+  invoke="docker exec cli peer chaincode invoke -o orderer.example.com:7050 --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem --peerAddresses peer0.org1.example.com:7051 --tlsRootCertFiles /opt/gopath/src/github.com/hyperledger/fabric/peer/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses peer0.org2.example.com:9051 --tlsRootCertFiles /opt/gopath/src/github.com/hyperledger/fabric/peer/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt -C mychannel -n mycc -c '{\"Args\":[\"set\",\"${2}\",\"{\\\"taskID\\\":\\\"$3\\\",\\\"epoch\\\":$4,\\\"paras\\\":\\\"${5}\\\"}\"]}'"
+  # invoke="peer chaincode invoke -o orderer.example.com:7050 --tls --cafile ${FabricL}/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem --peerAddresses peer0.org1.example.com:7051 --tlsRootCertFiles ${FabricL}/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses peer0.org2.example.com:9051 --tlsRootCertFiles ${FabricL}/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt -C mychannel -n mycc -c '{\"Args\":[\"set\",\"${2}\",\"{\\\"taskID\\\":\\\"$3\\\",\\\"epoch\\\":$4,\\\"paras\\\":\\\"${5}\\\"}\"]}'"
   eval ${invoke}
 }
 
@@ -84,6 +89,7 @@ function devQuery(){
   ORG=$1
   setEnvironments $ORG
   query="docker exec cli peer chaincode query -C mychannel -n mycc -c '{\"Args\":[\"get\",\"${2}\"]}'"
+  # query="peer chaincode query -C mychannel -n mycc -c '{\"Args\":[\"get\",\"${2}\"]}'"
   eval ${query}
 }
 

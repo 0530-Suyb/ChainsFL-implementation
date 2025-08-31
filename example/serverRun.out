@@ -1,0 +1,543 @@
+(base) vm2@ubuntu:~/Desktop/ChainFL/ChainsFL-implementation/dagMainChain$ python serverRun.py --epochs 1 --frac 0.1 --gpu -1 --model cnn --num_channels 1
+/home/vm2/miniconda3/lib/python3.13/site-packages/torchvision/datasets/mnist.py:66: UserWarning: train_labels has been renamed targets
+  warnings.warn("train_labels has been renamed targets")
+The para of iid is False
+********************************
+CNNMnist(
+  (conv1): Conv2d(1, 10, kernel_size=(5, 5), stride=(1, 1))
+  (conv2): Conv2d(10, 20, kernel_size=(5, 5), stride=(1, 1))
+  (conv2_drop): Dropout2d(p=0.5, inplace=False)
+  (fc1): Linear(in_features=320, out_features=50, bias=True)
+  (fc2): Linear(in_features=50, out_features=10, bias=True)
+)
+********************************
+
+The base mode parasfile initialModel.pkl has been uploaded!
+And the fileHash is QmWr9CYPKj8cMTubKbcL4guHcMg77yrxkGRxNpDrdgzAWG
+
+The genesisBlock hash value is  QmWr9CYPKj8cMTubKbcL4guHcMg77yrxkGRxNpDrdgzAWG
+DAG_socket starts...
+Accept new connection from ('127.0.0.1', 41482)
+('127.0.0.1', 41482) client send data is require
+GenesisBlock.json file send over...
+('127.0.0.1', 41482) connection close
+Accept new connection from ('127.0.0.1', 40386)
+('127.0.0.1', 40386) client send data is transUpload
+*******************************************
+The new trans *node1_1756627208.621236* had been published!
+*******************************************
+('127.0.0.1', 40386) connection close
+Accept new connection from ('127.0.0.1', 40398)
+('127.0.0.1', 40398) client send data is requireTips
+tip_list.json file send over...
+Accept new connection from ('127.0.0.1', 46680)
+('127.0.0.1', 46680) client send data is require
+('127.0.0.1', 40398) connection close
+node1_1756627208.621236.json file send over...
+('127.0.0.1', 46680) connection close
+Accept new connection from ('127.0.0.1', 47020)
+('127.0.0.1', 47020) client send data is transUpload
+*******************************************
+The new trans *node1_1756627307.7654135* had been published!
+*******************************************
+('127.0.0.1', 47020) connection close
+Accept new connection from ('127.0.0.1', 47026)
+('127.0.0.1', 47026) client send data is requireTips
+tip_list.json file send over...
+Accept new connection from ('127.0.0.1', 49704)
+('127.0.0.1', 49704) client send data is require
+('127.0.0.1', 47026) connection close
+node1_1756627208.621236.json file send over...
+Accept new connection from ('127.0.0.1', 49716)
+('127.0.0.1', 49716) client send data is require
+('127.0.0.1', 49704) connection close
+node1_1756627307.7654135.json file send over...
+('127.0.0.1', 49716) connection close
+Accept new connection from ('127.0.0.1', 38534)
+('127.0.0.1', 38534) client send data is require
+GenesisBlock.json file send over...
+('127.0.0.1', 38534) connection close
+Accept new connection from ('127.0.0.1', 43116)
+('127.0.0.1', 43116) client send data is transUpload
+*******************************************
+The new trans *node1_1756629238.5583389* had been published!
+*******************************************
+('127.0.0.1', 43116) connection close
+Accept new connection from ('127.0.0.1', 43118)
+('127.0.0.1', 43118) client send data is requireTips
+tip_list.json file send over...
+Accept new connection from ('127.0.0.1', 54948)
+('127.0.0.1', 54948) client send data is require
+('127.0.0.1', 43118) connection close
+node1_1756627208.621236.json file send over...
+Accept new connection from ('127.0.0.1', 54958)
+('127.0.0.1', 54958) client send data is require
+('127.0.0.1', 54948) connection close
+node1_1756627307.7654135.json file send over...
+Accept new connection from ('127.0.0.1', 54960)
+('127.0.0.1', 54960) client send data is require
+('127.0.0.1', 54958) connection close
+node1_1756629238.5583389.json file send over...
+('127.0.0.1', 54960) connection close
+Accept new connection from ('127.0.0.1', 46828)
+('127.0.0.1', 46828) client send data is transUpload
+*******************************************
+The new trans *node1_1756629332.8472207* had been published!
+*******************************************
+('127.0.0.1', 46828) connection close
+Accept new connection from ('127.0.0.1', 46830)
+('127.0.0.1', 46830) client send data is requireTips
+tip_list.json file send over...
+Accept new connection from ('127.0.0.1', 46846)
+('127.0.0.1', 46846) client send data is require
+('127.0.0.1', 46830) connection close
+node1_1756627208.621236.json file send over...
+Accept new connection from ('127.0.0.1', 46850)
+('127.0.0.1', 46850) client send data is require
+('127.0.0.1', 46846) connection close
+node1_1756629238.5583389.json file send over...
+Accept new connection from ('127.0.0.1', 46862)
+('127.0.0.1', 46862) client send data is require
+('127.0.0.1', 46850) connection close
+node1_1756629332.8472207.json file send over...
+('127.0.0.1', 46862) connection close
+Accept new connection from ('127.0.0.1', 50488)
+('127.0.0.1', 50488) client send data is transUpload
+*******************************************
+The new trans *node1_1756629423.0908089* had been published!
+*******************************************
+('127.0.0.1', 50488) connection close
+Accept new connection from ('127.0.0.1', 50502)
+('127.0.0.1', 50502) client send data is requireTips
+tip_list.json file send over...
+Accept new connection from ('127.0.0.1', 50504)
+('127.0.0.1', 50504) client send data is require
+('127.0.0.1', 50502) connection close
+node1_1756627208.621236.json file send over...
+Accept new connection from ('127.0.0.1', 50512)
+('127.0.0.1', 50512) client send data is require
+('127.0.0.1', 50504) connection close
+node1_1756629238.5583389.json file send over...
+Accept new connection from ('127.0.0.1', 50526)
+('127.0.0.1', 50526) client send data is require
+('127.0.0.1', 50512) connection close
+node1_1756629423.0908089.json file send over...
+('127.0.0.1', 50526) connection close
+Accept new connection from ('127.0.0.1', 35442)
+('127.0.0.1', 35442) client send data is transUpload
+*******************************************
+The new trans *node1_1756629674.7910256* had been published!
+*******************************************
+('127.0.0.1', 35442) connection close
+Accept new connection from ('127.0.0.1', 35458)
+('127.0.0.1', 35458) client send data is requireTips
+tip_list.json file send over...
+Accept new connection from ('127.0.0.1', 35474)
+('127.0.0.1', 35474) client send data is require
+('127.0.0.1', 35458) connection close
+node1_1756629238.5583389.json file send over...
+Accept new connection from ('127.0.0.1', 35490)
+('127.0.0.1', 35490) client send data is require
+('127.0.0.1', 35474) connection close
+node1_1756629423.0908089.json file send over...
+Accept new connection from ('127.0.0.1', 35500)
+('127.0.0.1', 35500) client send data is require
+('127.0.0.1', 35490) connection close
+node1_1756629674.7910256.json file send over...
+('127.0.0.1', 35500) connection close
+Accept new connection from ('127.0.0.1', 50704)
+('127.0.0.1', 50704) client send data is transUpload
+*******************************************
+The new trans *node1_1756629774.3287084* had been published!
+*******************************************
+('127.0.0.1', 50704) connection close
+Accept new connection from ('127.0.0.1', 50714)
+('127.0.0.1', 50714) client send data is requireTips
+tip_list.json file send over...
+Accept new connection from ('127.0.0.1', 50720)
+('127.0.0.1', 50720) client send data is require
+('127.0.0.1', 50714) connection close
+node1_1756629238.5583389.json file send over...
+Accept new connection from ('127.0.0.1', 50726)
+('127.0.0.1', 50726) client send data is require
+('127.0.0.1', 50720) connection close
+node1_1756629674.7910256.json file send over...
+Accept new connection from ('127.0.0.1', 50742)
+('127.0.0.1', 50742) client send data is require
+('127.0.0.1', 50726) connection close
+node1_1756629774.3287084.json file send over...
+('127.0.0.1', 50742) connection close
+Accept new connection from ('127.0.0.1', 34096)
+('127.0.0.1', 34096) client send data is transUpload
+*******************************************
+The new trans *node1_1756629868.8196707* had been published!
+*******************************************
+('127.0.0.1', 34096) connection close
+Accept new connection from ('127.0.0.1', 48794)
+('127.0.0.1', 48794) client send data is requireTips
+tip_list.json file send over...
+Accept new connection from ('127.0.0.1', 48810)
+('127.0.0.1', 48810) client send data is require
+('127.0.0.1', 48794) connection close
+node1_1756629238.5583389.json file send over...
+Accept new connection from ('127.0.0.1', 48818)
+('127.0.0.1', 48818) client send data is require
+('127.0.0.1', 48810) connection close
+node1_1756629774.3287084.json file send over...
+Accept new connection from ('127.0.0.1', 48828)
+('127.0.0.1', 48828) client send data is require
+('127.0.0.1', 48818) connection close
+node1_1756629868.8196707.json file send over...
+('127.0.0.1', 48828) connection close
+Accept new connection from ('127.0.0.1', 45172)
+('127.0.0.1', 45172) client send data is transUpload
+*******************************************
+The new trans *node1_1756629963.3189993* had been published!
+*******************************************
+('127.0.0.1', 45172) connection close
+Accept new connection from ('127.0.0.1', 45176)
+('127.0.0.1', 45176) client send data is requireTips
+tip_list.json file send over...
+Accept new connection from ('127.0.0.1', 45180)
+('127.0.0.1', 45180) client send data is require
+('127.0.0.1', 45176) connection close
+node1_1756629238.5583389.json file send over...
+Accept new connection from ('127.0.0.1', 45186)
+('127.0.0.1', 45186) client send data is require
+('127.0.0.1', 45180) connection close
+node1_1756629774.3287084.json file send over...
+Accept new connection from ('127.0.0.1', 45198)
+('127.0.0.1', 45198) client send data is require
+('127.0.0.1', 45186) connection close
+node1_1756629963.3189993.json file send over...
+('127.0.0.1', 45198) connection close
+Accept new connection from ('127.0.0.1', 37262)
+('127.0.0.1', 37262) client send data is transUpload
+*******************************************
+The new trans *node1_1756630065.259548* had been published!
+*******************************************
+('127.0.0.1', 37262) connection close
+Accept new connection from ('127.0.0.1', 37274)
+('127.0.0.1', 37274) client send data is requireTips
+tip_list.json file send over...
+Accept new connection from ('127.0.0.1', 37286)
+('127.0.0.1', 37286) client send data is require
+('127.0.0.1', 37274) connection close
+node1_1756629238.5583389.json file send over...
+Accept new connection from ('127.0.0.1', 37300)
+('127.0.0.1', 37300) client send data is require
+('127.0.0.1', 37286) connection close
+node1_1756629963.3189993.json file send over...
+Accept new connection from ('127.0.0.1', 37314)
+('127.0.0.1', 37314) client send data is require
+('127.0.0.1', 37300) connection close
+node1_1756630065.259548.json file send over...
+('127.0.0.1', 37314) connection close
+Accept new connection from ('127.0.0.1', 39882)
+('127.0.0.1', 39882) client send data is transUpload
+*******************************************
+The new trans *node1_1756630302.3618667* had been published!
+*******************************************
+('127.0.0.1', 39882) connection close
+Accept new connection from ('127.0.0.1', 39888)
+('127.0.0.1', 39888) client send data is requireTips
+tip_list.json file send over...
+Accept new connection from ('127.0.0.1', 39900)
+('127.0.0.1', 39900) client send data is require
+('127.0.0.1', 39888) connection close
+node1_1756629238.5583389.json file send over...
+Accept new connection from ('127.0.0.1', 39912)
+('127.0.0.1', 39912) client send data is require
+('127.0.0.1', 39900) connection close
+node1_1756630065.259548.json file send over...
+Accept new connection from ('127.0.0.1', 39926)
+('127.0.0.1', 39926) client send data is require
+('127.0.0.1', 39912) connection close
+node1_1756630302.3618667.json file send over...
+('127.0.0.1', 39926) connection close
+Accept new connection from ('127.0.0.1', 46024)
+('127.0.0.1', 46024) client send data is transUpload
+*******************************************
+The new trans *node1_1756630607.939339* had been published!
+*******************************************
+('127.0.0.1', 46024) connection close
+Accept new connection from ('127.0.0.1', 46032)
+('127.0.0.1', 46032) client send data is requireTips
+tip_list.json file send over...
+Accept new connection from ('127.0.0.1', 35736)
+('127.0.0.1', 35736) client send data is require
+('127.0.0.1', 46032) connection close
+node1_1756629238.5583389.json file send over...
+Accept new connection from ('127.0.0.1', 35740)
+('127.0.0.1', 35740) client send data is require
+('127.0.0.1', 35736) connection close
+node1_1756630065.259548.json file send over...
+Accept new connection from ('127.0.0.1', 35754)
+('127.0.0.1', 35754) client send data is require
+('127.0.0.1', 35740) connection close
+node1_1756630607.939339.json file send over...
+('127.0.0.1', 35754) connection close
+Accept new connection from ('127.0.0.1', 47056)
+('127.0.0.1', 47056) client send data is transUpload
+*******************************************
+The new trans *node1_1756630714.9677346* had been published!
+*******************************************
+('127.0.0.1', 47056) connection close
+Accept new connection from ('127.0.0.1', 47068)
+('127.0.0.1', 47068) client send data is requireTips
+tip_list.json file send over...
+Accept new connection from ('127.0.0.1', 47080)
+('127.0.0.1', 47080) client send data is require
+('127.0.0.1', 47068) connection close
+node1_1756629238.5583389.json file send over...
+Accept new connection from ('127.0.0.1', 47096)
+('127.0.0.1', 47096) client send data is require
+('127.0.0.1', 47080) connection close
+node1_1756630607.939339.json file send over...
+Accept new connection from ('127.0.0.1', 47112)
+('127.0.0.1', 47112) client send data is require
+('127.0.0.1', 47096) connection close
+node1_1756630714.9677346.json file send over...
+('127.0.0.1', 47112) connection close
+Accept new connection from ('127.0.0.1', 55124)
+('127.0.0.1', 55124) client send data is transUpload
+*******************************************
+The new trans *node1_1756630821.7033057* had been published!
+*******************************************
+('127.0.0.1', 55124) connection close
+Accept new connection from ('127.0.0.1', 55126)
+('127.0.0.1', 55126) client send data is requireTips
+tip_list.json file send over...
+Accept new connection from ('127.0.0.1', 55134)
+('127.0.0.1', 55134) client send data is require
+('127.0.0.1', 55126) connection close
+node1_1756629238.5583389.json file send over...
+Accept new connection from ('127.0.0.1', 55150)
+('127.0.0.1', 55150) client send data is require
+('127.0.0.1', 55134) connection close
+node1_1756630714.9677346.json file send over...
+Accept new connection from ('127.0.0.1', 55166)
+('127.0.0.1', 55166) client send data is require
+('127.0.0.1', 55150) connection close
+node1_1756630821.7033057.json file send over...
+('127.0.0.1', 55166) connection close
+Accept new connection from ('127.0.0.1', 57090)
+('127.0.0.1', 57090) client send data is transUpload
+*******************************************
+The new trans *node1_1756630917.274237* had been published!
+*******************************************
+('127.0.0.1', 57090) connection close
+Accept new connection from ('127.0.0.1', 57096)
+('127.0.0.1', 57096) client send data is requireTips
+tip_list.json file send over...
+Accept new connection from ('127.0.0.1', 57106)
+('127.0.0.1', 57106) client send data is require
+('127.0.0.1', 57096) connection close
+node1_1756629238.5583389.json file send over...
+Accept new connection from ('127.0.0.1', 48320)
+('127.0.0.1', 48320) client send data is require
+('127.0.0.1', 57106) connection close
+node1_1756630714.9677346.json file send over...
+Accept new connection from ('127.0.0.1', 48324)
+('127.0.0.1', 48324) client send data is require
+('127.0.0.1', 48320) connection close
+node1_1756630917.274237.json file send over...
+('127.0.0.1', 48324) connection close
+Accept new connection from ('127.0.0.1', 55712)
+('127.0.0.1', 55712) client send data is transUpload
+*******************************************
+The new trans *node1_1756631066.964202* had been published!
+*******************************************
+('127.0.0.1', 55712) connection close
+Accept new connection from ('127.0.0.1', 55716)
+('127.0.0.1', 55716) client send data is requireTips
+tip_list.json file send over...
+Accept new connection from ('127.0.0.1', 55728)
+('127.0.0.1', 55728) client send data is require
+('127.0.0.1', 55716) connection close
+node1_1756629238.5583389.json file send over...
+Accept new connection from ('127.0.0.1', 57608)
+('127.0.0.1', 57608) client send data is require
+('127.0.0.1', 55728) connection close
+node1_1756630714.9677346.json file send over...
+Accept new connection from ('127.0.0.1', 57624)
+('127.0.0.1', 57624) client send data is require
+('127.0.0.1', 57608) connection close
+node1_1756631066.964202.json file send over...
+('127.0.0.1', 57624) connection close
+Accept new connection from ('127.0.0.1', 35514)
+('127.0.0.1', 35514) client send data is transUpload
+*******************************************
+The new trans *node1_1756631175.6076264* had been published!
+*******************************************
+('127.0.0.1', 35514) connection close
+Accept new connection from ('127.0.0.1', 35528)
+('127.0.0.1', 35528) client send data is requireTips
+tip_list.json file send over...
+Accept new connection from ('127.0.0.1', 35538)
+('127.0.0.1', 35538) client send data is require
+('127.0.0.1', 35528) connection close
+node1_1756629238.5583389.json file send over...
+Accept new connection from ('127.0.0.1', 35554)
+('127.0.0.1', 35554) client send data is require
+('127.0.0.1', 35538) connection close
+node1_1756630714.9677346.json file send over...
+Accept new connection from ('127.0.0.1', 35568)
+('127.0.0.1', 35568) client send data is require
+('127.0.0.1', 35554) connection close
+node1_1756631175.6076264.json file send over...
+('127.0.0.1', 35568) connection close
+Accept new connection from ('127.0.0.1', 38862)
+('127.0.0.1', 38862) client send data is transUpload
+*******************************************
+The new trans *node1_1756631268.7006965* had been published!
+*******************************************
+('127.0.0.1', 38862) connection close
+Accept new connection from ('127.0.0.1', 39970)
+('127.0.0.1', 39970) client send data is requireTips
+tip_list.json file send over...
+Accept new connection from ('127.0.0.1', 39974)
+('127.0.0.1', 39974) client send data is require
+('127.0.0.1', 39970) connection close
+node1_1756629238.5583389.json file send over...
+Accept new connection from ('127.0.0.1', 39980)
+('127.0.0.1', 39980) client send data is require
+('127.0.0.1', 39974) connection close
+node1_1756631175.6076264.json file send over...
+Accept new connection from ('127.0.0.1', 39996)
+('127.0.0.1', 39996) client send data is require
+('127.0.0.1', 39980) connection close
+node1_1756631268.7006965.json file send over...
+('127.0.0.1', 39996) connection close
+Accept new connection from ('127.0.0.1', 56916)
+('127.0.0.1', 56916) client send data is transUpload
+*******************************************
+The new trans *node1_1756631380.364558* had been published!
+*******************************************
+('127.0.0.1', 56916) connection close
+Accept new connection from ('127.0.0.1', 50324)
+('127.0.0.1', 50324) client send data is requireTips
+tip_list.json file send over...
+Accept new connection from ('127.0.0.1', 50332)
+('127.0.0.1', 50332) client send data is require
+('127.0.0.1', 50324) connection close
+node1_1756629238.5583389.json file send over...
+Accept new connection from ('127.0.0.1', 50338)
+('127.0.0.1', 50338) client send data is require
+('127.0.0.1', 50332) connection close
+node1_1756631175.6076264.json file send over...
+Accept new connection from ('127.0.0.1', 50340)
+('127.0.0.1', 50340) client send data is require
+('127.0.0.1', 50338) connection close
+node1_1756631380.364558.json file send over...
+('127.0.0.1', 50340) connection close
+Accept new connection from ('127.0.0.1', 60504)
+('127.0.0.1', 60504) client send data is transUpload
+*******************************************
+The new trans *node1_1756631489.8645566* had been published!
+*******************************************
+('127.0.0.1', 60504) connection close
+Accept new connection from ('127.0.0.1', 38488)
+('127.0.0.1', 38488) client send data is requireTips
+tip_list.json file send over...
+Accept new connection from ('127.0.0.1', 38498)
+('127.0.0.1', 38498) client send data is require
+('127.0.0.1', 38488) connection close
+node1_1756629238.5583389.json file send over...
+Accept new connection from ('127.0.0.1', 38506)
+('127.0.0.1', 38506) client send data is require
+('127.0.0.1', 38498) connection close
+node1_1756631380.364558.json file send over...
+Accept new connection from ('127.0.0.1', 38514)
+('127.0.0.1', 38514) client send data is require
+('127.0.0.1', 38506) connection close
+node1_1756631489.8645566.json file send over...
+('127.0.0.1', 38514) connection close
+Accept new connection from ('127.0.0.1', 42532)
+('127.0.0.1', 42532) client send data is transUpload
+*******************************************
+The new trans *node1_1756631594.3483663* had been published!
+*******************************************
+('127.0.0.1', 42532) connection close
+Accept new connection from ('127.0.0.1', 42540)
+('127.0.0.1', 42540) client send data is requireTips
+tip_list.json file send over...
+Accept new connection from ('127.0.0.1', 42554)
+('127.0.0.1', 42554) client send data is require
+('127.0.0.1', 42540) connection close
+node1_1756629238.5583389.json file send over...
+Accept new connection from ('127.0.0.1', 42568)
+('127.0.0.1', 42568) client send data is require
+('127.0.0.1', 42554) connection close
+node1_1756631380.364558.json file send over...
+Accept new connection from ('127.0.0.1', 42572)
+('127.0.0.1', 42572) client send data is require
+('127.0.0.1', 42568) connection close
+node1_1756631594.3483663.json file send over...
+('127.0.0.1', 42572) connection close
+Accept new connection from ('127.0.0.1', 47142)
+('127.0.0.1', 47142) client send data is transUpload
+*******************************************
+The new trans *node1_1756631701.4108717* had been published!
+*******************************************
+('127.0.0.1', 47142) connection close
+Accept new connection from ('127.0.0.1', 54466)
+('127.0.0.1', 54466) client send data is requireTips
+tip_list.json file send over...
+Accept new connection from ('127.0.0.1', 54478)
+('127.0.0.1', 54478) client send data is require
+('127.0.0.1', 54466) connection close
+node1_1756629238.5583389.json file send over...
+Accept new connection from ('127.0.0.1', 54486)
+('127.0.0.1', 54486) client send data is require
+('127.0.0.1', 54478) connection close
+node1_1756631380.364558.json file send over...
+Accept new connection from ('127.0.0.1', 54502)
+('127.0.0.1', 54502) client send data is require
+('127.0.0.1', 54486) connection close
+node1_1756631701.4108717.json file send over...
+('127.0.0.1', 54502) connection close
+Accept new connection from ('127.0.0.1', 47976)
+('127.0.0.1', 47976) client send data is transUpload
+*******************************************
+The new trans *node1_1756631797.115594* had been published!
+*******************************************
+('127.0.0.1', 47976) connection close
+Accept new connection from ('127.0.0.1', 47990)
+('127.0.0.1', 47990) client send data is requireTips
+tip_list.json file send over...
+Accept new connection from ('127.0.0.1', 47992)
+('127.0.0.1', 47992) client send data is require
+('127.0.0.1', 47990) connection close
+node1_1756629238.5583389.json file send over...
+Accept new connection from ('127.0.0.1', 51568)
+('127.0.0.1', 51568) client send data is require
+('127.0.0.1', 47992) connection close
+node1_1756631380.364558.json file send over...
+Accept new connection from ('127.0.0.1', 51574)
+('127.0.0.1', 51574) client send data is require
+('127.0.0.1', 51568) connection close
+node1_1756631797.115594.json file send over...
+('127.0.0.1', 51574) connection close
+Accept new connection from ('127.0.0.1', 34064)
+('127.0.0.1', 34064) client send data is transUpload
+*******************************************
+The new trans *node1_1756631896.0773811* had been published!
+*******************************************
+('127.0.0.1', 34064) connection close
+Accept new connection from ('127.0.0.1', 34066)
+('127.0.0.1', 34066) client send data is requireTips
+tip_list.json file send over...
+Accept new connection from ('127.0.0.1', 34078)
+('127.0.0.1', 34078) client send data is require
+('127.0.0.1', 34066) connection close
+node1_1756629238.5583389.json file send over...
+Accept new connection from ('127.0.0.1', 34080)
+('127.0.0.1', 34080) client send data is require
+('127.0.0.1', 34078) connection close
+node1_1756631380.364558.json file send over...
+Accept new connection from ('127.0.0.1', 57578)
+('127.0.0.1', 57578) client send data is require
+('127.0.0.1', 34080) connection close
+node1_1756631896.0773811.json file send over...
+('127.0.0.1', 57578) connection close

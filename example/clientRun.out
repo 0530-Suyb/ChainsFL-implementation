@@ -1,0 +1,2274 @@
+(base) vm2@ubuntu:~/Desktop/ChainFL/ChainsFL-implementation/dagMainChain$ python clientRun.py --epochs 1 --frac 0.1 --gpu -1 --model cnn --num_channels 1
+/home/vm2/miniconda3/lib/python3.13/site-packages/torchvision/datasets/mnist.py:66: UserWarning: train_labels has been renamed targets
+  warnings.warn("train_labels has been renamed targets")
+The para of iid is False
+********************************
+CNNMnist(
+  (conv1): Conv2d(1, 10, kernel_size=(5, 5), stride=(1, 1))
+  (conv2): Conv2d(10, 20, kernel_size=(5, 5), stride=(1, 1))
+  (conv2_drop): Dropout2d(p=0.5, inplace=False)
+  (fc1): Linear(in_features=320, out_features=50, bias=True)
+  (fc2): Linear(in_features=50, out_features=10, bias=True)
+)
+********************************
+['device00005', 'device00056', 'device00076', 'device00078', 'device00068', 'device00025', 'device00047', 'device00015', 'device00061', 'device00055']
+
+
+
+**************************** Iteration 0 *****************************
+
+************************* Select Candidates Tips *****************************
+The candidates tips are  ['GenesisBlock']
+********************************************************************************
+
+You've connected, wait for command...
+File name is GenesisBlock.json, filesize is 146
+Start receiving...
+End receive...
+{"apv_trans": [], "model_acc": 0.0, "model_para": "QmWr9CYPKj8cMTubKbcL4guHcMg77yrxkGRxNpDrdgzAWG", "src_node": 0, "timestamp": 1756627072.213044} ./clientS/paras/apvTrans/iteration-0-GenesisBlock.pkl
+The filehash of this approved trans is QmWr9CYPKj8cMTubKbcL4guHcMg77yrxkGRxNpDrdgzAWG, and the file is ./clientS/paras/apvTrans/iteration-0-GenesisBlock.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-0-GenesisBlock.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-0-GenesisBlock.pkl has been downloaded!
+
+
+************************************
+Acc of the basic model in iteration 0 is 11.220000267028809
+************************************
+
+The base mode parasfile ./clientS/paras/baseModel.pkl has been uploaded!
+And the fileHash is QmSX7kgD984GtjkWqsJpJsP6PqtmQh1wMo2h2SqWQovW6H
+
+2025-08-31 08:32:24.178 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 001 Chaincode invoke successful. result: status:200 
+
+{"taskID":"task681010","epoch":1,"status":"start","usersFrac":0.1}
+
+*** task681010 has been released! ***
+*** And the detail of this task is {"taskID":"task681010","epoch":1,"status":"start","usersFrac":0.1}! ***
+
+*** The init aggModel of task681010 has been published! ***
+*** And the detail of the init aggModel is {"epoch":0,"status":"training","paras":"QmSX7kgD984GtjkWqsJpJsP6PqtmQh1wMo2h2SqWQovW6H"} ! ***
+
+The query result of the device00056 is  {"taskID":"task681010","epoch":1,"paras":"QmYixJ5ZATLo4g41Sq7U8J9Ua2TbU1qWaVYTKvyvYQMfn6"}
+The query result of the device00005 is  {"taskID":"task681010","epoch":1,"paras":"QmQppjnb9M8WS2Wjf1Yc59ewi9cgcQUykZFAannyjvjDgB"}
+The query result of the device00076 is  {"taskID":"task681010","epoch":1,"paras":"QmZRsSvhpCQeGa8atToucT4ZuUgeaX5zBFgryqnrbA8PcG"}
+The query result of the device00078 is  {"taskID":"task681010","epoch":1,"paras":"QmTmE59FMkobnNk836cWTnZgdYoiiP3SuipUEjewTAwe6o"}
+The query result of the device00068 is  {"taskID":"task681010","epoch":1,"paras":"QmU2tjBNr8WU2WH6YhjJja6gNEzUpr1i63oYoR67A81BC7"}
+The query result of the device00025 is  {"taskID":"task681010","epoch":1,"paras":"Qmcx6zQvbsvGhKZHdVshHQJNGegNtjz5hKxBJJxnppf7ju"}
+The query result of the device00047 is  {"taskID":"task681010","epoch":1,"paras":"QmcCEGWR54YQEV7B6BQpqQDTdz4tARHhyBAAUXdB6h82N1"}
+The query result of the device00015 is  {"taskID":"task681010","epoch":1,"paras":"QmUM2sJ1oZVrJ4x7XFqeEVWsFJZ8J9oj1JGKTdn9XEjqXb"}
+The query result of the device00061 is  {"taskID":"task681010","epoch":1,"paras":"QmP5epciabREpTgrHgzbfnYPH5LACbNK5U7NJ76Usbd48k"}
+The query result of the device00055 is  {"taskID":"task681010","epoch":1,"paras":"QmX9HCRbuf3qhXkfa7C7a1Kqfi6MFB99fMJwc3sTnqbTS8"}
+Test acc of the model trained by device00005 is 20.559999465942383
+Test acc of the model trained by device00056 is 18.079999923706055
+Test acc of the model trained by device00076 is 19.799999237060547
+Test acc of the model trained by device00078 is 19.559999465942383
+Test acc of the model trained by device00068 is 10.100000381469727
+Test acc of the model trained by device00025 is 19.670000076293945
+Test acc of the model trained by device00047 is 21.530000686645508
+Test acc of the model trained by device00015 is 9.819999694824219
+Test acc of the model trained by device00061 is 20.950000762939453
+Test acc of the model trained by device00055 is 19.829999923706055
+
+************************************
+Acc of the agg model of Round 1 in iteration 0 is 10.100000381469727
+************************************
+
+*************************
+The aggregated parasfile ./clientS/paras/aggModel-iter-0-epoch-1.pkl has been uploaded!
+And the fileHash is QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT!
+*************************
+
+
+******************
+The info of task task681010 is {"epoch":1,"status":"done","paras":"QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT"}
+The model aggregated in epoch 1 for task681010 has been published!
+******************
+
+You've connected, wait for command...
+
+******************************* Transaction upload *******************************
+The details of this trans are {"apv_trans": ["GenesisBlock"], "model_acc": 10.100000381469727, "model_para": "QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT", "src_node": 1, "timestamp": 1756629238.5583389}
+The trans generated in the iteration #0 had been uploaded!
+*************************************************************************************
+
+
+
+
+**************************** Iteration 1 *****************************
+You've connected, wait for command...
+File name is tip_list.json, filesize is 142
+Start receiving...
+End receive...
+
+************************* Select Candidates Tips *****************************
+The candidates tips are  ['node1_1756627208.621236', 'node1_1756627307.7654135', 'node1_1756629238.5583389']
+********************************************************************************
+
+You've connected, wait for command...
+File name is node1_1756627208.621236.json, filesize is 161
+Start receiving...
+End receive...
+{"apv_trans": ["GenesisBlock"], "model_acc": 27.0, "model_para": "QmcRWwufHHG8KmEGzpnTnS6tE4eZvBsk4hxrYFQBsgcyBx", "src_node": 1, "timestamp": 1756627208.621236} ./clientS/paras/apvTrans/iteration-1-node1_1756627208.621236.pkl
+The filehash of this approved trans is QmcRWwufHHG8KmEGzpnTnS6tE4eZvBsk4hxrYFQBsgcyBx, and the file is ./clientS/paras/apvTrans/iteration-1-node1_1756627208.621236.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-1-node1_1756627208.621236.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-1-node1_1756627208.621236.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756627307.7654135.json, filesize is 185
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756627208.621236"], "model_acc": 28.6200008392334, "model_para": "QmdsUftHmA7Uwmxtr9gvz1HSoNtP5nPMES4B2DNWxQXmEm", "src_node": 1, "timestamp": 1756627307.7654135} ./clientS/paras/apvTrans/iteration-1-node1_1756627307.7654135.pkl
+The filehash of this approved trans is QmdsUftHmA7Uwmxtr9gvz1HSoNtP5nPMES4B2DNWxQXmEm, and the file is ./clientS/paras/apvTrans/iteration-1-node1_1756627307.7654135.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-1-node1_1756627307.7654135.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-1-node1_1756627307.7654135.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756629238.5583389.json, filesize is 176
+Start receiving...
+End receive...
+{"apv_trans": ["GenesisBlock"], "model_acc": 10.100000381469727, "model_para": "QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT", "src_node": 1, "timestamp": 1756629238.5583389} ./clientS/paras/apvTrans/iteration-1-node1_1756629238.5583389.pkl
+The filehash of this approved trans is QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT, and the file is ./clientS/paras/apvTrans/iteration-1-node1_1756629238.5583389.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-1-node1_1756629238.5583389.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-1-node1_1756629238.5583389.pkl has been downloaded!
+
+
+************************************
+Acc of the basic model in iteration 1 is 27.149999618530273
+************************************
+
+The base mode parasfile ./clientS/paras/baseModel.pkl has been uploaded!
+And the fileHash is Qmav7efrsCz7TgZou1QPQLSuPEc84eMeX5m4FcWC91wo6P
+
+2025-08-31 08:34:08.429 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 001 Chaincode invoke successful. result: status:200 
+
+{"taskID":"task8469","epoch":1,"status":"start","usersFrac":0.1}
+
+*** task8469 has been released! ***
+*** And the detail of this task is {"taskID":"task8469","epoch":1,"status":"start","usersFrac":0.1}! ***
+
+*** The init aggModel of task8469 has been published! ***
+*** And the detail of the init aggModel is {"epoch":0,"status":"training","paras":"Qmav7efrsCz7TgZou1QPQLSuPEc84eMeX5m4FcWC91wo6P"} ! ***
+
+The query result of the device00005 is  {"taskID":"task8469","epoch":1,"paras":"QmbPENtZ3CeUztMayg1vVZkhKbZBRQtiYJTnJ5azfXitoe"}
+The query result of the device00056 is  {"taskID":"task8469","epoch":1,"paras":"QmetXE2RNKBPY9Cfv66BNGUwdwDT9nv9865sC6f29htzbD"}
+The query result of the device00076 is  {"taskID":"task8469","epoch":1,"paras":"QmexNxYchv9kMUNqNXVuJXa5oYu6CkNaSpKycxcdyjBWon"}
+The query result of the device00078 is  {"taskID":"task8469","epoch":1,"paras":"QmVR7kV2tDvxoqaMTpEZbWyqE9xQEk8Ue8QZrSu7X2nkc6"}
+The query result of the device00068 is  {"taskID":"task8469","epoch":1,"paras":"Qmb1XaHC8d4r9atSDFjTAUJjF1z6ZYm8sGpwaK2qvtDbGF"}
+The query result of the device00025 is  {"taskID":"task8469","epoch":1,"paras":"QmWh2En53nmTGNh143MmKC7r6QwPGuTBcvdp2tfbhnaFSt"}
+The query result of the device00047 is  {"taskID":"task8469","epoch":1,"paras":"QmUtxR3fdNZKVXofbpbD9ViSGX1xJSht1PEQgjck9CCQJK"}
+The query result of the device00015 is  {"taskID":"task8469","epoch":1,"paras":"QmRcPRH6VTKx5fWjEKTzNLay4yrgLwAmpMmGcMRPz6wrHf"}
+The query result of the device00061 is  {"taskID":"task8469","epoch":1,"paras":"QmWAEeq8fXxEf4HLTXmKrm7VWCf2sSPzvqRm5cMQaKVMWx"}
+The query result of the device00055 is  {"taskID":"task8469","epoch":1,"paras":"QmdQSNEru3FezTHLa3QfZ1M5QfbvZvNUwm4ujfNYu7AXEH"}
+Test acc of the model trained by device00005 is 20.84000015258789
+Test acc of the model trained by device00056 is 18.15999984741211
+Test acc of the model trained by device00076 is 19.579999923706055
+Test acc of the model trained by device00078 is 19.81999969482422
+Test acc of the model trained by device00068 is 10.100000381469727
+Test acc of the model trained by device00025 is 19.889999389648438
+Test acc of the model trained by device00047 is 21.559999465942383
+Test acc of the model trained by device00015 is 9.819999694824219
+Test acc of the model trained by device00061 is 21.100000381469727
+Test acc of the model trained by device00055 is 19.829999923706055
+
+************************************
+Acc of the agg model of Round 1 in iteration 1 is 26.6299991607666
+************************************
+
+*************************
+The aggregated parasfile ./clientS/paras/aggModel-iter-1-epoch-1.pkl has been uploaded!
+And the fileHash is QmTrmu7m7TcF6ACJ9wzzP1DZ5vif7JCuMBtkYsLGdycB2D!
+*************************
+
+
+******************
+The info of task task8469 is {"epoch":1,"status":"done","paras":"QmTrmu7m7TcF6ACJ9wzzP1DZ5vif7JCuMBtkYsLGdycB2D"}
+The model aggregated in epoch 1 for task8469 has been published!
+******************
+
+You've connected, wait for command...
+
+******************************* Transaction upload *******************************
+The details of this trans are {"apv_trans": ["node1_1756627307.7654135", "node1_1756627208.621236"], "model_acc": 26.6299991607666, "model_para": "QmTrmu7m7TcF6ACJ9wzzP1DZ5vif7JCuMBtkYsLGdycB2D", "src_node": 1, "timestamp": 1756629332.8472207}
+The trans generated in the iteration #1 had been uploaded!
+*************************************************************************************
+
+
+
+
+**************************** Iteration 2 *****************************
+You've connected, wait for command...
+File name is tip_list.json, filesize is 142
+Start receiving...
+End receive...
+
+************************* Select Candidates Tips *****************************
+The candidates tips are  ['node1_1756627208.621236', 'node1_1756629238.5583389', 'node1_1756629332.8472207']
+********************************************************************************
+
+You've connected, wait for command...
+File name is node1_1756627208.621236.json, filesize is 161
+Start receiving...
+End receive...
+{"apv_trans": ["GenesisBlock"], "model_acc": 27.0, "model_para": "QmcRWwufHHG8KmEGzpnTnS6tE4eZvBsk4hxrYFQBsgcyBx", "src_node": 1, "timestamp": 1756627208.621236} ./clientS/paras/apvTrans/iteration-2-node1_1756627208.621236.pkl
+The filehash of this approved trans is QmcRWwufHHG8KmEGzpnTnS6tE4eZvBsk4hxrYFQBsgcyBx, and the file is ./clientS/paras/apvTrans/iteration-2-node1_1756627208.621236.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-2-node1_1756627208.621236.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-2-node1_1756627208.621236.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756629238.5583389.json, filesize is 176
+Start receiving...
+End receive...
+{"apv_trans": ["GenesisBlock"], "model_acc": 10.100000381469727, "model_para": "QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT", "src_node": 1, "timestamp": 1756629238.5583389} ./clientS/paras/apvTrans/iteration-2-node1_1756629238.5583389.pkl
+The filehash of this approved trans is QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT, and the file is ./clientS/paras/apvTrans/iteration-2-node1_1756629238.5583389.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-2-node1_1756629238.5583389.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-2-node1_1756629238.5583389.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756629332.8472207.json, filesize is 213
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756627307.7654135", "node1_1756627208.621236"], "model_acc": 26.6299991607666, "model_para": "QmTrmu7m7TcF6ACJ9wzzP1DZ5vif7JCuMBtkYsLGdycB2D", "src_node": 1, "timestamp": 1756629332.8472207} ./clientS/paras/apvTrans/iteration-2-node1_1756629332.8472207.pkl
+The filehash of this approved trans is QmTrmu7m7TcF6ACJ9wzzP1DZ5vif7JCuMBtkYsLGdycB2D, and the file is ./clientS/paras/apvTrans/iteration-2-node1_1756629332.8472207.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-2-node1_1756629332.8472207.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-2-node1_1756629332.8472207.pkl has been downloaded!
+
+
+************************************
+Acc of the basic model in iteration 2 is 34.369998931884766
+************************************
+
+The base mode parasfile ./clientS/paras/baseModel.pkl has been uploaded!
+And the fileHash is QmSY4bkEfPxRi2hN3P3tL6MfE9B89gMCUxS6dkgNK1RhJN
+
+2025-08-31 08:35:42.183 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 001 Chaincode invoke successful. result: status:200 
+
+{"taskID":"task81097","epoch":1,"status":"start","usersFrac":0.1}
+
+*** task81097 has been released! ***
+*** And the detail of this task is {"taskID":"task81097","epoch":1,"status":"start","usersFrac":0.1}! ***
+
+*** The init aggModel of task81097 has been published! ***
+*** And the detail of the init aggModel is {"epoch":0,"status":"training","paras":"QmSY4bkEfPxRi2hN3P3tL6MfE9B89gMCUxS6dkgNK1RhJN"} ! ***
+
+The query result of the device00056 is  {"taskID":"task81097","epoch":1,"paras":"QmUooWYCHtJqsxmasnE26xdMKQBMtdSTnVj8mfLyLZGFgk"}
+The query result of the device00005 is  {"taskID":"task81097","epoch":1,"paras":"QmRaGSuQzob4Zvnrn9aY1kmNd2wW9sRh3Rdzfbnpx23jd3"}
+The query result of the device00076 is  {"taskID":"task81097","epoch":1,"paras":"QmVw4FJS82xPogxKFdtgNc4TxxT43DEM7NTqb2VRMfpUe8"}
+The query result of the device00078 is  {"taskID":"task81097","epoch":1,"paras":"QmTYpQEuBxVHLhPfo8CC7Ln2tQk4DYS5JPuHEo2spCE9kU"}
+The query result of the device00068 is  {"taskID":"task81097","epoch":1,"paras":"QmSGTzuT9BPsJrVnF9MrNmNc5VoobSGDyEFex3ziWkXyVc"}
+The query result of the device00025 is  {"taskID":"task81097","epoch":1,"paras":"Qmdo8kKU5A3MfGpRkydgVd65Tpii4VwTzHDdvYtX24MSuq"}
+The query result of the device00047 is  {"taskID":"task81097","epoch":1,"paras":"QmRyLaotczpMMvgSrufLUU2gaG2D3utr8Rvroqf8ot8RDk"}
+The query result of the device00015 is  {"taskID":"task81097","epoch":1,"paras":"QmNyZH7S8UpzY7DjG87Li3mKCuMwF8smuZK5g12BiTEmZR"}
+The query result of the device00061 is  {"taskID":"task81097","epoch":1,"paras":"QmYTf3Y6HzCDL3hPrmmkSAdLFh6gw1nt6Fs6ZQbA9MLdHq"}
+The query result of the device00055 is  {"taskID":"task81097","epoch":1,"paras":"QmdUKToH9mDPYyQrZBC4WVzRZ31MenrAQDb3jRGMd8uv3B"}
+Test acc of the model trained by device00005 is 20.889999389648438
+Test acc of the model trained by device00056 is 18.1200008392334
+Test acc of the model trained by device00076 is 19.829999923706055
+Test acc of the model trained by device00078 is 19.850000381469727
+Test acc of the model trained by device00068 is 10.100000381469727
+Test acc of the model trained by device00025 is 19.860000610351562
+Test acc of the model trained by device00047 is 21.56999969482422
+Test acc of the model trained by device00015 is 9.819999694824219
+Test acc of the model trained by device00061 is 21.1200008392334
+Test acc of the model trained by device00055 is 19.850000381469727
+
+************************************
+Acc of the agg model of Round 1 in iteration 2 is 30.790000915527344
+************************************
+
+*************************
+The aggregated parasfile ./clientS/paras/aggModel-iter-2-epoch-1.pkl has been uploaded!
+And the fileHash is QmPYtvVMGGnbGMFDnsvyF9xCjrv6veHprAjhrTXRdziem7!
+*************************
+
+
+******************
+The info of task task81097 is {"epoch":1,"status":"done","paras":"QmPYtvVMGGnbGMFDnsvyF9xCjrv6veHprAjhrTXRdziem7"}
+The model aggregated in epoch 1 for task81097 has been published!
+******************
+
+You've connected, wait for command...
+
+******************************* Transaction upload *******************************
+The details of this trans are {"apv_trans": ["node1_1756627208.621236", "node1_1756629332.8472207"], "model_acc": 30.790000915527344, "model_para": "QmPYtvVMGGnbGMFDnsvyF9xCjrv6veHprAjhrTXRdziem7", "src_node": 1, "timestamp": 1756629423.0908089}
+The trans generated in the iteration #2 had been uploaded!
+*************************************************************************************
+
+
+
+
+**************************** Iteration 3 *****************************
+You've connected, wait for command...
+File name is tip_list.json, filesize is 142
+Start receiving...
+End receive...
+
+************************* Select Candidates Tips *****************************
+The candidates tips are  ['node1_1756627208.621236', 'node1_1756629238.5583389', 'node1_1756629423.0908089']
+********************************************************************************
+
+You've connected, wait for command...
+File name is node1_1756627208.621236.json, filesize is 161
+Start receiving...
+End receive...
+{"apv_trans": ["GenesisBlock"], "model_acc": 27.0, "model_para": "QmcRWwufHHG8KmEGzpnTnS6tE4eZvBsk4hxrYFQBsgcyBx", "src_node": 1, "timestamp": 1756627208.621236} ./clientS/paras/apvTrans/iteration-3-node1_1756627208.621236.pkl
+The filehash of this approved trans is QmcRWwufHHG8KmEGzpnTnS6tE4eZvBsk4hxrYFQBsgcyBx, and the file is ./clientS/paras/apvTrans/iteration-3-node1_1756627208.621236.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-3-node1_1756627208.621236.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-3-node1_1756627208.621236.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756629238.5583389.json, filesize is 176
+Start receiving...
+End receive...
+{"apv_trans": ["GenesisBlock"], "model_acc": 10.100000381469727, "model_para": "QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT", "src_node": 1, "timestamp": 1756629238.5583389} ./clientS/paras/apvTrans/iteration-3-node1_1756629238.5583389.pkl
+The filehash of this approved trans is QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT, and the file is ./clientS/paras/apvTrans/iteration-3-node1_1756629238.5583389.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-3-node1_1756629238.5583389.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-3-node1_1756629238.5583389.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756629423.0908089.json, filesize is 215
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756627208.621236", "node1_1756629332.8472207"], "model_acc": 30.790000915527344, "model_para": "QmPYtvVMGGnbGMFDnsvyF9xCjrv6veHprAjhrTXRdziem7", "src_node": 1, "timestamp": 1756629423.0908089} ./clientS/paras/apvTrans/iteration-3-node1_1756629423.0908089.pkl
+The filehash of this approved trans is QmPYtvVMGGnbGMFDnsvyF9xCjrv6veHprAjhrTXRdziem7, and the file is ./clientS/paras/apvTrans/iteration-3-node1_1756629423.0908089.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-3-node1_1756629423.0908089.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-3-node1_1756629423.0908089.pkl has been downloaded!
+
+
+************************************
+Acc of the basic model in iteration 3 is 35.09000015258789
+************************************
+
+The base mode parasfile ./clientS/paras/baseModel.pkl has been uploaded!
+And the fileHash is QmP2qJyogQPj9xh6hCi93VHUwpyrxUs5v9r1Dsp5F7AHc8
+
+2025-08-31 08:37:12.480 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 001 Chaincode invoke successful. result: status:200 
+
+{"taskID":"task6271","epoch":1,"status":"start","usersFrac":0.1}
+
+*** task6271 has been released! ***
+*** And the detail of this task is {"taskID":"task6271","epoch":1,"status":"start","usersFrac":0.1}! ***
+
+*** The init aggModel of task6271 has been published! ***
+*** And the detail of the init aggModel is {"epoch":0,"status":"training","paras":"QmP2qJyogQPj9xh6hCi93VHUwpyrxUs5v9r1Dsp5F7AHc8"} ! ***
+
+The query result of the device00005 is  {"taskID":"task6271","epoch":1,"paras":"QmZHTjb2pH6LwUjky6YRpaSUA2fqbxDaAmA9qjU6LRb6yN"}
+The query result of the device00056 is  {"taskID":"task6271","epoch":1,"paras":"QmTz5uz1gQNR1TRfKbFa2t7sv3TbqBphqK4CyWwhGuGeg2"}
+The query result of the device00076 is  {"taskID":"task6271","epoch":1,"paras":"QmabXmvHo7XupHwxtYreDiDgMUDcbVtBWg12kK2bzBzNKb"}
+The query result of the device00078 is  {"taskID":"task6271","epoch":1,"paras":"Qmbub4fa1qKdFUasWHQekyCTewQ5a7M5GuMoeZZkRrqhAg"}
+The query result of the device00068 is  {"taskID":"task6271","epoch":1,"paras":"QmcfNni7gWP63ZtibhH6kCnoWpReT5ymCfa9NPeNcmWQC4"}
+The query result of the device00025 is  {"taskID":"task6271","epoch":1,"paras":"QmYJQm1NJpLK9NuLFhZ8hsXcF67vEag1SKhwEmXekXn1Mb"}
+The query result of the device00047 is  {"taskID":"task6271","epoch":1,"paras":"QmcsL9Fzf9zhAtdfQtAdhNNGToFKfCu7toM2xYLXCcebhh"}
+The query result of the device00015 is  {"taskID":"task6271","epoch":1,"paras":"QmX4kEgPtEp77qfDxZRZiAJ4YsmVhi9PzpWzHcHEDyKNaP"}
+The query result of the device00061 is  {"taskID":"task6271","epoch":1,"paras":"QmRdM4vu18jfXUNSLW5Za2kQ7mQsp35wNQCRBbkyEs56H7"}
+The query result of the device00055 is  {"taskID":"task6271","epoch":1,"paras":"QmaRafwa3D78NgUJTDw8XpKzxa3stnMs1sXk2S3z4RiJE9"}
+Test acc of the model trained by device00005 is 20.860000610351562
+Test acc of the model trained by device00056 is 18.190000534057617
+Test acc of the model trained by device00076 is 19.780000686645508
+Test acc of the model trained by device00078 is 19.760000228881836
+Test acc of the model trained by device00068 is 10.100000381469727
+Test acc of the model trained by device00025 is 19.90999984741211
+Test acc of the model trained by device00047 is 21.56999969482422
+Test acc of the model trained by device00015 is 9.819999694824219
+Test acc of the model trained by device00061 is 21.110000610351562
+Test acc of the model trained by device00055 is 19.809999465942383
+
+************************************
+Acc of the agg model of Round 1 in iteration 3 is 34.189998626708984
+************************************
+
+*************************
+The aggregated parasfile ./clientS/paras/aggModel-iter-3-epoch-1.pkl has been uploaded!
+And the fileHash is QmeHXVDsEkEEm9BXwHZUR79SvDvd97gTAVPEw2UWShEWV2!
+*************************
+
+
+******************
+The info of task task6271 is {"epoch":1,"status":"done","paras":"QmeHXVDsEkEEm9BXwHZUR79SvDvd97gTAVPEw2UWShEWV2"}
+The model aggregated in epoch 1 for task6271 has been published!
+******************
+
+You've connected, wait for command...
+
+******************************* Transaction upload *******************************
+The details of this trans are {"apv_trans": ["node1_1756629423.0908089", "node1_1756627208.621236"], "model_acc": 34.189998626708984, "model_para": "QmeHXVDsEkEEm9BXwHZUR79SvDvd97gTAVPEw2UWShEWV2", "src_node": 1, "timestamp": 1756629674.7910256}
+The trans generated in the iteration #3 had been uploaded!
+*************************************************************************************
+
+
+
+
+**************************** Iteration 4 *****************************
+You've connected, wait for command...
+File name is tip_list.json, filesize is 144
+Start receiving...
+End receive...
+
+************************* Select Candidates Tips *****************************
+The candidates tips are  ['node1_1756629238.5583389', 'node1_1756629423.0908089', 'node1_1756629674.7910256']
+********************************************************************************
+
+You've connected, wait for command...
+File name is node1_1756629238.5583389.json, filesize is 176
+Start receiving...
+End receive...
+{"apv_trans": ["GenesisBlock"], "model_acc": 10.100000381469727, "model_para": "QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT", "src_node": 1, "timestamp": 1756629238.5583389} ./clientS/paras/apvTrans/iteration-4-node1_1756629238.5583389.pkl
+The filehash of this approved trans is QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT, and the file is ./clientS/paras/apvTrans/iteration-4-node1_1756629238.5583389.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-4-node1_1756629238.5583389.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-4-node1_1756629238.5583389.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756629423.0908089.json, filesize is 215
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756627208.621236", "node1_1756629332.8472207"], "model_acc": 30.790000915527344, "model_para": "QmPYtvVMGGnbGMFDnsvyF9xCjrv6veHprAjhrTXRdziem7", "src_node": 1, "timestamp": 1756629423.0908089} ./clientS/paras/apvTrans/iteration-4-node1_1756629423.0908089.pkl
+The filehash of this approved trans is QmPYtvVMGGnbGMFDnsvyF9xCjrv6veHprAjhrTXRdziem7, and the file is ./clientS/paras/apvTrans/iteration-4-node1_1756629423.0908089.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-4-node1_1756629423.0908089.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-4-node1_1756629423.0908089.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756629674.7910256.json, filesize is 215
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756629423.0908089", "node1_1756627208.621236"], "model_acc": 34.189998626708984, "model_para": "QmeHXVDsEkEEm9BXwHZUR79SvDvd97gTAVPEw2UWShEWV2", "src_node": 1, "timestamp": 1756629674.7910256} ./clientS/paras/apvTrans/iteration-4-node1_1756629674.7910256.pkl
+The filehash of this approved trans is QmeHXVDsEkEEm9BXwHZUR79SvDvd97gTAVPEw2UWShEWV2, and the file is ./clientS/paras/apvTrans/iteration-4-node1_1756629674.7910256.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-4-node1_1756629674.7910256.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-4-node1_1756629674.7910256.pkl has been downloaded!
+
+
+************************************
+Acc of the basic model in iteration 4 is 32.7400016784668
+************************************
+
+The base mode parasfile ./clientS/paras/baseModel.pkl has been uploaded!
+And the fileHash is QmVFYjVaEvghDUjLrewUhRvLE5Lv4sZs77e19ozguvvJSe
+
+2025-08-31 08:41:25.231 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 001 Chaincode invoke successful. result: status:200 
+
+{"taskID":"task108710","epoch":1,"status":"start","usersFrac":0.1}
+
+*** task108710 has been released! ***
+*** And the detail of this task is {"taskID":"task108710","epoch":1,"status":"start","usersFrac":0.1}! ***
+
+*** The init aggModel of task108710 has been published! ***
+*** And the detail of the init aggModel is {"epoch":0,"status":"training","paras":"QmVFYjVaEvghDUjLrewUhRvLE5Lv4sZs77e19ozguvvJSe"} ! ***
+
+The query result of the device00056 is  {"taskID":"task108710","epoch":1,"paras":"QmTHjTdevqHNwoPHChpWmzsdaB1UifyV6pFGojw4mVCUpX"}
+The query result of the device00005 is  {"taskID":"task108710","epoch":1,"paras":"QmR7RvHsGcH8V5bBJ8AG7ZomHM9ZhMi7z5whGNLMF8nBvX"}
+The query result of the device00076 is  {"taskID":"task108710","epoch":1,"paras":"QmebcULksWAwjQW81VsuCi7c183H1CduaFR6q682Z5PdaZ"}
+The query result of the device00078 is  {"taskID":"task108710","epoch":1,"paras":"QmSgecGKzATLTfzGZgJj3BKCevXcFo6Ywzt1TZ8UR9KAjC"}
+The query result of the device00068 is  {"taskID":"task108710","epoch":1,"paras":"QmWFkoGPqncu8wxnEWfZ5sXG9BqhEgmTHuSGnheKCTRvs2"}
+The query result of the device00025 is  {"taskID":"task108710","epoch":1,"paras":"QmePj3ujYSpf299wndG1FWWkjWL15vj3JAC8CsRMwBZBdn"}
+The query result of the device00047 is  {"taskID":"task108710","epoch":1,"paras":"QmeswvCmWvo9HyYSVZDBLPXnRExeMhJHDsZvsyemmNyAnK"}
+The query result of the device00015 is  {"taskID":"task108710","epoch":1,"paras":"QmaZ9T5Lt4buu2swpYGi8NokK4NMR55SqE6wJbncSDm5YF"}
+The query result of the device00061 is  {"taskID":"task108710","epoch":1,"paras":"Qma7Jz6ZaWAwGAjVB9YGG44KzjVuLTDPe5sbuzct83VCSL"}
+The query result of the device00055 is  {"taskID":"task108710","epoch":1,"paras":"QmdXMdAEif9VtzUkJ9URsjYPtHBL1Tpx7AayPtMAZBR5rE"}
+Test acc of the model trained by device00005 is 20.8700008392334
+Test acc of the model trained by device00056 is 18.170000076293945
+Test acc of the model trained by device00076 is 19.799999237060547
+Test acc of the model trained by device00078 is 19.8799991607666
+Test acc of the model trained by device00068 is 10.100000381469727
+Test acc of the model trained by device00025 is 19.979999542236328
+Test acc of the model trained by device00047 is 21.43000030517578
+Test acc of the model trained by device00015 is 9.819999694824219
+Test acc of the model trained by device00061 is 21.190000534057617
+Test acc of the model trained by device00055 is 19.829999923706055
+
+************************************
+Acc of the agg model of Round 1 in iteration 4 is 46.91999816894531
+************************************
+
+*************************
+The aggregated parasfile ./clientS/paras/aggModel-iter-4-epoch-1.pkl has been uploaded!
+And the fileHash is Qmd5NDye3xEfmxbPrjtLjGZzySjY8BqAc5jt7BRyP9Vafo!
+*************************
+
+
+******************
+The info of task task108710 is {"epoch":1,"status":"done","paras":"Qmd5NDye3xEfmxbPrjtLjGZzySjY8BqAc5jt7BRyP9Vafo"}
+The model aggregated in epoch 1 for task108710 has been published!
+******************
+
+You've connected, wait for command...
+
+******************************* Transaction upload *******************************
+The details of this trans are {"apv_trans": ["node1_1756629674.7910256", "node1_1756629423.0908089"], "model_acc": 46.91999816894531, "model_para": "Qmd5NDye3xEfmxbPrjtLjGZzySjY8BqAc5jt7BRyP9Vafo", "src_node": 1, "timestamp": 1756629774.3287084}
+The trans generated in the iteration #4 had been uploaded!
+*************************************************************************************
+
+
+
+
+**************************** Iteration 5 *****************************
+You've connected, wait for command...
+File name is tip_list.json, filesize is 144
+Start receiving...
+End receive...
+
+************************* Select Candidates Tips *****************************
+The candidates tips are  ['node1_1756629238.5583389', 'node1_1756629674.7910256', 'node1_1756629774.3287084']
+********************************************************************************
+
+You've connected, wait for command...
+File name is node1_1756629238.5583389.json, filesize is 176
+Start receiving...
+End receive...
+{"apv_trans": ["GenesisBlock"], "model_acc": 10.100000381469727, "model_para": "QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT", "src_node": 1, "timestamp": 1756629238.5583389} ./clientS/paras/apvTrans/iteration-5-node1_1756629238.5583389.pkl
+The filehash of this approved trans is QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT, and the file is ./clientS/paras/apvTrans/iteration-5-node1_1756629238.5583389.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-5-node1_1756629238.5583389.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-5-node1_1756629238.5583389.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756629674.7910256.json, filesize is 215
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756629423.0908089", "node1_1756627208.621236"], "model_acc": 34.189998626708984, "model_para": "QmeHXVDsEkEEm9BXwHZUR79SvDvd97gTAVPEw2UWShEWV2", "src_node": 1, "timestamp": 1756629674.7910256} ./clientS/paras/apvTrans/iteration-5-node1_1756629674.7910256.pkl
+The filehash of this approved trans is QmeHXVDsEkEEm9BXwHZUR79SvDvd97gTAVPEw2UWShEWV2, and the file is ./clientS/paras/apvTrans/iteration-5-node1_1756629674.7910256.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-5-node1_1756629674.7910256.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-5-node1_1756629674.7910256.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756629774.3287084.json, filesize is 215
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756629674.7910256", "node1_1756629423.0908089"], "model_acc": 46.91999816894531, "model_para": "Qmd5NDye3xEfmxbPrjtLjGZzySjY8BqAc5jt7BRyP9Vafo", "src_node": 1, "timestamp": 1756629774.3287084} ./clientS/paras/apvTrans/iteration-5-node1_1756629774.3287084.pkl
+The filehash of this approved trans is Qmd5NDye3xEfmxbPrjtLjGZzySjY8BqAc5jt7BRyP9Vafo, and the file is ./clientS/paras/apvTrans/iteration-5-node1_1756629774.3287084.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-5-node1_1756629774.3287084.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-5-node1_1756629774.3287084.pkl has been downloaded!
+
+
+************************************
+Acc of the basic model in iteration 5 is 43.59000015258789
+************************************
+
+The base mode parasfile ./clientS/paras/baseModel.pkl has been uploaded!
+And the fileHash is QmQcsaHaYP5npXvMep6uN3uJjtbro2wSoEr1zxrJD9hhcq
+
+2025-08-31 08:43:04.030 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 001 Chaincode invoke successful. result: status:200 
+
+{"taskID":"task6342","epoch":1,"status":"start","usersFrac":0.1}
+
+*** task6342 has been released! ***
+*** And the detail of this task is {"taskID":"task6342","epoch":1,"status":"start","usersFrac":0.1}! ***
+
+*** The init aggModel of task6342 has been published! ***
+*** And the detail of the init aggModel is {"epoch":0,"status":"training","paras":"QmQcsaHaYP5npXvMep6uN3uJjtbro2wSoEr1zxrJD9hhcq"} ! ***
+
+The query result of the device00056 is  {"taskID":"task6342","epoch":1,"paras":"QmeNv5XRFmirYVSyA5KuokcBEMpDMowrve3eB7dNg7kRRJ"}
+The query result of the device00005 is  {"taskID":"task6342","epoch":1,"paras":"QmZ84pfro9bgvQzij5aLA6W63MS7AYET2TKGqGBw1e73oz"}
+The query result of the device00076 is  {"taskID":"task6342","epoch":1,"paras":"QmfHkcbNh7GsgDiP57nZ2QQ7tACCrxWo62ysUTgS2iy62o"}
+The query result of the device00078 is  {"taskID":"task6342","epoch":1,"paras":"QmXYe5USUhqkMXoyvKRTuJrsZrAEmGmqp4BxkSdosvwzJj"}
+The query result of the device00068 is  {"taskID":"task6342","epoch":1,"paras":"QmNvPNJbNHaATdNojytkGpmmEVPys7j9mhwRaRcR5ysVJD"}
+The query result of the device00025 is  {"taskID":"task6342","epoch":1,"paras":"QmYa9xkfhYgoAWnSfKFYGub1LVh1K3WFLSCyRmx9MMyVEP"}
+The query result of the device00047 is  {"taskID":"task6342","epoch":1,"paras":"QmPN9xFiLKiPxmQtsCRBirs7WsSan2Gk9cE4TbzJ72rFDY"}
+The query result of the device00015 is  {"taskID":"task6342","epoch":1,"paras":"QmfZg4EugKKXUpNLSHukVV2Yva1T1qKU6wWXyrQ1nKnn9f"}
+The query result of the device00061 is  {"taskID":"task6342","epoch":1,"paras":"Qmed4mQN8JaGHE4tUk2e6rbb4V1rggnpvUSQCWKuMnh7Zw"}
+The query result of the device00055 is  {"taskID":"task6342","epoch":1,"paras":"Qmbk4jsPyvEQrqRDGFCEPkiMqjWyqCXdKdsXRg6a97fPRg"}
+Test acc of the model trained by device00005 is 20.8799991607666
+Test acc of the model trained by device00056 is 18.209999084472656
+Test acc of the model trained by device00076 is 19.770000457763672
+Test acc of the model trained by device00078 is 19.899999618530273
+Test acc of the model trained by device00068 is 10.100000381469727
+Test acc of the model trained by device00025 is 19.729999542236328
+Test acc of the model trained by device00047 is 21.489999771118164
+Test acc of the model trained by device00015 is 9.819999694824219
+Test acc of the model trained by device00061 is 21.889999389648438
+Test acc of the model trained by device00055 is 19.84000015258789
+
+************************************
+Acc of the agg model of Round 1 in iteration 5 is 47.0
+************************************
+
+*************************
+The aggregated parasfile ./clientS/paras/aggModel-iter-5-epoch-1.pkl has been uploaded!
+And the fileHash is QmdvdhLmC2F3ZdVfk4yqq6aFsPDXPoMikKK6ejhcDcLfEs!
+*************************
+
+
+******************
+The info of task task6342 is {"epoch":1,"status":"done","paras":"QmdvdhLmC2F3ZdVfk4yqq6aFsPDXPoMikKK6ejhcDcLfEs"}
+The model aggregated in epoch 1 for task6342 has been published!
+******************
+
+You've connected, wait for command...
+
+******************************* Transaction upload *******************************
+The details of this trans are {"apv_trans": ["node1_1756629774.3287084", "node1_1756629674.7910256"], "model_acc": 47.0, "model_para": "QmdvdhLmC2F3ZdVfk4yqq6aFsPDXPoMikKK6ejhcDcLfEs", "src_node": 1, "timestamp": 1756629868.8196707}
+The trans generated in the iteration #5 had been uploaded!
+*************************************************************************************
+
+
+
+
+**************************** Iteration 6 *****************************
+You've connected, wait for command...
+File name is tip_list.json, filesize is 144
+Start receiving...
+End receive...
+
+************************* Select Candidates Tips *****************************
+The candidates tips are  ['node1_1756629238.5583389', 'node1_1756629774.3287084', 'node1_1756629868.8196707']
+********************************************************************************
+
+You've connected, wait for command...
+File name is node1_1756629238.5583389.json, filesize is 176
+Start receiving...
+End receive...
+{"apv_trans": ["GenesisBlock"], "model_acc": 10.100000381469727, "model_para": "QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT", "src_node": 1, "timestamp": 1756629238.5583389} ./clientS/paras/apvTrans/iteration-6-node1_1756629238.5583389.pkl
+The filehash of this approved trans is QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT, and the file is ./clientS/paras/apvTrans/iteration-6-node1_1756629238.5583389.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-6-node1_1756629238.5583389.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-6-node1_1756629238.5583389.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756629774.3287084.json, filesize is 215
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756629674.7910256", "node1_1756629423.0908089"], "model_acc": 46.91999816894531, "model_para": "Qmd5NDye3xEfmxbPrjtLjGZzySjY8BqAc5jt7BRyP9Vafo", "src_node": 1, "timestamp": 1756629774.3287084} ./clientS/paras/apvTrans/iteration-6-node1_1756629774.3287084.pkl
+The filehash of this approved trans is Qmd5NDye3xEfmxbPrjtLjGZzySjY8BqAc5jt7BRyP9Vafo, and the file is ./clientS/paras/apvTrans/iteration-6-node1_1756629774.3287084.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-6-node1_1756629774.3287084.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-6-node1_1756629774.3287084.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756629868.8196707.json, filesize is 202
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756629774.3287084", "node1_1756629674.7910256"], "model_acc": 47.0, "model_para": "QmdvdhLmC2F3ZdVfk4yqq6aFsPDXPoMikKK6ejhcDcLfEs", "src_node": 1, "timestamp": 1756629868.8196707} ./clientS/paras/apvTrans/iteration-6-node1_1756629868.8196707.pkl
+The filehash of this approved trans is QmdvdhLmC2F3ZdVfk4yqq6aFsPDXPoMikKK6ejhcDcLfEs, and the file is ./clientS/paras/apvTrans/iteration-6-node1_1756629868.8196707.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-6-node1_1756629868.8196707.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-6-node1_1756629868.8196707.pkl has been downloaded!
+
+
+************************************
+Acc of the basic model in iteration 6 is 47.08000183105469
+************************************
+
+The base mode parasfile ./clientS/paras/baseModel.pkl has been uploaded!
+And the fileHash is QmVozRDDGdj9FzTMK25bRYgpchWNNR738zPHXEC19NNoW1
+
+2025-08-31 08:44:38.577 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 001 Chaincode invoke successful. result: status:200 
+
+{"taskID":"task23910","epoch":1,"status":"start","usersFrac":0.1}
+
+*** task23910 has been released! ***
+*** And the detail of this task is {"taskID":"task23910","epoch":1,"status":"start","usersFrac":0.1}! ***
+
+*** The init aggModel of task23910 has been published! ***
+*** And the detail of the init aggModel is {"epoch":0,"status":"training","paras":"QmVozRDDGdj9FzTMK25bRYgpchWNNR738zPHXEC19NNoW1"} ! ***
+
+The query result of the device00005 is  {"taskID":"task23910","epoch":1,"paras":"QmR3LtMaDS17TUDULupDKq4kf68t8X7QHMMn5MoZnK3ska"}
+The query result of the device00056 is  {"taskID":"task23910","epoch":1,"paras":"Qma6AWpg4RWhSA4Znt8A7Ym96BooaRSXSrCx1sBYs76m4y"}
+The query result of the device00076 is  {"taskID":"task23910","epoch":1,"paras":"QmbrPsLgujR5tRXjcQwrKGGkj7Z1CdNPFe1mgwf3GCN6RQ"}
+The query result of the device00078 is  {"taskID":"task23910","epoch":1,"paras":"QmRgZ7MeNjpa3kTfSb6JdX3LMLvxkVYp3aJy5qv4A3zujg"}
+The query result of the device00068 is  {"taskID":"task23910","epoch":1,"paras":"Qme6NjdZpGVmtbvedMhnoBTRJpeJuu5oA1yxmrQh9aMoJK"}
+The query result of the device00025 is  {"taskID":"task23910","epoch":1,"paras":"QmbUA3HouP33V9VwaTLV7CGF7GqcHsHaGoadDCFQoHvYrc"}
+The query result of the device00047 is  {"taskID":"task23910","epoch":1,"paras":"Qme5ZCXtqtg4r4rn5YyziwLrAXNDUwXDaUtVnfAsbcd9Ng"}
+The query result of the device00015 is  {"taskID":"task23910","epoch":1,"paras":"QmW2mpLpAhpFasWCvK8KYSW5KvEG2cdZjQyH4v8StHu6g7"}
+The query result of the device00061 is  {"taskID":"task23910","epoch":1,"paras":"QmWGVDQSsKVepxomYNDyDG82JMcem5nddUfnHnkdCxT1sZ"}
+The query result of the device00055 is  {"taskID":"task23910","epoch":1,"paras":"QmYgMT3rywdY6UbH3vqHdYsa7DAkAFZQvPnuZETWK1TYU5"}
+Test acc of the model trained by device00005 is 21.270000457763672
+Test acc of the model trained by device00056 is 17.850000381469727
+Test acc of the model trained by device00076 is 19.780000686645508
+Test acc of the model trained by device00078 is 19.84000015258789
+Test acc of the model trained by device00068 is 10.100000381469727
+Test acc of the model trained by device00025 is 19.8799991607666
+Test acc of the model trained by device00047 is 21.559999465942383
+Test acc of the model trained by device00015 is 9.819999694824219
+Test acc of the model trained by device00061 is 21.40999984741211
+Test acc of the model trained by device00055 is 19.84000015258789
+
+************************************
+Acc of the agg model of Round 1 in iteration 6 is 50.31999969482422
+************************************
+
+*************************
+The aggregated parasfile ./clientS/paras/aggModel-iter-6-epoch-1.pkl has been uploaded!
+And the fileHash is Qmc9EiWc3hj1MveTw6uTnNfcYZq4t3BDgxbtRRtX5g59K2!
+*************************
+
+
+******************
+The info of task task23910 is {"epoch":1,"status":"done","paras":"Qmc9EiWc3hj1MveTw6uTnNfcYZq4t3BDgxbtRRtX5g59K2"}
+The model aggregated in epoch 1 for task23910 has been published!
+******************
+
+You've connected, wait for command...
+
+******************************* Transaction upload *******************************
+The details of this trans are {"apv_trans": ["node1_1756629868.8196707", "node1_1756629774.3287084"], "model_acc": 50.31999969482422, "model_para": "Qmc9EiWc3hj1MveTw6uTnNfcYZq4t3BDgxbtRRtX5g59K2", "src_node": 1, "timestamp": 1756629963.3189993}
+The trans generated in the iteration #6 had been uploaded!
+*************************************************************************************
+
+
+
+
+**************************** Iteration 7 *****************************
+You've connected, wait for command...
+File name is tip_list.json, filesize is 144
+Start receiving...
+End receive...
+
+************************* Select Candidates Tips *****************************
+The candidates tips are  ['node1_1756629238.5583389', 'node1_1756629774.3287084', 'node1_1756629963.3189993']
+********************************************************************************
+
+You've connected, wait for command...
+File name is node1_1756629238.5583389.json, filesize is 176
+Start receiving...
+End receive...
+{"apv_trans": ["GenesisBlock"], "model_acc": 10.100000381469727, "model_para": "QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT", "src_node": 1, "timestamp": 1756629238.5583389} ./clientS/paras/apvTrans/iteration-7-node1_1756629238.5583389.pkl
+The filehash of this approved trans is QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT, and the file is ./clientS/paras/apvTrans/iteration-7-node1_1756629238.5583389.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-7-node1_1756629238.5583389.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-7-node1_1756629238.5583389.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756629774.3287084.json, filesize is 215
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756629674.7910256", "node1_1756629423.0908089"], "model_acc": 46.91999816894531, "model_para": "Qmd5NDye3xEfmxbPrjtLjGZzySjY8BqAc5jt7BRyP9Vafo", "src_node": 1, "timestamp": 1756629774.3287084} ./clientS/paras/apvTrans/iteration-7-node1_1756629774.3287084.pkl
+The filehash of this approved trans is Qmd5NDye3xEfmxbPrjtLjGZzySjY8BqAc5jt7BRyP9Vafo, and the file is ./clientS/paras/apvTrans/iteration-7-node1_1756629774.3287084.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-7-node1_1756629774.3287084.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-7-node1_1756629774.3287084.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756629963.3189993.json, filesize is 215
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756629868.8196707", "node1_1756629774.3287084"], "model_acc": 50.31999969482422, "model_para": "Qmc9EiWc3hj1MveTw6uTnNfcYZq4t3BDgxbtRRtX5g59K2", "src_node": 1, "timestamp": 1756629963.3189993} ./clientS/paras/apvTrans/iteration-7-node1_1756629963.3189993.pkl
+The filehash of this approved trans is Qmc9EiWc3hj1MveTw6uTnNfcYZq4t3BDgxbtRRtX5g59K2, and the file is ./clientS/paras/apvTrans/iteration-7-node1_1756629963.3189993.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-7-node1_1756629963.3189993.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-7-node1_1756629963.3189993.pkl has been downloaded!
+
+
+************************************
+Acc of the basic model in iteration 7 is 48.779998779296875
+************************************
+
+The base mode parasfile ./clientS/paras/baseModel.pkl has been uploaded!
+And the fileHash is QmV9mCytJqGqgnYdCJNgSSVGXNZ2Q2Nwcqvyahbg3d5up8
+
+2025-08-31 08:46:12.770 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 001 Chaincode invoke successful. result: status:200 
+
+{"taskID":"task6864","epoch":1,"status":"start","usersFrac":0.1}
+
+*** task6864 has been released! ***
+*** And the detail of this task is {"taskID":"task6864","epoch":1,"status":"start","usersFrac":0.1}! ***
+
+*** The init aggModel of task6864 has been published! ***
+*** And the detail of the init aggModel is {"epoch":0,"status":"training","paras":"QmV9mCytJqGqgnYdCJNgSSVGXNZ2Q2Nwcqvyahbg3d5up8"} ! ***
+
+The query result of the device00056 is  {"taskID":"task6864","epoch":1,"paras":"QmcL2HPo6s7etuffK4HCaeZr8iua1mJt1qxQucQqf79G9t"}
+The query result of the device00005 is  {"taskID":"task6864","epoch":1,"paras":"QmUQejQdnHjnd6X9sDZvYjyumuyojusy6AX95PPRsrtczv"}
+The query result of the device00076 is  {"taskID":"task6864","epoch":1,"paras":"QmThbGXLpPcUudJHaC6hrQL29yH53PY1nymJJENcdkYdz2"}
+The query result of the device00078 is  {"taskID":"task6864","epoch":1,"paras":"QmUtPwNjUy4LpUNhoEzxdVHinj3oybSY9dY4bksmc94pVe"}
+The query result of the device00068 is  {"taskID":"task6864","epoch":1,"paras":"QmPwDGK9hmUpjYXExwHgqURh19SaNYF71Fe6VeSMoEc3Ve"}
+The query result of the device00025 is  {"taskID":"task6864","epoch":1,"paras":"QmRqZTD8TBEHPFozQYJQA33XJGoMoHs29bfAeDUKBpKDgY"}
+The query result of the device00047 is  {"taskID":"task6864","epoch":1,"paras":"QmadFjYn6SHPwJeaugfqmGbddACB2fTsdEFiWoqv1LGFo8"}
+The query result of the device00015 is  {"taskID":"task6864","epoch":1,"paras":"QmfKbaCJRJipi1dYsq3H4XhHaSK52TCV36u76rvATMEwVM"}
+The query result of the device00061 is  {"taskID":"task6864","epoch":1,"paras":"QmdwSRNJVGQKPoXmsTiTYFGSZSMoBquwotqMadqJeNQSFC"}
+The query result of the device00055 is  {"taskID":"task6864","epoch":1,"paras":"QmVrfnEhdqNfhxVFo698o9MHuxeTY7Zu4JLPkW2ZtdmH3w"}
+Test acc of the model trained by device00005 is 20.8700008392334
+Test acc of the model trained by device00056 is 18.209999084472656
+Test acc of the model trained by device00076 is 19.770000457763672
+Test acc of the model trained by device00078 is 19.8700008392334
+Test acc of the model trained by device00068 is 10.100000381469727
+Test acc of the model trained by device00025 is 20.0
+Test acc of the model trained by device00047 is 21.579999923706055
+Test acc of the model trained by device00015 is 9.829999923706055
+Test acc of the model trained by device00061 is 23.84000015258789
+Test acc of the model trained by device00055 is 19.829999923706055
+
+************************************
+Acc of the agg model of Round 1 in iteration 7 is 49.529998779296875
+************************************
+
+*************************
+The aggregated parasfile ./clientS/paras/aggModel-iter-7-epoch-1.pkl has been uploaded!
+And the fileHash is QmSGPF8J7xWSahzzFD9jhicSLoFEVL6Y8qcXCxUjtg3ito!
+*************************
+
+
+******************
+The info of task task6864 is {"epoch":1,"status":"done","paras":"QmSGPF8J7xWSahzzFD9jhicSLoFEVL6Y8qcXCxUjtg3ito"}
+The model aggregated in epoch 1 for task6864 has been published!
+******************
+
+You've connected, wait for command...
+
+******************************* Transaction upload *******************************
+The details of this trans are {"apv_trans": ["node1_1756629963.3189993", "node1_1756629774.3287084"], "model_acc": 49.529998779296875, "model_para": "QmSGPF8J7xWSahzzFD9jhicSLoFEVL6Y8qcXCxUjtg3ito", "src_node": 1, "timestamp": 1756630065.259548}
+The trans generated in the iteration #7 had been uploaded!
+*************************************************************************************
+
+
+
+
+**************************** Iteration 8 *****************************
+You've connected, wait for command...
+File name is tip_list.json, filesize is 142
+Start receiving...
+End receive...
+
+************************* Select Candidates Tips *****************************
+The candidates tips are  ['node1_1756629238.5583389', 'node1_1756629963.3189993', 'node1_1756630065.259548']
+********************************************************************************
+
+You've connected, wait for command...
+File name is node1_1756629238.5583389.json, filesize is 176
+Start receiving...
+End receive...
+{"apv_trans": ["GenesisBlock"], "model_acc": 10.100000381469727, "model_para": "QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT", "src_node": 1, "timestamp": 1756629238.5583389} ./clientS/paras/apvTrans/iteration-8-node1_1756629238.5583389.pkl
+The filehash of this approved trans is QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT, and the file is ./clientS/paras/apvTrans/iteration-8-node1_1756629238.5583389.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-8-node1_1756629238.5583389.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-8-node1_1756629238.5583389.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756629963.3189993.json, filesize is 215
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756629868.8196707", "node1_1756629774.3287084"], "model_acc": 50.31999969482422, "model_para": "Qmc9EiWc3hj1MveTw6uTnNfcYZq4t3BDgxbtRRtX5g59K2", "src_node": 1, "timestamp": 1756629963.3189993} ./clientS/paras/apvTrans/iteration-8-node1_1756629963.3189993.pkl
+The filehash of this approved trans is Qmc9EiWc3hj1MveTw6uTnNfcYZq4t3BDgxbtRRtX5g59K2, and the file is ./clientS/paras/apvTrans/iteration-8-node1_1756629963.3189993.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-8-node1_1756629963.3189993.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-8-node1_1756629963.3189993.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756630065.259548.json, filesize is 215
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756629963.3189993", "node1_1756629774.3287084"], "model_acc": 49.529998779296875, "model_para": "QmSGPF8J7xWSahzzFD9jhicSLoFEVL6Y8qcXCxUjtg3ito", "src_node": 1, "timestamp": 1756630065.259548} ./clientS/paras/apvTrans/iteration-8-node1_1756630065.259548.pkl
+The filehash of this approved trans is QmSGPF8J7xWSahzzFD9jhicSLoFEVL6Y8qcXCxUjtg3ito, and the file is ./clientS/paras/apvTrans/iteration-8-node1_1756630065.259548.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-8-node1_1756630065.259548.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-8-node1_1756630065.259548.pkl has been downloaded!
+
+
+************************************
+Acc of the basic model in iteration 8 is 50.0
+************************************
+
+The base mode parasfile ./clientS/paras/baseModel.pkl has been uploaded!
+And the fileHash is QmXwG4XV5H2hnw56aKHQXd8AiBLPQ71KrepH6rnuJz1xSt
+
+2025-08-31 08:47:54.951 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 001 Chaincode invoke successful. result: status:200 
+
+{"taskID":"task5788","epoch":1,"status":"start","usersFrac":0.1}
+
+*** task5788 has been released! ***
+*** And the detail of this task is {"taskID":"task5788","epoch":1,"status":"start","usersFrac":0.1}! ***
+
+*** The init aggModel of task5788 has been published! ***
+*** And the detail of the init aggModel is {"epoch":0,"status":"training","paras":"QmXwG4XV5H2hnw56aKHQXd8AiBLPQ71KrepH6rnuJz1xSt"} ! ***
+
+The query result of the device00005 is  {"taskID":"task5788","epoch":1,"paras":"QmQHsEfCNGP8KsVaV1xbKZPxbLvXVqnXJznKrii5cFD8fs"}
+The query result of the device00056 is  {"taskID":"task5788","epoch":1,"paras":"QmePKAtk2SBiVyqwcbDgqdsvSdxj4zTYrkrjhK3uVUJwa4"}
+The query result of the device00076 is  {"taskID":"task5788","epoch":1,"paras":"QmT7XHa7GpedpWs2x1TNokLpTK3WdkMwubRxFMrEZkbtTb"}
+The query result of the device00078 is  {"taskID":"task5788","epoch":1,"paras":"QmNyq8ew8Qp97cFkQZgS9jPPqESgqDfJ1ifnPgHuSNaVTu"}
+The query result of the device00068 is  {"taskID":"task5788","epoch":1,"paras":"QmfYhM9N4ip14dhmHEJMBPRrMywxA2L5a9K9HZy2WVAJyJ"}
+The query result of the device00025 is  {"taskID":"task5788","epoch":1,"paras":"QmVmRSSsbbKhyryeGo2y98WiCgmMJgnKbPWEJLgnCxupYb"}
+The query result of the device00047 is  {"taskID":"task5788","epoch":1,"paras":"QmNT8arCErphepx9oHgAc8kPZGa838R8XAuJnTNNXdDAUc"}
+The query result of the device00015 is  {"taskID":"task5788","epoch":1,"paras":"Qmb11AWKnL2cWZwsY7n7YK4cUUaVd8WvgM3TSZMTTxM18k"}
+The query result of the device00061 is  {"taskID":"task5788","epoch":1,"paras":"QmYuKrgKoyDjykfT6gcXhijGVkLjKnWUaEccPmW4UkE3oC"}
+The query result of the device00055 is  {"taskID":"task5788","epoch":1,"paras":"QmYSTiBjB6rNBZuYfZmkjsYGbPKoSWUgqnZgj9KCMnJLPq"}
+Test acc of the model trained by device00005 is 20.969999313354492
+Test acc of the model trained by device00056 is 18.8799991607666
+Test acc of the model trained by device00076 is 19.790000915527344
+Test acc of the model trained by device00078 is 19.989999771118164
+Test acc of the model trained by device00068 is 10.100000381469727
+Test acc of the model trained by device00025 is 20.110000610351562
+Test acc of the model trained by device00047 is 21.540000915527344
+Test acc of the model trained by device00015 is 9.829999923706055
+Test acc of the model trained by device00061 is 23.100000381469727
+Test acc of the model trained by device00055 is 19.84000015258789
+
+************************************
+Acc of the agg model of Round 1 in iteration 8 is 51.540000915527344
+************************************
+
+*************************
+The aggregated parasfile ./clientS/paras/aggModel-iter-8-epoch-1.pkl has been uploaded!
+And the fileHash is QmeEid6SH8Tnsr19oTjnzCkTM8o72Km8emeVp5PT5y1FqM!
+*************************
+
+
+******************
+The info of task task5788 is {"epoch":1,"status":"done","paras":"QmeEid6SH8Tnsr19oTjnzCkTM8o72Km8emeVp5PT5y1FqM"}
+The model aggregated in epoch 1 for task5788 has been published!
+******************
+
+You've connected, wait for command...
+
+******************************* Transaction upload *******************************
+The details of this trans are {"apv_trans": ["node1_1756629963.3189993", "node1_1756630065.259548"], "model_acc": 51.540000915527344, "model_para": "QmeEid6SH8Tnsr19oTjnzCkTM8o72Km8emeVp5PT5y1FqM", "src_node": 1, "timestamp": 1756630302.3618667}
+The trans generated in the iteration #8 had been uploaded!
+*************************************************************************************
+
+
+
+
+**************************** Iteration 9 *****************************
+You've connected, wait for command...
+File name is tip_list.json, filesize is 142
+Start receiving...
+End receive...
+
+************************* Select Candidates Tips *****************************
+The candidates tips are  ['node1_1756629238.5583389', 'node1_1756630065.259548', 'node1_1756630302.3618667']
+********************************************************************************
+
+You've connected, wait for command...
+File name is node1_1756629238.5583389.json, filesize is 176
+Start receiving...
+End receive...
+{"apv_trans": ["GenesisBlock"], "model_acc": 10.100000381469727, "model_para": "QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT", "src_node": 1, "timestamp": 1756629238.5583389} ./clientS/paras/apvTrans/iteration-9-node1_1756629238.5583389.pkl
+The filehash of this approved trans is QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT, and the file is ./clientS/paras/apvTrans/iteration-9-node1_1756629238.5583389.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-9-node1_1756629238.5583389.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-9-node1_1756629238.5583389.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756630065.259548.json, filesize is 215
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756629963.3189993", "node1_1756629774.3287084"], "model_acc": 49.529998779296875, "model_para": "QmSGPF8J7xWSahzzFD9jhicSLoFEVL6Y8qcXCxUjtg3ito", "src_node": 1, "timestamp": 1756630065.259548} ./clientS/paras/apvTrans/iteration-9-node1_1756630065.259548.pkl
+The filehash of this approved trans is QmSGPF8J7xWSahzzFD9jhicSLoFEVL6Y8qcXCxUjtg3ito, and the file is ./clientS/paras/apvTrans/iteration-9-node1_1756630065.259548.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-9-node1_1756630065.259548.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-9-node1_1756630065.259548.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756630302.3618667.json, filesize is 215
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756629963.3189993", "node1_1756630065.259548"], "model_acc": 51.540000915527344, "model_para": "QmeEid6SH8Tnsr19oTjnzCkTM8o72Km8emeVp5PT5y1FqM", "src_node": 1, "timestamp": 1756630302.3618667} ./clientS/paras/apvTrans/iteration-9-node1_1756630302.3618667.pkl
+The filehash of this approved trans is QmeEid6SH8Tnsr19oTjnzCkTM8o72Km8emeVp5PT5y1FqM, and the file is ./clientS/paras/apvTrans/iteration-9-node1_1756630302.3618667.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-9-node1_1756630302.3618667.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-9-node1_1756630302.3618667.pkl has been downloaded!
+
+
+************************************
+Acc of the basic model in iteration 9 is 50.630001068115234
+************************************
+
+The base mode parasfile ./clientS/paras/baseModel.pkl has been uploaded!
+And the fileHash is QmX7hfXntYx5dwS8wqVXzsvRCF3yPDjhn5umnXeuyVLUoq
+
+2025-08-31 08:51:51.687 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 001 Chaincode invoke successful. result: status:200 
+
+{"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}
+
+*** task2791 has been released! ***
+*** And the detail of this task is {"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}! ***
+
+*** The init aggModel of task2791 has been published! ***
+*** And the detail of the init aggModel is {"epoch":0,"status":"training","paras":"QmX7hfXntYx5dwS8wqVXzsvRCF3yPDjhn5umnXeuyVLUoq"} ! ***
+
+The query result of the device00005 is  {"taskID":"task2791","epoch":1,"paras":"QmVULZFkoXNXxjEcM1CHuqNAQfywAnK9EU8gCeWC2fY24u"}
+The query result of the device00056 is  {"taskID":"task2791","epoch":1,"paras":"QmWMcEDDPYVe38e5Z2upJ7qyhQNiT9pczJLAKNDE1a9GLt"}
+The query result of the device00076 is  {"taskID":"task2791","epoch":1,"paras":"Qmaxe4Bw3X7C2hprAhrhGPE3uMB7zRSJdL4TpHALa17ifx"}
+The query result of the device00078 is  {"taskID":"task2791","epoch":1,"paras":"QmcvUPzb4ctmcy7ziFrLfaMrtBQyt9ZWRVzn4uMGEzuUF3"}
+The query result of the device00068 is  {"taskID":"task2791","epoch":1,"paras":"QmT4EBPRGzqXT6sbXx7Zumxfd1oVB2ekJnukWeyc97ggf8"}
+The query result of the device00025 is  {"taskID":"task2791","epoch":1,"paras":"QmTJKBgUULMiAuerJeaphuYsu7go2nEmVaeKeiMC79nyyq"}
+The query result of the device00047 is  {"taskID":"task2791","epoch":1,"paras":"QmTLJfnnky5iahXQWyzsivgvsMmagnDJRtuDhnjMPcySL6"}
+The query result of the device00015 is  {"taskID":"task2791","epoch":1,"paras":"QmWWhY4DTsXbooAzYrQ91JZn7jZMa7tsLYnEZDe9Lo8AHZ"}
+The query result of the device00061 is  {"taskID":"task2791","epoch":1,"paras":"QmecyeirjYGkZ7gMWgnxkPuHq12weZbyFFoYDzuB7SCYSd"}
+The query result of the device00055 is  {"taskID":"task2791","epoch":1,"paras":"QmZjm8NZniJeQUWYtVzcwkHg5hKD9cWKdVGBhNwr2VWR6H"}
+Test acc of the model trained by device00005 is 20.950000762939453
+Test acc of the model trained by device00056 is 18.190000534057617
+Test acc of the model trained by device00076 is 19.850000381469727
+Test acc of the model trained by device00078 is 19.90999984741211
+Test acc of the model trained by device00068 is 10.199999809265137
+Test acc of the model trained by device00025 is 20.100000381469727
+Test acc of the model trained by device00047 is 21.549999237060547
+Test acc of the model trained by device00015 is 10.010000228881836
+Test acc of the model trained by device00061 is 25.34000015258789
+Test acc of the model trained by device00055 is 19.899999618530273
+
+************************************
+Acc of the agg model of Round 1 in iteration 9 is 51.470001220703125
+************************************
+
+*************************
+The aggregated parasfile ./clientS/paras/aggModel-iter-9-epoch-1.pkl has been uploaded!
+And the fileHash is QmSvfRxhghxvMep5RMkfHcDxgm9FkGHsQYPQ7BeVqM1kBp!
+*************************
+
+
+******************
+The info of task task2791 is {"epoch":1,"status":"done","paras":"QmSvfRxhghxvMep5RMkfHcDxgm9FkGHsQYPQ7BeVqM1kBp"}
+The model aggregated in epoch 1 for task2791 has been published!
+******************
+
+You've connected, wait for command...
+
+******************************* Transaction upload *******************************
+The details of this trans are {"apv_trans": ["node1_1756630302.3618667", "node1_1756630065.259548"], "model_acc": 51.470001220703125, "model_para": "QmSvfRxhghxvMep5RMkfHcDxgm9FkGHsQYPQ7BeVqM1kBp", "src_node": 1, "timestamp": 1756630607.939339}
+The trans generated in the iteration #9 had been uploaded!
+*************************************************************************************
+
+
+
+
+**************************** Iteration 10 *****************************
+You've connected, wait for command...
+File name is tip_list.json, filesize is 140
+Start receiving...
+End receive...
+
+************************* Select Candidates Tips *****************************
+The candidates tips are  ['node1_1756629238.5583389', 'node1_1756630065.259548', 'node1_1756630607.939339']
+********************************************************************************
+
+You've connected, wait for command...
+File name is node1_1756629238.5583389.json, filesize is 176
+Start receiving...
+End receive...
+{"apv_trans": ["GenesisBlock"], "model_acc": 10.100000381469727, "model_para": "QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT", "src_node": 1, "timestamp": 1756629238.5583389} ./clientS/paras/apvTrans/iteration-10-node1_1756629238.5583389.pkl
+The filehash of this approved trans is QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT, and the file is ./clientS/paras/apvTrans/iteration-10-node1_1756629238.5583389.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-10-node1_1756629238.5583389.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-10-node1_1756629238.5583389.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756630065.259548.json, filesize is 215
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756629963.3189993", "node1_1756629774.3287084"], "model_acc": 49.529998779296875, "model_para": "QmSGPF8J7xWSahzzFD9jhicSLoFEVL6Y8qcXCxUjtg3ito", "src_node": 1, "timestamp": 1756630065.259548} ./clientS/paras/apvTrans/iteration-10-node1_1756630065.259548.pkl
+The filehash of this approved trans is QmSGPF8J7xWSahzzFD9jhicSLoFEVL6Y8qcXCxUjtg3ito, and the file is ./clientS/paras/apvTrans/iteration-10-node1_1756630065.259548.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-10-node1_1756630065.259548.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-10-node1_1756630065.259548.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756630607.939339.json, filesize is 214
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756630302.3618667", "node1_1756630065.259548"], "model_acc": 51.470001220703125, "model_para": "QmSvfRxhghxvMep5RMkfHcDxgm9FkGHsQYPQ7BeVqM1kBp", "src_node": 1, "timestamp": 1756630607.939339} ./clientS/paras/apvTrans/iteration-10-node1_1756630607.939339.pkl
+The filehash of this approved trans is QmSvfRxhghxvMep5RMkfHcDxgm9FkGHsQYPQ7BeVqM1kBp, and the file is ./clientS/paras/apvTrans/iteration-10-node1_1756630607.939339.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-10-node1_1756630607.939339.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-10-node1_1756630607.939339.pkl has been downloaded!
+
+
+************************************
+Acc of the basic model in iteration 10 is 50.90999984741211
+************************************
+
+The base mode parasfile ./clientS/paras/baseModel.pkl has been uploaded!
+And the fileHash is Qma7BnD9mCpFc8Pm9rerDpa2VSvNzLdJ51t5eLpwkxMmjg
+
+2025-08-31 08:56:58.168 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 001 Chaincode invoke successful. result: status:200 
+
+{"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}
+
+*** task2593 has been released! ***
+*** And the detail of this task is {"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}! ***
+
+*** The init aggModel of task2593 has been published! ***
+*** And the detail of the init aggModel is {"epoch":0,"status":"training","paras":"Qma7BnD9mCpFc8Pm9rerDpa2VSvNzLdJ51t5eLpwkxMmjg"} ! ***
+
+The query result of the device00005 is  {"taskID":"task2593","epoch":1,"paras":"QmPPgFVDLwsZP8UisHjJshyrTHwZ4yzXwTem4EWP21j5pn"}
+The query result of the device00056 is  {"taskID":"task2593","epoch":1,"paras":"QmVwkBN1MMF3xosejins2BFGXLeY31j2nFj8S6o6hU5yeJ"}
+The query result of the device00076 is  {"taskID":"task2593","epoch":1,"paras":"Qmaizeamn4U59EzkjchpfgZe2tnHSuJBi5mY838zXV9xdi"}
+The query result of the device00078 is  {"taskID":"task2593","epoch":1,"paras":"QmaNb4WCdrh8fbSSrEUE8eCFyXiGPq2bYmcryxDg4VzNT2"}
+The query result of the device00068 is  {"taskID":"task2593","epoch":1,"paras":"QmZk3ZXNTv61uUKq7w4DWWLkjAXUsntW1zHTN2RJS8opjD"}
+The query result of the device00025 is  {"taskID":"task2593","epoch":1,"paras":"QmYRgWb5GHRf9F3gYH65XtYa8EoJDik1LF32g4jGAmqsDx"}
+The query result of the device00047 is  {"taskID":"task2593","epoch":1,"paras":"QmcTadYKHxk2zcdKXhd9t6tS4kbXdBGgTz1wCkUao3WeXW"}
+The query result of the device00015 is  {"taskID":"task2593","epoch":1,"paras":"QmThcvuW9AG8jz5SyUSRedchvm7ZHPjr4vfBvP5t4Re8d9"}
+The query result of the device00061 is  {"taskID":"task2593","epoch":1,"paras":"QmZMQj2ykNj6pyGP56TxXjJSFHgaq4VXmv4oPcXvHDKBTz"}
+The query result of the device00055 is  {"taskID":"task2593","epoch":1,"paras":"QmXFd2sgPrke77suuE2uTGM31SAEozXVqPYsBzs99r3gLB"}
+Test acc of the model trained by device00005 is 20.950000762939453
+Test acc of the model trained by device00056 is 19.15999984741211
+Test acc of the model trained by device00076 is 19.68000030517578
+Test acc of the model trained by device00078 is 19.920000076293945
+Test acc of the model trained by device00068 is 11.75
+Test acc of the model trained by device00025 is 20.40999984741211
+Test acc of the model trained by device00047 is 21.579999923706055
+Test acc of the model trained by device00015 is 10.069999694824219
+Test acc of the model trained by device00061 is 24.200000762939453
+Test acc of the model trained by device00055 is 19.84000015258789
+
+************************************
+Acc of the agg model of Round 1 in iteration 10 is 53.970001220703125
+************************************
+
+*************************
+The aggregated parasfile ./clientS/paras/aggModel-iter-10-epoch-1.pkl has been uploaded!
+And the fileHash is QmNchxFbLYj4twDZzCj43Zm8N9srcueRi6D4zwwhDVoKKz!
+*************************
+
+
+******************
+The info of task task2593 is {"epoch":1,"status":"done","paras":"QmNchxFbLYj4twDZzCj43Zm8N9srcueRi6D4zwwhDVoKKz"}
+The model aggregated in epoch 1 for task2593 has been published!
+******************
+
+You've connected, wait for command...
+
+******************************* Transaction upload *******************************
+The details of this trans are {"apv_trans": ["node1_1756630607.939339", "node1_1756630065.259548"], "model_acc": 53.970001220703125, "model_para": "QmNchxFbLYj4twDZzCj43Zm8N9srcueRi6D4zwwhDVoKKz", "src_node": 1, "timestamp": 1756630714.9677346}
+The trans generated in the iteration #10 had been uploaded!
+*************************************************************************************
+
+
+
+
+**************************** Iteration 11 *****************************
+You've connected, wait for command...
+File name is tip_list.json, filesize is 142
+Start receiving...
+End receive...
+
+************************* Select Candidates Tips *****************************
+The candidates tips are  ['node1_1756629238.5583389', 'node1_1756630607.939339', 'node1_1756630714.9677346']
+********************************************************************************
+
+You've connected, wait for command...
+File name is node1_1756629238.5583389.json, filesize is 176
+Start receiving...
+End receive...
+{"apv_trans": ["GenesisBlock"], "model_acc": 10.100000381469727, "model_para": "QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT", "src_node": 1, "timestamp": 1756629238.5583389} ./clientS/paras/apvTrans/iteration-11-node1_1756629238.5583389.pkl
+The filehash of this approved trans is QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT, and the file is ./clientS/paras/apvTrans/iteration-11-node1_1756629238.5583389.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-11-node1_1756629238.5583389.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-11-node1_1756629238.5583389.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756630607.939339.json, filesize is 214
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756630302.3618667", "node1_1756630065.259548"], "model_acc": 51.470001220703125, "model_para": "QmSvfRxhghxvMep5RMkfHcDxgm9FkGHsQYPQ7BeVqM1kBp", "src_node": 1, "timestamp": 1756630607.939339} ./clientS/paras/apvTrans/iteration-11-node1_1756630607.939339.pkl
+The filehash of this approved trans is QmSvfRxhghxvMep5RMkfHcDxgm9FkGHsQYPQ7BeVqM1kBp, and the file is ./clientS/paras/apvTrans/iteration-11-node1_1756630607.939339.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-11-node1_1756630607.939339.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-11-node1_1756630607.939339.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756630714.9677346.json, filesize is 214
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756630607.939339", "node1_1756630065.259548"], "model_acc": 53.970001220703125, "model_para": "QmNchxFbLYj4twDZzCj43Zm8N9srcueRi6D4zwwhDVoKKz", "src_node": 1, "timestamp": 1756630714.9677346} ./clientS/paras/apvTrans/iteration-11-node1_1756630714.9677346.pkl
+The filehash of this approved trans is QmNchxFbLYj4twDZzCj43Zm8N9srcueRi6D4zwwhDVoKKz, and the file is ./clientS/paras/apvTrans/iteration-11-node1_1756630714.9677346.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-11-node1_1756630714.9677346.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-11-node1_1756630714.9677346.pkl has been downloaded!
+
+
+************************************
+Acc of the basic model in iteration 11 is 52.959999084472656
+************************************
+
+The base mode parasfile ./clientS/paras/baseModel.pkl has been uploaded!
+And the fileHash is QmTVJZgd4CLjji8htmcXPjR9t1CJHWNGVc1Eps76XZJiMY
+
+2025-08-31 08:58:44.565 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 001 Chaincode invoke successful. result: status:200 
+
+{"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}
+
+*** task42210 has been released! ***
+*** And the detail of this task is {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}! ***
+
+*** The init aggModel of task42210 has been published! ***
+*** And the detail of the init aggModel is {"epoch":0,"status":"training","paras":"QmTVJZgd4CLjji8htmcXPjR9t1CJHWNGVc1Eps76XZJiMY"} ! ***
+
+The query result of the device00005 is  {"taskID":"task42210","epoch":1,"paras":"QmcNr7fCVm5ZRbHKxvQu5czGusHbUxkStfHjSTtZtBaMGd"}
+The query result of the device00056 is  {"taskID":"task42210","epoch":1,"paras":"QmadBkMZhhhAQw9mxQNGuj8QAUeoCnARZufptD9GdsRQXP"}
+The query result of the device00076 is  {"taskID":"task42210","epoch":1,"paras":"QmWCkkTPXp3SddUuDUMqXJUj5sh1WSH83b3Y35erwQxEW2"}
+The query result of the device00078 is  {"taskID":"task42210","epoch":1,"paras":"QmcUU3NXAJeSK2Av9oHB8L1PTrrLuRR232ERWBwNfFLvAu"}
+The query result of the device00068 is  {"taskID":"task42210","epoch":1,"paras":"Qmep2Xw81vuFUaFBVFYSZoiM9H6pyvjyUufyQ3bHB7JDmc"}
+The query result of the device00025 is  {"taskID":"task42210","epoch":1,"paras":"QmczHSSU8SkXi9RuzAhUN3KP2CBqjStd2eHxeZstBxtLz4"}
+The query result of the device00047 is  {"taskID":"task42210","epoch":1,"paras":"QmPv3khc8JYzEy8qyM6nkhK8uLDGJUeE4AnsGKt2Z6Jx8D"}
+The query result of the device00015 is  {"taskID":"task42210","epoch":1,"paras":"QmU9cXRShPULg6ZgwyjJuj2QyJJuDMJ8XN3kzuGidgMGKV"}
+The query result of the device00061 is  {"taskID":"task42210","epoch":1,"paras":"QmXz4vajj8vQeSbcPeC62NpAfwzyKLU1N77isxafBFR3fb"}
+The query result of the device00055 is  {"taskID":"task42210","epoch":1,"paras":"QmYRDpsaa88KHR6hYSYfvVkbv3HJh1hXwkJCxFiSfbJUfJ"}
+Test acc of the model trained by device00005 is 21.209999084472656
+Test acc of the model trained by device00056 is 20.950000762939453
+Test acc of the model trained by device00076 is 20.260000228881836
+Test acc of the model trained by device00078 is 19.93000030517578
+Test acc of the model trained by device00068 is 10.739999771118164
+Test acc of the model trained by device00025 is 21.3799991607666
+Test acc of the model trained by device00047 is 21.559999465942383
+Test acc of the model trained by device00015 is 10.1899995803833
+Test acc of the model trained by device00061 is 25.329999923706055
+Test acc of the model trained by device00055 is 20.360000610351562
+
+************************************
+Acc of the agg model of Round 1 in iteration 11 is 54.709999084472656
+************************************
+
+*************************
+The aggregated parasfile ./clientS/paras/aggModel-iter-11-epoch-1.pkl has been uploaded!
+And the fileHash is QmNY4k51yQNKd5HK1SqBGXadhmVAtPKXpxtSmh5e5jRZ1e!
+*************************
+
+
+******************
+The info of task task42210 is {"epoch":1,"status":"done","paras":"QmNY4k51yQNKd5HK1SqBGXadhmVAtPKXpxtSmh5e5jRZ1e"}
+The model aggregated in epoch 1 for task42210 has been published!
+******************
+
+You've connected, wait for command...
+
+******************************* Transaction upload *******************************
+The details of this trans are {"apv_trans": ["node1_1756630714.9677346", "node1_1756630607.939339"], "model_acc": 54.709999084472656, "model_para": "QmNY4k51yQNKd5HK1SqBGXadhmVAtPKXpxtSmh5e5jRZ1e", "src_node": 1, "timestamp": 1756630821.7033057}
+The trans generated in the iteration #11 had been uploaded!
+*************************************************************************************
+
+
+
+
+**************************** Iteration 12 *****************************
+You've connected, wait for command...
+File name is tip_list.json, filesize is 144
+Start receiving...
+End receive...
+
+************************* Select Candidates Tips *****************************
+The candidates tips are  ['node1_1756629238.5583389', 'node1_1756630714.9677346', 'node1_1756630821.7033057']
+********************************************************************************
+
+You've connected, wait for command...
+File name is node1_1756629238.5583389.json, filesize is 176
+Start receiving...
+End receive...
+{"apv_trans": ["GenesisBlock"], "model_acc": 10.100000381469727, "model_para": "QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT", "src_node": 1, "timestamp": 1756629238.5583389} ./clientS/paras/apvTrans/iteration-12-node1_1756629238.5583389.pkl
+The filehash of this approved trans is QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT, and the file is ./clientS/paras/apvTrans/iteration-12-node1_1756629238.5583389.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-12-node1_1756629238.5583389.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-12-node1_1756629238.5583389.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756630714.9677346.json, filesize is 214
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756630607.939339", "node1_1756630065.259548"], "model_acc": 53.970001220703125, "model_para": "QmNchxFbLYj4twDZzCj43Zm8N9srcueRi6D4zwwhDVoKKz", "src_node": 1, "timestamp": 1756630714.9677346} ./clientS/paras/apvTrans/iteration-12-node1_1756630714.9677346.pkl
+The filehash of this approved trans is QmNchxFbLYj4twDZzCj43Zm8N9srcueRi6D4zwwhDVoKKz, and the file is ./clientS/paras/apvTrans/iteration-12-node1_1756630714.9677346.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-12-node1_1756630714.9677346.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-12-node1_1756630714.9677346.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756630821.7033057.json, filesize is 215
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756630714.9677346", "node1_1756630607.939339"], "model_acc": 54.709999084472656, "model_para": "QmNY4k51yQNKd5HK1SqBGXadhmVAtPKXpxtSmh5e5jRZ1e", "src_node": 1, "timestamp": 1756630821.7033057} ./clientS/paras/apvTrans/iteration-12-node1_1756630821.7033057.pkl
+The filehash of this approved trans is QmNY4k51yQNKd5HK1SqBGXadhmVAtPKXpxtSmh5e5jRZ1e, and the file is ./clientS/paras/apvTrans/iteration-12-node1_1756630821.7033057.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-12-node1_1756630821.7033057.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-12-node1_1756630821.7033057.pkl has been downloaded!
+
+
+************************************
+Acc of the basic model in iteration 12 is 54.45000076293945
+************************************
+
+The base mode parasfile ./clientS/paras/baseModel.pkl has been uploaded!
+And the fileHash is QmVFrWRnt2ZxGGbZvqTBpSf8tzGgVDgFGtXJyxxJ4TdjPi
+
+2025-08-31 09:00:31.984 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 001 Chaincode invoke successful. result: status:200 
+
+{"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}
+
+*** task8145 has been released! ***
+*** And the detail of this task is {"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}! ***
+
+*** The init aggModel of task8145 has been published! ***
+*** And the detail of the init aggModel is {"epoch":0,"status":"training","paras":"QmVFrWRnt2ZxGGbZvqTBpSf8tzGgVDgFGtXJyxxJ4TdjPi"} ! ***
+
+The query result of the device00056 is  {"taskID":"task8145","epoch":1,"paras":"QmcDno7KXsLB7V8wnguAjyQbwbR79FsiCiUmoTFcFZSrJE"}
+The query result of the device00005 is  {"taskID":"task8145","epoch":1,"paras":"QmTBtwj85qRvYUUUwwg6QzjGeBAV6Hw76o28wPDxvcG31X"}
+The query result of the device00076 is  {"taskID":"task8145","epoch":1,"paras":"QmPieAscwbT9NCPk2whXvXcjHUU77gAwyBPQGzm1tjwhhx"}
+The query result of the device00078 is  {"taskID":"task8145","epoch":1,"paras":"QmdpsVsJvoaqSe1EJkGE8HD33uyYrBLGfJiHDxSkJjXShK"}
+The query result of the device00068 is  {"taskID":"task8145","epoch":1,"paras":"QmaF3TZjcpxGj7i8qVg58gRqFNvrc8HWWVbeoeLCGWjBZZ"}
+The query result of the device00025 is  {"taskID":"task8145","epoch":1,"paras":"Qma1jvvGzL4pZpnEioq4u4STEAVxJrca1SFfAfRV78gUGq"}
+The query result of the device00047 is  {"taskID":"task8145","epoch":1,"paras":"QmPK3v3HLDBm9bYPTibvRmmuaZvHV75PA1BWGCJJfM3t84"}
+The query result of the device00015 is  {"taskID":"task8145","epoch":1,"paras":"QmUTgb5APzQC8hzZ4YvD6cSZZRPAHWNcmJoNnM5zJ1edZK"}
+The query result of the device00061 is  {"taskID":"task8145","epoch":1,"paras":"QmXzLyAZLDNvQ66hJQzyRvBdsXENpR9s6t3o3SZZt934na"}
+The query result of the device00055 is  {"taskID":"task8145","epoch":1,"paras":"QmTqm6Wm7ffjm4UTVHyL5tFuys7qaxt6DC362uUCig6ztS"}
+Test acc of the model trained by device00005 is 22.540000915527344
+Test acc of the model trained by device00056 is 19.8799991607666
+Test acc of the model trained by device00076 is 19.899999618530273
+Test acc of the model trained by device00078 is 19.950000762939453
+Test acc of the model trained by device00068 is 10.569999694824219
+Test acc of the model trained by device00025 is 23.049999237060547
+Test acc of the model trained by device00047 is 21.56999969482422
+Test acc of the model trained by device00015 is 10.300000190734863
+Test acc of the model trained by device00061 is 25.479999542236328
+Test acc of the model trained by device00055 is 20.309999465942383
+
+************************************
+Acc of the agg model of Round 1 in iteration 12 is 55.61000061035156
+************************************
+
+*************************
+The aggregated parasfile ./clientS/paras/aggModel-iter-12-epoch-1.pkl has been uploaded!
+And the fileHash is QmYEuBA6uBmNiBggbjknEc9YkcejNpZHKJwYEQqhvcd5uF!
+*************************
+
+
+******************
+The info of task task8145 is {"epoch":1,"status":"done","paras":"QmYEuBA6uBmNiBggbjknEc9YkcejNpZHKJwYEQqhvcd5uF"}
+The model aggregated in epoch 1 for task8145 has been published!
+******************
+
+You've connected, wait for command...
+
+******************************* Transaction upload *******************************
+The details of this trans are {"apv_trans": ["node1_1756630821.7033057", "node1_1756630714.9677346"], "model_acc": 55.61000061035156, "model_para": "QmYEuBA6uBmNiBggbjknEc9YkcejNpZHKJwYEQqhvcd5uF", "src_node": 1, "timestamp": 1756630917.274237}
+The trans generated in the iteration #12 had been uploaded!
+*************************************************************************************
+
+
+
+
+**************************** Iteration 13 *****************************
+You've connected, wait for command...
+File name is tip_list.json, filesize is 142
+Start receiving...
+End receive...
+
+************************* Select Candidates Tips *****************************
+The candidates tips are  ['node1_1756629238.5583389', 'node1_1756630714.9677346', 'node1_1756630917.274237']
+********************************************************************************
+
+You've connected, wait for command...
+File name is node1_1756629238.5583389.json, filesize is 176
+Start receiving...
+End receive...
+{"apv_trans": ["GenesisBlock"], "model_acc": 10.100000381469727, "model_para": "QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT", "src_node": 1, "timestamp": 1756629238.5583389} ./clientS/paras/apvTrans/iteration-13-node1_1756629238.5583389.pkl
+The filehash of this approved trans is QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT, and the file is ./clientS/paras/apvTrans/iteration-13-node1_1756629238.5583389.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-13-node1_1756629238.5583389.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-13-node1_1756629238.5583389.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756630714.9677346.json, filesize is 214
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756630607.939339", "node1_1756630065.259548"], "model_acc": 53.970001220703125, "model_para": "QmNchxFbLYj4twDZzCj43Zm8N9srcueRi6D4zwwhDVoKKz", "src_node": 1, "timestamp": 1756630714.9677346} ./clientS/paras/apvTrans/iteration-13-node1_1756630714.9677346.pkl
+The filehash of this approved trans is QmNchxFbLYj4twDZzCj43Zm8N9srcueRi6D4zwwhDVoKKz, and the file is ./clientS/paras/apvTrans/iteration-13-node1_1756630714.9677346.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-13-node1_1756630714.9677346.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-13-node1_1756630714.9677346.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756630917.274237.json, filesize is 214
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756630821.7033057", "node1_1756630714.9677346"], "model_acc": 55.61000061035156, "model_para": "QmYEuBA6uBmNiBggbjknEc9YkcejNpZHKJwYEQqhvcd5uF", "src_node": 1, "timestamp": 1756630917.274237} ./clientS/paras/apvTrans/iteration-13-node1_1756630917.274237.pkl
+The filehash of this approved trans is QmYEuBA6uBmNiBggbjknEc9YkcejNpZHKJwYEQqhvcd5uF, and the file is ./clientS/paras/apvTrans/iteration-13-node1_1756630917.274237.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-13-node1_1756630917.274237.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-13-node1_1756630917.274237.pkl has been downloaded!
+
+
+************************************
+Acc of the basic model in iteration 13 is 54.900001525878906
+************************************
+
+The base mode parasfile ./clientS/paras/baseModel.pkl has been uploaded!
+And the fileHash is QmPVB97DiQ8Ku7mXu5Em1wEJ2EQQodDmx4NUMDEQ7nSyfq
+
+2025-08-31 09:02:07.183 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 001 Chaincode invoke successful. result: status:200 
+
+{"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}
+
+*** task3435 has been released! ***
+*** And the detail of this task is {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}! ***
+
+*** The init aggModel of task3435 has been published! ***
+*** And the detail of the init aggModel is {"epoch":0,"status":"training","paras":"QmPVB97DiQ8Ku7mXu5Em1wEJ2EQQodDmx4NUMDEQ7nSyfq"} ! ***
+
+The query result of the device00005 is  {"taskID":"task3435","epoch":1,"paras":"QmaTfRwVqM8gQcY7cqeb3SrehaE7miwHGh86m4ZpUzDwdy"}
+The query result of the device00056 is  {"taskID":"task3435","epoch":1,"paras":"QmNcLdjfxrH3KtTePk4mHMrkU7dJCcD2owBG3PfVqgYNsk"}
+The query result of the device00076 is  {"taskID":"task3435","epoch":1,"paras":"QmZdUantuWKKeyNtaVBV9K4tAqGyAdQwhfNT79DaH157tg"}
+The query result of the device00078 is  {"taskID":"task3435","epoch":1,"paras":"QmWoaUop4mxxrLL6sFL21KX4X9NP1duSMdgn4m2WxbhBZU"}
+The query result of the device00068 is  {"taskID":"task3435","epoch":1,"paras":"QmcwfgZe6rUm1cwxHe1AEFzmbkwjjT3P2wUmiyCgvgGHD7"}
+The query result of the device00025 is  {"taskID":"task3435","epoch":1,"paras":"QmfYYrAuBj1ZSHEsc4oCDS7RjTqUSP8nPUWwygNWH6PdgX"}
+The query result of the device00047 is  {"taskID":"task3435","epoch":1,"paras":"Qmc1QAsYjwPo1ZtpjXiAjmz1oRYQsLokAQ6LMLpCtBeXg3"}
+The query result of the device00015 is  {"taskID":"task3435","epoch":1,"paras":"QmYUs9jmxWGJ2BHxzdkxn3igS36916CDQtoRT2y2XgrPR6"}
+The query result of the device00061 is  {"taskID":"task3435","epoch":1,"paras":"Qmb3e65uwMCRRhoMhFhvqXQkgbZzyHCAVJrH1cK5dvV2yn"}
+The query result of the device00055 is  {"taskID":"task3435","epoch":1,"paras":"QmdftRwsWQxvs4fSjH81cYzqZaXNUZTMqSUH5ypXU1xpQS"}
+Test acc of the model trained by device00005 is 22.25
+Test acc of the model trained by device00056 is 20.489999771118164
+Test acc of the model trained by device00076 is 20.15999984741211
+Test acc of the model trained by device00078 is 19.959999084472656
+Test acc of the model trained by device00068 is 11.479999542236328
+Test acc of the model trained by device00025 is 23.040000915527344
+Test acc of the model trained by device00047 is 21.56999969482422
+Test acc of the model trained by device00015 is 10.510000228881836
+Test acc of the model trained by device00061 is 25.84000015258789
+Test acc of the model trained by device00055 is 20.790000915527344
+
+************************************
+Acc of the agg model of Round 1 in iteration 13 is 55.56999969482422
+************************************
+
+*************************
+The aggregated parasfile ./clientS/paras/aggModel-iter-13-epoch-1.pkl has been uploaded!
+And the fileHash is QmQ2hBgit75RxTCWTWEvYXcNTmvT58BCweXSnnZ6f1NRnU!
+*************************
+
+
+******************
+The info of task task3435 is {"epoch":1,"status":"done","paras":"QmQ2hBgit75RxTCWTWEvYXcNTmvT58BCweXSnnZ6f1NRnU"}
+The model aggregated in epoch 1 for task3435 has been published!
+******************
+
+You've connected, wait for command...
+
+******************************* Transaction upload *******************************
+The details of this trans are {"apv_trans": ["node1_1756630917.274237", "node1_1756630714.9677346"], "model_acc": 55.56999969482422, "model_para": "QmQ2hBgit75RxTCWTWEvYXcNTmvT58BCweXSnnZ6f1NRnU", "src_node": 1, "timestamp": 1756631066.964202}
+The trans generated in the iteration #13 had been uploaded!
+*************************************************************************************
+
+
+
+
+**************************** Iteration 14 *****************************
+You've connected, wait for command...
+File name is tip_list.json, filesize is 142
+Start receiving...
+End receive...
+
+************************* Select Candidates Tips *****************************
+The candidates tips are  ['node1_1756629238.5583389', 'node1_1756630714.9677346', 'node1_1756631066.964202']
+********************************************************************************
+
+You've connected, wait for command...
+File name is node1_1756629238.5583389.json, filesize is 176
+Start receiving...
+End receive...
+{"apv_trans": ["GenesisBlock"], "model_acc": 10.100000381469727, "model_para": "QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT", "src_node": 1, "timestamp": 1756629238.5583389} ./clientS/paras/apvTrans/iteration-14-node1_1756629238.5583389.pkl
+The filehash of this approved trans is QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT, and the file is ./clientS/paras/apvTrans/iteration-14-node1_1756629238.5583389.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-14-node1_1756629238.5583389.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-14-node1_1756629238.5583389.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756630714.9677346.json, filesize is 214
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756630607.939339", "node1_1756630065.259548"], "model_acc": 53.970001220703125, "model_para": "QmNchxFbLYj4twDZzCj43Zm8N9srcueRi6D4zwwhDVoKKz", "src_node": 1, "timestamp": 1756630714.9677346} ./clientS/paras/apvTrans/iteration-14-node1_1756630714.9677346.pkl
+The filehash of this approved trans is QmNchxFbLYj4twDZzCj43Zm8N9srcueRi6D4zwwhDVoKKz, and the file is ./clientS/paras/apvTrans/iteration-14-node1_1756630714.9677346.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-14-node1_1756630714.9677346.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-14-node1_1756630714.9677346.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756631066.964202.json, filesize is 213
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756630917.274237", "node1_1756630714.9677346"], "model_acc": 55.56999969482422, "model_para": "QmQ2hBgit75RxTCWTWEvYXcNTmvT58BCweXSnnZ6f1NRnU", "src_node": 1, "timestamp": 1756631066.964202} ./clientS/paras/apvTrans/iteration-14-node1_1756631066.964202.pkl
+The filehash of this approved trans is QmQ2hBgit75RxTCWTWEvYXcNTmvT58BCweXSnnZ6f1NRnU, and the file is ./clientS/paras/apvTrans/iteration-14-node1_1756631066.964202.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-14-node1_1756631066.964202.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-14-node1_1756631066.964202.pkl has been downloaded!
+
+
+************************************
+Acc of the basic model in iteration 14 is 54.88999938964844
+************************************
+
+The base mode parasfile ./clientS/paras/baseModel.pkl has been uploaded!
+And the fileHash is QmWJJvnggzFkVXV9gz2pPu1wmgam9tksHfPdj6KPjFjPEH
+
+2025-08-31 09:04:36.773 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 001 Chaincode invoke successful. result: status:200 
+
+{"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}
+
+*** task53410 has been released! ***
+*** And the detail of this task is {"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}! ***
+
+*** The init aggModel of task53410 has been published! ***
+*** And the detail of the init aggModel is {"epoch":0,"status":"training","paras":"QmWJJvnggzFkVXV9gz2pPu1wmgam9tksHfPdj6KPjFjPEH"} ! ***
+
+The query result of the device00056 is  {"taskID":"task53410","epoch":1,"paras":"QmdGiVCnRYpizhXquhJ5dDmqBZCrUc7x7kyBSFQDNSBEPM"}
+The query result of the device00005 is  {"taskID":"task53410","epoch":1,"paras":"QmTsc83jWBLBHgyxYLfLpnVyhKMwNKjsRMaQfQ7YQci9U8"}
+The query result of the device00076 is  {"taskID":"task53410","epoch":1,"paras":"QmTj4LWb2UMeRUJ7b5PEvV3y8DPfX6LqhTXrc6VvxJhTFe"}
+The query result of the device00078 is  {"taskID":"task53410","epoch":1,"paras":"QmabzsEVoeenoCrhHjPYngZtpQdVv8cVMTEVxDD2riCHLi"}
+The query result of the device00068 is  {"taskID":"task53410","epoch":1,"paras":"QmWr8hgRwi7cLd1PP2Tqg3ESDwyoqkCRecXe3f5Joz8suU"}
+The query result of the device00025 is  {"taskID":"task53410","epoch":1,"paras":"QmVMPtnQssJtq8N1HGj4YDJmYzCVdcCYCZj7C52XoxLggN"}
+The query result of the device00047 is  {"taskID":"task53410","epoch":1,"paras":"QmUPsdwNgwWUJ74WZDLv2vVKpNHrMY4QhdrPAKe7FkRkub"}
+The query result of the device00015 is  {"taskID":"task53410","epoch":1,"paras":"QmaafEYT9g3nedKLFirAMGqNNiMTwd97D4NG5dQp3DFY6U"}
+The query result of the device00061 is  {"taskID":"task53410","epoch":1,"paras":"QmVfq8PpcoFMYPnGuAdGTqF5xYzcjxDEeZ5K2MFkXCGAFB"}
+The query result of the device00055 is  {"taskID":"task53410","epoch":1,"paras":"QmZfpPmSULyN8GZCYCkBoQLk6mBG4jsjD4fgzU7qLPukiS"}
+Test acc of the model trained by device00005 is 22.190000534057617
+Test acc of the model trained by device00056 is 19.459999084472656
+Test acc of the model trained by device00076 is 19.8700008392334
+Test acc of the model trained by device00078 is 19.8799991607666
+Test acc of the model trained by device00068 is 10.130000114440918
+Test acc of the model trained by device00025 is 21.799999237060547
+Test acc of the model trained by device00047 is 21.56999969482422
+Test acc of the model trained by device00015 is 10.6899995803833
+Test acc of the model trained by device00061 is 26.709999084472656
+Test acc of the model trained by device00055 is 19.899999618530273
+
+************************************
+Acc of the agg model of Round 1 in iteration 14 is 56.43000030517578
+************************************
+
+*************************
+The aggregated parasfile ./clientS/paras/aggModel-iter-14-epoch-1.pkl has been uploaded!
+And the fileHash is QmaEcpbX1kpafB1rVwumSDCGh4YriBHQk4dBsoarEtbmkA!
+*************************
+
+
+******************
+The info of task task53410 is {"epoch":1,"status":"done","paras":"QmaEcpbX1kpafB1rVwumSDCGh4YriBHQk4dBsoarEtbmkA"}
+The model aggregated in epoch 1 for task53410 has been published!
+******************
+
+You've connected, wait for command...
+
+******************************* Transaction upload *******************************
+The details of this trans are {"apv_trans": ["node1_1756631066.964202", "node1_1756630714.9677346"], "model_acc": 56.43000030517578, "model_para": "QmaEcpbX1kpafB1rVwumSDCGh4YriBHQk4dBsoarEtbmkA", "src_node": 1, "timestamp": 1756631175.6076264}
+The trans generated in the iteration #14 had been uploaded!
+*************************************************************************************
+
+
+
+
+**************************** Iteration 15 *****************************
+You've connected, wait for command...
+File name is tip_list.json, filesize is 144
+Start receiving...
+End receive...
+
+************************* Select Candidates Tips *****************************
+The candidates tips are  ['node1_1756629238.5583389', 'node1_1756630714.9677346', 'node1_1756631175.6076264']
+********************************************************************************
+
+You've connected, wait for command...
+File name is node1_1756629238.5583389.json, filesize is 176
+Start receiving...
+End receive...
+{"apv_trans": ["GenesisBlock"], "model_acc": 10.100000381469727, "model_para": "QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT", "src_node": 1, "timestamp": 1756629238.5583389} ./clientS/paras/apvTrans/iteration-15-node1_1756629238.5583389.pkl
+The filehash of this approved trans is QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT, and the file is ./clientS/paras/apvTrans/iteration-15-node1_1756629238.5583389.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-15-node1_1756629238.5583389.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-15-node1_1756629238.5583389.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756630714.9677346.json, filesize is 214
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756630607.939339", "node1_1756630065.259548"], "model_acc": 53.970001220703125, "model_para": "QmNchxFbLYj4twDZzCj43Zm8N9srcueRi6D4zwwhDVoKKz", "src_node": 1, "timestamp": 1756630714.9677346} ./clientS/paras/apvTrans/iteration-15-node1_1756630714.9677346.pkl
+The filehash of this approved trans is QmNchxFbLYj4twDZzCj43Zm8N9srcueRi6D4zwwhDVoKKz, and the file is ./clientS/paras/apvTrans/iteration-15-node1_1756630714.9677346.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-15-node1_1756630714.9677346.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-15-node1_1756630714.9677346.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756631175.6076264.json, filesize is 214
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756631066.964202", "node1_1756630714.9677346"], "model_acc": 56.43000030517578, "model_para": "QmaEcpbX1kpafB1rVwumSDCGh4YriBHQk4dBsoarEtbmkA", "src_node": 1, "timestamp": 1756631175.6076264} ./clientS/paras/apvTrans/iteration-15-node1_1756631175.6076264.pkl
+The filehash of this approved trans is QmaEcpbX1kpafB1rVwumSDCGh4YriBHQk4dBsoarEtbmkA, and the file is ./clientS/paras/apvTrans/iteration-15-node1_1756631175.6076264.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-15-node1_1756631175.6076264.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-15-node1_1756631175.6076264.pkl has been downloaded!
+
+
+************************************
+Acc of the basic model in iteration 15 is 55.20000076293945
+************************************
+
+The base mode parasfile ./clientS/paras/baseModel.pkl has been uploaded!
+And the fileHash is Qmc3hpvndm6qX6m8ZShd4zPSBDrPimQhGnzTenjsiM4H8w
+
+2025-08-31 09:06:24.661 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 001 Chaincode invoke successful. result: status:200 
+
+{"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}
+
+*** task10141 has been released! ***
+*** And the detail of this task is {"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}! ***
+
+*** The init aggModel of task10141 has been published! ***
+*** And the detail of the init aggModel is {"epoch":0,"status":"training","paras":"Qmc3hpvndm6qX6m8ZShd4zPSBDrPimQhGnzTenjsiM4H8w"} ! ***
+
+The query result of the device00076 is  {"taskID":"task10141","epoch":1,"paras":"QmVssfQrk7tepJ78ucxNNnUKk9dRt8ZWKbxkFZoL6w7aWW"}
+The query result of the device00056 is  {"taskID":"task10141","epoch":1,"paras":"QmZePnWZMQU5gyx5LtoSv7fzxLo1bpuSqs8WMXwLnComrX"}
+The query result of the device00005 is  {"taskID":"task10141","epoch":1,"paras":"Qmbz42oGGpvpLfR6iNFdusm44DQMRQdT2mfNznw59itPMK"}
+The query result of the device00078 is  {"taskID":"task10141","epoch":1,"paras":"QmZPQG8DX8CJ3z1VPfRDrbLXCYeyQPGt9aU1qd4tqFJTcw"}
+The query result of the device00068 is  {"taskID":"task10141","epoch":1,"paras":"QmZwfqamf5r2JC9Hi22yzbPrBsdnW3CwX9KankKT9wf7br"}
+The query result of the device00025 is  {"taskID":"task10141","epoch":1,"paras":"QmeGcuDsRk4siR7DT9Kbk8kZumBor41nj7RYU55JSemKDP"}
+The query result of the device00047 is  {"taskID":"task10141","epoch":1,"paras":"QmZUQNGPKpAhVwqEBx54Dx499X79Dd4UtyPE8xirmoAGuD"}
+The query result of the device00015 is  {"taskID":"task10141","epoch":1,"paras":"QmUHvMkGZSqJ8yNDCnVZury5UeQs4pW5vbCAdHRvup5Lq8"}
+The query result of the device00061 is  {"taskID":"task10141","epoch":1,"paras":"QmYNTnrhbWPVUcwF1LvJyXVtzov1vPgi4Sczj2N3qdSfgi"}
+The query result of the device00055 is  {"taskID":"task10141","epoch":1,"paras":"QmXpssygP5qfVat1kXqdLsS3kvyWrxVz5dJR7nuY2GNKQP"}
+Test acc of the model trained by device00005 is 21.34000015258789
+Test acc of the model trained by device00056 is 20.56999969482422
+Test acc of the model trained by device00076 is 19.899999618530273
+Test acc of the model trained by device00078 is 19.93000030517578
+Test acc of the model trained by device00068 is 16.579999923706055
+Test acc of the model trained by device00025 is 23.670000076293945
+Test acc of the model trained by device00047 is 21.559999465942383
+Test acc of the model trained by device00015 is 10.800000190734863
+Test acc of the model trained by device00061 is 23.649999618530273
+Test acc of the model trained by device00055 is 19.989999771118164
+
+************************************
+Acc of the agg model of Round 1 in iteration 15 is 56.400001525878906
+************************************
+
+*************************
+The aggregated parasfile ./clientS/paras/aggModel-iter-15-epoch-1.pkl has been uploaded!
+And the fileHash is QmZLcnoV1V6QUqN6c2dHZ2vCsrXkzDqodkC8eCL4hK6LRn!
+*************************
+
+
+******************
+The info of task task10141 is {"epoch":1,"status":"done","paras":"QmZLcnoV1V6QUqN6c2dHZ2vCsrXkzDqodkC8eCL4hK6LRn"}
+The model aggregated in epoch 1 for task10141 has been published!
+******************
+
+You've connected, wait for command...
+
+******************************* Transaction upload *******************************
+The details of this trans are {"apv_trans": ["node1_1756631175.6076264", "node1_1756630714.9677346"], "model_acc": 56.400001525878906, "model_para": "QmZLcnoV1V6QUqN6c2dHZ2vCsrXkzDqodkC8eCL4hK6LRn", "src_node": 1, "timestamp": 1756631268.7006965}
+The trans generated in the iteration #15 had been uploaded!
+*************************************************************************************
+
+
+
+
+**************************** Iteration 16 *****************************
+You've connected, wait for command...
+File name is tip_list.json, filesize is 144
+Start receiving...
+End receive...
+
+************************* Select Candidates Tips *****************************
+The candidates tips are  ['node1_1756629238.5583389', 'node1_1756631175.6076264', 'node1_1756631268.7006965']
+********************************************************************************
+
+You've connected, wait for command...
+File name is node1_1756629238.5583389.json, filesize is 176
+Start receiving...
+End receive...
+{"apv_trans": ["GenesisBlock"], "model_acc": 10.100000381469727, "model_para": "QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT", "src_node": 1, "timestamp": 1756629238.5583389} ./clientS/paras/apvTrans/iteration-16-node1_1756629238.5583389.pkl
+The filehash of this approved trans is QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT, and the file is ./clientS/paras/apvTrans/iteration-16-node1_1756629238.5583389.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-16-node1_1756629238.5583389.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-16-node1_1756629238.5583389.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756631175.6076264.json, filesize is 214
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756631066.964202", "node1_1756630714.9677346"], "model_acc": 56.43000030517578, "model_para": "QmaEcpbX1kpafB1rVwumSDCGh4YriBHQk4dBsoarEtbmkA", "src_node": 1, "timestamp": 1756631175.6076264} ./clientS/paras/apvTrans/iteration-16-node1_1756631175.6076264.pkl
+The filehash of this approved trans is QmaEcpbX1kpafB1rVwumSDCGh4YriBHQk4dBsoarEtbmkA, and the file is ./clientS/paras/apvTrans/iteration-16-node1_1756631175.6076264.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-16-node1_1756631175.6076264.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-16-node1_1756631175.6076264.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756631268.7006965.json, filesize is 216
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756631175.6076264", "node1_1756630714.9677346"], "model_acc": 56.400001525878906, "model_para": "QmZLcnoV1V6QUqN6c2dHZ2vCsrXkzDqodkC8eCL4hK6LRn", "src_node": 1, "timestamp": 1756631268.7006965} ./clientS/paras/apvTrans/iteration-16-node1_1756631268.7006965.pkl
+The filehash of this approved trans is QmZLcnoV1V6QUqN6c2dHZ2vCsrXkzDqodkC8eCL4hK6LRn, and the file is ./clientS/paras/apvTrans/iteration-16-node1_1756631268.7006965.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-16-node1_1756631268.7006965.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-16-node1_1756631268.7006965.pkl has been downloaded!
+
+
+************************************
+Acc of the basic model in iteration 16 is 56.4900016784668
+************************************
+
+The base mode parasfile ./clientS/paras/baseModel.pkl has been uploaded!
+And the fileHash is QmU1mAUTrYh1BiCTEPenaCqcYVRhmXP1TTB9Cg6YHk1cwc
+
+2025-08-31 09:07:58.607 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 001 Chaincode invoke successful. result: status:200 
+
+{"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}
+
+*** task9329 has been released! ***
+*** And the detail of this task is {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}! ***
+
+*** The init aggModel of task9329 has been published! ***
+*** And the detail of the init aggModel is {"epoch":0,"status":"training","paras":"QmU1mAUTrYh1BiCTEPenaCqcYVRhmXP1TTB9Cg6YHk1cwc"} ! ***
+
+The query result of the device00005 is  {"taskID":"task9329","epoch":1,"paras":"QmeTCHdGU1nU7MXkomQEcopVYf2FrveL1jmZsFgeNyWmai"}
+The query result of the device00056 is  {"taskID":"task9329","epoch":1,"paras":"QmTdCLbSP6RsRdNyb2QYEVZkpKBVVp6PTk3Tbn3MyF1w5H"}
+The query result of the device00076 is  {"taskID":"task9329","epoch":1,"paras":"QmZNdeu8W655oK6CujPgicAs8dfwmrnKrzi5CTpPn7NQPG"}
+The query result of the device00078 is  {"taskID":"task9329","epoch":1,"paras":"QmZbjpAcjfmrJQ4NFZf581me84J8BKTzEfMa92UDEvmAPL"}
+The query result of the device00068 is  {"taskID":"task9329","epoch":1,"paras":"QmV17NExhbx3oAyVvYmBheRLCB7uvsLBcMAWhUHV4y8XJ2"}
+The query result of the device00025 is  {"taskID":"task9329","epoch":1,"paras":"Qmd9cS7ysRgfDhnAuXxfwNQ363P7nw8zP6vaER5QHjycS3"}
+The query result of the device00047 is  {"taskID":"task9329","epoch":1,"paras":"QmY9rcXswP7eSdFW2zveiczFf2ibfZ7q8LGYo2kwtq4Uc6"}
+The query result of the device00015 is  {"taskID":"task9329","epoch":1,"paras":"QmcmPQiy1MyLR3HP6EC6y7XJ9JpM9Fw2fQG8exK6gPUKrc"}
+The query result of the device00061 is  {"taskID":"task9329","epoch":1,"paras":"QmaSYJ7qX5LU36hG4NLi3HibUaqYaDVh3HmTiom1PGJ55f"}
+The query result of the device00055 is  {"taskID":"task9329","epoch":1,"paras":"QmbW1F8idzzwkY9GMZNxzgW96E2Abrn5LDH9fmiJTAz9Dp"}
+Test acc of the model trained by device00005 is 22.950000762939453
+Test acc of the model trained by device00056 is 19.309999465942383
+Test acc of the model trained by device00076 is 20.260000228881836
+Test acc of the model trained by device00078 is 20.049999237060547
+Test acc of the model trained by device00068 is 12.890000343322754
+Test acc of the model trained by device00025 is 26.600000381469727
+Test acc of the model trained by device00047 is 21.559999465942383
+Test acc of the model trained by device00015 is 10.84000015258789
+Test acc of the model trained by device00061 is 27.229999542236328
+Test acc of the model trained by device00055 is 19.899999618530273
+
+************************************
+Acc of the agg model of Round 1 in iteration 16 is 57.36000061035156
+************************************
+
+*************************
+The aggregated parasfile ./clientS/paras/aggModel-iter-16-epoch-1.pkl has been uploaded!
+And the fileHash is Qmc8gv7Y5vCVWABtpfaRu75ATQX3t9vDMH8Z6h1fWV7bkH!
+*************************
+
+
+******************
+The info of task task9329 is {"epoch":1,"status":"done","paras":"Qmc8gv7Y5vCVWABtpfaRu75ATQX3t9vDMH8Z6h1fWV7bkH"}
+The model aggregated in epoch 1 for task9329 has been published!
+******************
+
+You've connected, wait for command...
+
+******************************* Transaction upload *******************************
+The details of this trans are {"apv_trans": ["node1_1756631175.6076264", "node1_1756631268.7006965"], "model_acc": 57.36000061035156, "model_para": "Qmc8gv7Y5vCVWABtpfaRu75ATQX3t9vDMH8Z6h1fWV7bkH", "src_node": 1, "timestamp": 1756631380.364558}
+The trans generated in the iteration #16 had been uploaded!
+*************************************************************************************
+
+
+
+
+**************************** Iteration 17 *****************************
+You've connected, wait for command...
+File name is tip_list.json, filesize is 142
+Start receiving...
+End receive...
+
+************************* Select Candidates Tips *****************************
+The candidates tips are  ['node1_1756629238.5583389', 'node1_1756631175.6076264', 'node1_1756631380.364558']
+********************************************************************************
+
+You've connected, wait for command...
+File name is node1_1756629238.5583389.json, filesize is 176
+Start receiving...
+End receive...
+{"apv_trans": ["GenesisBlock"], "model_acc": 10.100000381469727, "model_para": "QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT", "src_node": 1, "timestamp": 1756629238.5583389} ./clientS/paras/apvTrans/iteration-17-node1_1756629238.5583389.pkl
+The filehash of this approved trans is QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT, and the file is ./clientS/paras/apvTrans/iteration-17-node1_1756629238.5583389.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-17-node1_1756629238.5583389.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-17-node1_1756629238.5583389.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756631175.6076264.json, filesize is 214
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756631066.964202", "node1_1756630714.9677346"], "model_acc": 56.43000030517578, "model_para": "QmaEcpbX1kpafB1rVwumSDCGh4YriBHQk4dBsoarEtbmkA", "src_node": 1, "timestamp": 1756631175.6076264} ./clientS/paras/apvTrans/iteration-17-node1_1756631175.6076264.pkl
+The filehash of this approved trans is QmaEcpbX1kpafB1rVwumSDCGh4YriBHQk4dBsoarEtbmkA, and the file is ./clientS/paras/apvTrans/iteration-17-node1_1756631175.6076264.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-17-node1_1756631175.6076264.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-17-node1_1756631175.6076264.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756631380.364558.json, filesize is 214
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756631175.6076264", "node1_1756631268.7006965"], "model_acc": 57.36000061035156, "model_para": "Qmc8gv7Y5vCVWABtpfaRu75ATQX3t9vDMH8Z6h1fWV7bkH", "src_node": 1, "timestamp": 1756631380.364558} ./clientS/paras/apvTrans/iteration-17-node1_1756631380.364558.pkl
+The filehash of this approved trans is Qmc8gv7Y5vCVWABtpfaRu75ATQX3t9vDMH8Z6h1fWV7bkH, and the file is ./clientS/paras/apvTrans/iteration-17-node1_1756631380.364558.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-17-node1_1756631380.364558.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-17-node1_1756631380.364558.pkl has been downloaded!
+
+
+************************************
+Acc of the basic model in iteration 17 is 57.060001373291016
+************************************
+
+The base mode parasfile ./clientS/paras/baseModel.pkl has been uploaded!
+And the fileHash is Qme8T2FrTieXozgDZY8SXC6KDhL9b1Jyf9nLLjmuDbSpJH
+
+2025-08-31 09:09:49.917 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 001 Chaincode invoke successful. result: status:200 
+
+{"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}
+
+*** task4791 has been released! ***
+*** And the detail of this task is {"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}! ***
+
+*** The init aggModel of task4791 has been published! ***
+*** And the detail of the init aggModel is {"epoch":0,"status":"training","paras":"Qme8T2FrTieXozgDZY8SXC6KDhL9b1Jyf9nLLjmuDbSpJH"} ! ***
+
+The query result of the device00005 is  {"taskID":"task4791","epoch":1,"paras":"QmbU22kQ83kUhjn7y8A1LTrot8pxEht25yhv11RVKF4H9K"}
+The query result of the device00056 is  {"taskID":"task4791","epoch":1,"paras":"QmTdry9F1AsFUN49odYVkENRNwubYsNMD5iGUExZ2aDa4N"}
+The query result of the device00076 is  {"taskID":"task4791","epoch":1,"paras":"QmeT7WdX28YxLZHnqbYfanaLgPNZd3PXZvCr742cche81E"}
+The query result of the device00078 is  {"taskID":"task4791","epoch":1,"paras":"QmbJjngTm6xqcgxYBRsBM8UiQDvvuNj2x2V7DKA7h31jh6"}
+The query result of the device00068 is  {"taskID":"task4791","epoch":1,"paras":"QmW8A1xB5BYfwDoo8bmMYCNuA6QedXcvkKAxE3Ez264k5n"}
+The query result of the device00025 is  {"taskID":"task4791","epoch":1,"paras":"QmeKgViDj6TR6HabJgQMqGLd53GrAPR3sdLNwMQWznXMrF"}
+The query result of the device00047 is  {"taskID":"task4791","epoch":1,"paras":"QmVC2Vf91CmgHUm32de3dZvRg9yVobtnrRs9awhXiNG1eD"}
+The query result of the device00015 is  {"taskID":"task4791","epoch":1,"paras":"QmZ9KQHWPYH6UQSh8Uwc8ZwKb5YjZdtDBcqUBN9XadSutZ"}
+The query result of the device00061 is  {"taskID":"task4791","epoch":1,"paras":"QmS9qJT9n3vFUE4xFrwRAQaAw7f7PdwLYhLmekX3c8LNyg"}
+The query result of the device00055 is  {"taskID":"task4791","epoch":1,"paras":"QmcVZa2bnBe7ur7ppvtzmCxoKebfLZ1xJzi489ciBuaYob"}
+Test acc of the model trained by device00005 is 22.8799991607666
+Test acc of the model trained by device00056 is 24.239999771118164
+Test acc of the model trained by device00076 is 21.200000762939453
+Test acc of the model trained by device00078 is 19.979999542236328
+Test acc of the model trained by device00068 is 14.789999961853027
+Test acc of the model trained by device00025 is 25.780000686645508
+Test acc of the model trained by device00047 is 22.34000015258789
+Test acc of the model trained by device00015 is 10.800000190734863
+Test acc of the model trained by device00061 is 27.030000686645508
+Test acc of the model trained by device00055 is 20.020000457763672
+
+************************************
+Acc of the agg model of Round 1 in iteration 17 is 57.7599983215332
+************************************
+
+*************************
+The aggregated parasfile ./clientS/paras/aggModel-iter-17-epoch-1.pkl has been uploaded!
+And the fileHash is QmVtX1R9zuzZV41gyb6RhGfbeKuibxn2v2xQnmqfdB1C3L!
+*************************
+
+
+******************
+The info of task task4791 is {"epoch":1,"status":"done","paras":"QmVtX1R9zuzZV41gyb6RhGfbeKuibxn2v2xQnmqfdB1C3L"}
+The model aggregated in epoch 1 for task4791 has been published!
+******************
+
+You've connected, wait for command...
+
+******************************* Transaction upload *******************************
+The details of this trans are {"apv_trans": ["node1_1756631380.364558", "node1_1756631175.6076264"], "model_acc": 57.7599983215332, "model_para": "QmVtX1R9zuzZV41gyb6RhGfbeKuibxn2v2xQnmqfdB1C3L", "src_node": 1, "timestamp": 1756631489.8645566}
+The trans generated in the iteration #17 had been uploaded!
+*************************************************************************************
+
+
+
+
+**************************** Iteration 18 *****************************
+You've connected, wait for command...
+File name is tip_list.json, filesize is 142
+Start receiving...
+End receive...
+
+************************* Select Candidates Tips *****************************
+The candidates tips are  ['node1_1756629238.5583389', 'node1_1756631380.364558', 'node1_1756631489.8645566']
+********************************************************************************
+
+You've connected, wait for command...
+File name is node1_1756629238.5583389.json, filesize is 176
+Start receiving...
+End receive...
+{"apv_trans": ["GenesisBlock"], "model_acc": 10.100000381469727, "model_para": "QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT", "src_node": 1, "timestamp": 1756629238.5583389} ./clientS/paras/apvTrans/iteration-18-node1_1756629238.5583389.pkl
+The filehash of this approved trans is QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT, and the file is ./clientS/paras/apvTrans/iteration-18-node1_1756629238.5583389.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-18-node1_1756629238.5583389.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-18-node1_1756629238.5583389.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756631380.364558.json, filesize is 214
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756631175.6076264", "node1_1756631268.7006965"], "model_acc": 57.36000061035156, "model_para": "Qmc8gv7Y5vCVWABtpfaRu75ATQX3t9vDMH8Z6h1fWV7bkH", "src_node": 1, "timestamp": 1756631380.364558} ./clientS/paras/apvTrans/iteration-18-node1_1756631380.364558.pkl
+The filehash of this approved trans is Qmc8gv7Y5vCVWABtpfaRu75ATQX3t9vDMH8Z6h1fWV7bkH, and the file is ./clientS/paras/apvTrans/iteration-18-node1_1756631380.364558.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-18-node1_1756631380.364558.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-18-node1_1756631380.364558.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756631489.8645566.json, filesize is 213
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756631380.364558", "node1_1756631175.6076264"], "model_acc": 57.7599983215332, "model_para": "QmVtX1R9zuzZV41gyb6RhGfbeKuibxn2v2xQnmqfdB1C3L", "src_node": 1, "timestamp": 1756631489.8645566} ./clientS/paras/apvTrans/iteration-18-node1_1756631489.8645566.pkl
+The filehash of this approved trans is QmVtX1R9zuzZV41gyb6RhGfbeKuibxn2v2xQnmqfdB1C3L, and the file is ./clientS/paras/apvTrans/iteration-18-node1_1756631489.8645566.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-18-node1_1756631489.8645566.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-18-node1_1756631489.8645566.pkl has been downloaded!
+
+
+************************************
+Acc of the basic model in iteration 18 is 57.65999984741211
+************************************
+
+The base mode parasfile ./clientS/paras/baseModel.pkl has been uploaded!
+And the fileHash is QmSvEbF6GhJyrAZN9REcWTPZmBTNoK5TANMaeNF9strNS1
+
+2025-08-31 09:11:39.511 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 001 Chaincode invoke successful. result: status:200 
+
+{"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}
+
+*** task43110 has been released! ***
+*** And the detail of this task is {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}! ***
+
+*** The init aggModel of task43110 has been published! ***
+*** And the detail of the init aggModel is {"epoch":0,"status":"training","paras":"QmSvEbF6GhJyrAZN9REcWTPZmBTNoK5TANMaeNF9strNS1"} ! ***
+
+The query result of the device00056 is  {"taskID":"task43110","epoch":1,"paras":"QmcqUbrAD7T5RSjDihvem1YJTjXtNx6ZFuWYhzMTk2nDyD"}
+The query result of the device00005 is  {"taskID":"task43110","epoch":1,"paras":"QmYMouSa9TZL25i5zcwtQTMkdMCAcJo7ZjcxsSzsQmo2z4"}
+The query result of the device00076 is  {"taskID":"task43110","epoch":1,"paras":"QmUAvK8iEB4JzMJJ44kd9fb5BM5cTFHYFmeuxVoDD284w2"}
+The query result of the device00078 is  {"taskID":"task43110","epoch":1,"paras":"Qmdu7RAsW9Gb7ce8kUyN6fYfyV184oLFtcgz4ichAiNe6X"}
+The query result of the device00068 is  {"taskID":"task43110","epoch":1,"paras":"QmeM5LMU5tsgBKhbNDNbLNfH7DzPYt3eSQ39X9NiJ9vxpA"}
+The query result of the device00025 is  {"taskID":"task43110","epoch":1,"paras":"QmfYSC1qkDH12j1TNbnw4cs2wSp1uhQaGZUHDMsSELyoe7"}
+The query result of the device00047 is  {"taskID":"task43110","epoch":1,"paras":"QmZSfoxbZEHtgymKZa1EdV85NGwrkDekXfWHJXVq7T7Kft"}
+The query result of the device00015 is  {"taskID":"task43110","epoch":1,"paras":"QmQekXc6GJyZWw8Y7Anjgw57faRmhEybHyZSJDpwyyX6qY"}
+The query result of the device00061 is  {"taskID":"task43110","epoch":1,"paras":"QmNceGxgroURCX6FVZwsjnNYT3qoA8s8UKAER6Nndbyunc"}
+The query result of the device00055 is  {"taskID":"task43110","epoch":1,"paras":"QmdppFELWMD1iZKmUVHNNdy14RpCKY7qnzWKoPCNWs9qbv"}
+Test acc of the model trained by device00005 is 25.739999771118164
+Test acc of the model trained by device00056 is 21.81999969482422
+Test acc of the model trained by device00076 is 20.5
+Test acc of the model trained by device00078 is 20.719999313354492
+Test acc of the model trained by device00068 is 16.700000762939453
+Test acc of the model trained by device00025 is 26.56999969482422
+Test acc of the model trained by device00047 is 21.59000015258789
+Test acc of the model trained by device00015 is 11.800000190734863
+Test acc of the model trained by device00061 is 30.40999984741211
+Test acc of the model trained by device00055 is 20.309999465942383
+
+************************************
+Acc of the agg model of Round 1 in iteration 18 is 59.29999923706055
+************************************
+
+*************************
+The aggregated parasfile ./clientS/paras/aggModel-iter-18-epoch-1.pkl has been uploaded!
+And the fileHash is QmVAvjLfpVrxftiyx6ECo2UCG3XhFyz8aFfie5aNeYZLn1!
+*************************
+
+
+******************
+The info of task task43110 is {"epoch":1,"status":"done","paras":"QmVAvjLfpVrxftiyx6ECo2UCG3XhFyz8aFfie5aNeYZLn1"}
+The model aggregated in epoch 1 for task43110 has been published!
+******************
+
+You've connected, wait for command...
+
+******************************* Transaction upload *******************************
+The details of this trans are {"apv_trans": ["node1_1756631489.8645566", "node1_1756631380.364558"], "model_acc": 59.29999923706055, "model_para": "QmVAvjLfpVrxftiyx6ECo2UCG3XhFyz8aFfie5aNeYZLn1", "src_node": 1, "timestamp": 1756631594.3483663}
+The trans generated in the iteration #18 had been uploaded!
+*************************************************************************************
+
+
+
+
+**************************** Iteration 19 *****************************
+You've connected, wait for command...
+File name is tip_list.json, filesize is 142
+Start receiving...
+End receive...
+
+************************* Select Candidates Tips *****************************
+The candidates tips are  ['node1_1756629238.5583389', 'node1_1756631380.364558', 'node1_1756631594.3483663']
+********************************************************************************
+
+You've connected, wait for command...
+File name is node1_1756629238.5583389.json, filesize is 176
+Start receiving...
+End receive...
+{"apv_trans": ["GenesisBlock"], "model_acc": 10.100000381469727, "model_para": "QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT", "src_node": 1, "timestamp": 1756629238.5583389} ./clientS/paras/apvTrans/iteration-19-node1_1756629238.5583389.pkl
+The filehash of this approved trans is QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT, and the file is ./clientS/paras/apvTrans/iteration-19-node1_1756629238.5583389.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-19-node1_1756629238.5583389.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-19-node1_1756629238.5583389.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756631380.364558.json, filesize is 214
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756631175.6076264", "node1_1756631268.7006965"], "model_acc": 57.36000061035156, "model_para": "Qmc8gv7Y5vCVWABtpfaRu75ATQX3t9vDMH8Z6h1fWV7bkH", "src_node": 1, "timestamp": 1756631380.364558} ./clientS/paras/apvTrans/iteration-19-node1_1756631380.364558.pkl
+The filehash of this approved trans is Qmc8gv7Y5vCVWABtpfaRu75ATQX3t9vDMH8Z6h1fWV7bkH, and the file is ./clientS/paras/apvTrans/iteration-19-node1_1756631380.364558.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-19-node1_1756631380.364558.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-19-node1_1756631380.364558.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756631594.3483663.json, filesize is 214
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756631489.8645566", "node1_1756631380.364558"], "model_acc": 59.29999923706055, "model_para": "QmVAvjLfpVrxftiyx6ECo2UCG3XhFyz8aFfie5aNeYZLn1", "src_node": 1, "timestamp": 1756631594.3483663} ./clientS/paras/apvTrans/iteration-19-node1_1756631594.3483663.pkl
+The filehash of this approved trans is QmVAvjLfpVrxftiyx6ECo2UCG3XhFyz8aFfie5aNeYZLn1, and the file is ./clientS/paras/apvTrans/iteration-19-node1_1756631594.3483663.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-19-node1_1756631594.3483663.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-19-node1_1756631594.3483663.pkl has been downloaded!
+
+
+************************************
+Acc of the basic model in iteration 19 is 58.38999938964844
+************************************
+
+The base mode parasfile ./clientS/paras/baseModel.pkl has been uploaded!
+And the fileHash is QmR4Y54UCD3gn1thikktppaXhdjMNWsQPp9fpotuziV5Ck
+
+2025-08-31 09:13:24.502 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 001 Chaincode invoke successful. result: status:200 
+
+{"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}
+
+*** task71096 has been released! ***
+*** And the detail of this task is {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}! ***
+
+*** The init aggModel of task71096 has been published! ***
+*** And the detail of the init aggModel is {"epoch":0,"status":"training","paras":"QmR4Y54UCD3gn1thikktppaXhdjMNWsQPp9fpotuziV5Ck"} ! ***
+
+The query result of the device00056 is  {"taskID":"task71096","epoch":1,"paras":"QmQ1UyUB8dDAcbn8bSrkFKZ3tjPN1MA3FC3yfgv9uavXv1"}
+The query result of the device00005 is  {"taskID":"task71096","epoch":1,"paras":"QmeAhBVnsuh1DKyNEpJELn5Xy5BsFskEdComp8UuAo3UcD"}
+The query result of the device00076 is  {"taskID":"task71096","epoch":1,"paras":"QmSZgPWrpfLv7GpF5i9wr4TMCsQ6QNko7cfGbLqqJGSRui"}
+The query result of the device00078 is  {"taskID":"task71096","epoch":1,"paras":"QmV26U2UQyFxWUUBQRFHaM4nQDZQ4EMQVe4kwN9mQjaNac"}
+The query result of the device00068 is  {"taskID":"task71096","epoch":1,"paras":"QmVALsSSFXHRULt7amMQsjZZW63Ug3mL9yi8fyZCHon7Xs"}
+The query result of the device00025 is  {"taskID":"task71096","epoch":1,"paras":"QmZWtUcSLXn6KeeygCPwEh6DqhTLrL5sREQCznDo9aGKUx"}
+The query result of the device00047 is  {"taskID":"task71096","epoch":1,"paras":"Qmd31cGzaC7z7FoiHESY6kyFz748EeBncMsow2Bq62wp1f"}
+The query result of the device00015 is  {"taskID":"task71096","epoch":1,"paras":"QmfUJXNj9x6EThmZHQ2FMEyo5b3jxPqznkW4j1LFMdnTwU"}
+The query result of the device00061 is  {"taskID":"task71096","epoch":1,"paras":"QmYPpKD1bua4QZvCi3CUTrmPL4EEWvPwJ7CPmwdc4Fyaxa"}
+The query result of the device00055 is  {"taskID":"task71096","epoch":1,"paras":"QmafXZiXiPwF1iDtqDYp1h9sxYJ3PcYf9Jr8fjWVCBeYYM"}
+Test acc of the model trained by device00005 is 23.65999984741211
+Test acc of the model trained by device00056 is 23.600000381469727
+Test acc of the model trained by device00076 is 21.170000076293945
+Test acc of the model trained by device00078 is 23.049999237060547
+Test acc of the model trained by device00068 is 15.899999618530273
+Test acc of the model trained by device00025 is 26.75
+Test acc of the model trained by device00047 is 21.850000381469727
+Test acc of the model trained by device00015 is 13.600000381469727
+Test acc of the model trained by device00061 is 28.899999618530273
+Test acc of the model trained by device00055 is 20.6200008392334
+
+************************************
+Acc of the agg model of Round 1 in iteration 19 is 59.08000183105469
+************************************
+
+*************************
+The aggregated parasfile ./clientS/paras/aggModel-iter-19-epoch-1.pkl has been uploaded!
+And the fileHash is QmNbkoBHAJjTW4QNUtZt1AADB8Qmtpachr54QsbXKrbrQq!
+*************************
+
+
+******************
+The info of task task71096 is {"epoch":1,"status":"done","paras":"QmNbkoBHAJjTW4QNUtZt1AADB8Qmtpachr54QsbXKrbrQq"}
+The model aggregated in epoch 1 for task71096 has been published!
+******************
+
+You've connected, wait for command...
+
+******************************* Transaction upload *******************************
+The details of this trans are {"apv_trans": ["node1_1756631594.3483663", "node1_1756631380.364558"], "model_acc": 59.08000183105469, "model_para": "QmNbkoBHAJjTW4QNUtZt1AADB8Qmtpachr54QsbXKrbrQq", "src_node": 1, "timestamp": 1756631701.4108717}
+The trans generated in the iteration #19 had been uploaded!
+*************************************************************************************
+
+
+
+
+**************************** Iteration 20 *****************************
+You've connected, wait for command...
+File name is tip_list.json, filesize is 142
+Start receiving...
+End receive...
+
+************************* Select Candidates Tips *****************************
+The candidates tips are  ['node1_1756629238.5583389', 'node1_1756631380.364558', 'node1_1756631701.4108717']
+********************************************************************************
+
+You've connected, wait for command...
+File name is node1_1756629238.5583389.json, filesize is 176
+Start receiving...
+End receive...
+{"apv_trans": ["GenesisBlock"], "model_acc": 10.100000381469727, "model_para": "QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT", "src_node": 1, "timestamp": 1756629238.5583389} ./clientS/paras/apvTrans/iteration-20-node1_1756629238.5583389.pkl
+The filehash of this approved trans is QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT, and the file is ./clientS/paras/apvTrans/iteration-20-node1_1756629238.5583389.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-20-node1_1756629238.5583389.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-20-node1_1756629238.5583389.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756631380.364558.json, filesize is 214
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756631175.6076264", "node1_1756631268.7006965"], "model_acc": 57.36000061035156, "model_para": "Qmc8gv7Y5vCVWABtpfaRu75ATQX3t9vDMH8Z6h1fWV7bkH", "src_node": 1, "timestamp": 1756631380.364558} ./clientS/paras/apvTrans/iteration-20-node1_1756631380.364558.pkl
+The filehash of this approved trans is Qmc8gv7Y5vCVWABtpfaRu75ATQX3t9vDMH8Z6h1fWV7bkH, and the file is ./clientS/paras/apvTrans/iteration-20-node1_1756631380.364558.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-20-node1_1756631380.364558.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-20-node1_1756631380.364558.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756631701.4108717.json, filesize is 214
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756631594.3483663", "node1_1756631380.364558"], "model_acc": 59.08000183105469, "model_para": "QmNbkoBHAJjTW4QNUtZt1AADB8Qmtpachr54QsbXKrbrQq", "src_node": 1, "timestamp": 1756631701.4108717} ./clientS/paras/apvTrans/iteration-20-node1_1756631701.4108717.pkl
+The filehash of this approved trans is QmNbkoBHAJjTW4QNUtZt1AADB8Qmtpachr54QsbXKrbrQq, and the file is ./clientS/paras/apvTrans/iteration-20-node1_1756631701.4108717.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-20-node1_1756631701.4108717.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-20-node1_1756631701.4108717.pkl has been downloaded!
+
+
+************************************
+Acc of the basic model in iteration 20 is 58.25
+************************************
+
+The base mode parasfile ./clientS/paras/baseModel.pkl has been uploaded!
+And the fileHash is QmUUGuymyKnSrMo9HL2KDWRasGmkDCaozMeXAPHCU7jsPu
+
+2025-08-31 09:15:11.495 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 001 Chaincode invoke successful. result: status:200 
+
+{"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}
+
+*** task95104 has been released! ***
+*** And the detail of this task is {"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}! ***
+
+*** The init aggModel of task95104 has been published! ***
+*** And the detail of the init aggModel is {"epoch":0,"status":"training","paras":"QmUUGuymyKnSrMo9HL2KDWRasGmkDCaozMeXAPHCU7jsPu"} ! ***
+
+The query result of the device00056 is  {"taskID":"task95104","epoch":1,"paras":"QmaLKDEd9foVPGQwGXYe8ge5sJEKyDsnHW86T5jJFsysHX"}
+The query result of the device00005 is  {"taskID":"task95104","epoch":1,"paras":"QmdhpndS11dURqQCXds7dyQMLJbmk5FRi85zdaD98XY639"}
+The query result of the device00076 is  {"taskID":"task95104","epoch":1,"paras":"QmZ78d4uYwLFAUf2kePTEuzj8ev93cWSNfyUP9ai9Wp7e2"}
+The query result of the device00078 is  {"taskID":"task95104","epoch":1,"paras":"QmXp8GSsxRy1kw7YM9rH58DzecfhT8Pp9uSwqSDoYvEXxF"}
+The query result of the device00068 is  {"taskID":"task95104","epoch":1,"paras":"QmeTYZJLyvSkZYAFPFPrDrLWFYHM5gS2PW1gvZ9Wk11WBf"}
+The query result of the device00025 is  {"taskID":"task95104","epoch":1,"paras":"QmYcUoHj6DpHSyeZAMtD26W7r5hJE3UUbYPVZAUzJVQfb4"}
+The query result of the device00047 is  {"taskID":"task95104","epoch":1,"paras":"Qma5KkAURZcSE1L6QCs6EsGzFB64Wxcafm8mY1VGAi5y3K"}
+The query result of the device00015 is  {"taskID":"task95104","epoch":1,"paras":"QmTK3a1wUdsgGvNuVfqbdwD3KoDhdurm63VjiHcZxoBnTj"}
+The query result of the device00061 is  {"taskID":"task95104","epoch":1,"paras":"QmRkwPMW2B4fqZQD6F2V2X2oKyPxUuJJzTYiTnw2svRgaE"}
+The query result of the device00055 is  {"taskID":"task95104","epoch":1,"paras":"Qmb3kJuQEjYkhJpfGT6W3X2gd3DguWHQX6XEWyifL2pAjh"}
+Test acc of the model trained by device00005 is 24.020000457763672
+Test acc of the model trained by device00056 is 20.350000381469727
+Test acc of the model trained by device00076 is 22.530000686645508
+Test acc of the model trained by device00078 is 21.93000030517578
+Test acc of the model trained by device00068 is 22.729999542236328
+Test acc of the model trained by device00025 is 26.049999237060547
+Test acc of the model trained by device00047 is 21.739999771118164
+Test acc of the model trained by device00015 is 12.539999961853027
+Test acc of the model trained by device00061 is 27.239999771118164
+Test acc of the model trained by device00055 is 20.34000015258789
+
+************************************
+Acc of the agg model of Round 1 in iteration 20 is 59.58000183105469
+************************************
+
+*************************
+The aggregated parasfile ./clientS/paras/aggModel-iter-20-epoch-1.pkl has been uploaded!
+And the fileHash is QmPNtry3cKC4yZHX1fKV7MVw2vQfpYKzE63QTxzb2QbJ3d!
+*************************
+
+
+******************
+The info of task task95104 is {"epoch":1,"status":"done","paras":"QmPNtry3cKC4yZHX1fKV7MVw2vQfpYKzE63QTxzb2QbJ3d"}
+The model aggregated in epoch 1 for task95104 has been published!
+******************
+
+You've connected, wait for command...
+
+******************************* Transaction upload *******************************
+The details of this trans are {"apv_trans": ["node1_1756631701.4108717", "node1_1756631380.364558"], "model_acc": 59.58000183105469, "model_para": "QmPNtry3cKC4yZHX1fKV7MVw2vQfpYKzE63QTxzb2QbJ3d", "src_node": 1, "timestamp": 1756631797.115594}
+The trans generated in the iteration #20 had been uploaded!
+*************************************************************************************
+
+
+
+
+**************************** Iteration 21 *****************************
+You've connected, wait for command...
+File name is tip_list.json, filesize is 140
+Start receiving...
+End receive...
+
+************************* Select Candidates Tips *****************************
+The candidates tips are  ['node1_1756629238.5583389', 'node1_1756631380.364558', 'node1_1756631797.115594']
+********************************************************************************
+
+You've connected, wait for command...
+File name is node1_1756629238.5583389.json, filesize is 176
+Start receiving...
+End receive...
+{"apv_trans": ["GenesisBlock"], "model_acc": 10.100000381469727, "model_para": "QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT", "src_node": 1, "timestamp": 1756629238.5583389} ./clientS/paras/apvTrans/iteration-21-node1_1756629238.5583389.pkl
+The filehash of this approved trans is QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT, and the file is ./clientS/paras/apvTrans/iteration-21-node1_1756629238.5583389.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-21-node1_1756629238.5583389.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-21-node1_1756629238.5583389.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756631380.364558.json, filesize is 214
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756631175.6076264", "node1_1756631268.7006965"], "model_acc": 57.36000061035156, "model_para": "Qmc8gv7Y5vCVWABtpfaRu75ATQX3t9vDMH8Z6h1fWV7bkH", "src_node": 1, "timestamp": 1756631380.364558} ./clientS/paras/apvTrans/iteration-21-node1_1756631380.364558.pkl
+The filehash of this approved trans is Qmc8gv7Y5vCVWABtpfaRu75ATQX3t9vDMH8Z6h1fWV7bkH, and the file is ./clientS/paras/apvTrans/iteration-21-node1_1756631380.364558.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-21-node1_1756631380.364558.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-21-node1_1756631380.364558.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756631797.115594.json, filesize is 213
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756631701.4108717", "node1_1756631380.364558"], "model_acc": 59.58000183105469, "model_para": "QmPNtry3cKC4yZHX1fKV7MVw2vQfpYKzE63QTxzb2QbJ3d", "src_node": 1, "timestamp": 1756631797.115594} ./clientS/paras/apvTrans/iteration-21-node1_1756631797.115594.pkl
+The filehash of this approved trans is QmPNtry3cKC4yZHX1fKV7MVw2vQfpYKzE63QTxzb2QbJ3d, and the file is ./clientS/paras/apvTrans/iteration-21-node1_1756631797.115594.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-21-node1_1756631797.115594.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-21-node1_1756631797.115594.pkl has been downloaded!
+
+
+************************************
+Acc of the basic model in iteration 21 is 58.599998474121094
+************************************
+
+The base mode parasfile ./clientS/paras/baseModel.pkl has been uploaded!
+And the fileHash is QmPk9nXE8nmG6BE88qYGKZTzbeaxb1k6Zw81JfmZSqdDGY
+
+2025-08-31 09:16:47.451 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 001 Chaincode invoke successful. result: status:200 
+
+{"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}
+
+*** task3153 has been released! ***
+*** And the detail of this task is {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}! ***
+
+*** The init aggModel of task3153 has been published! ***
+*** And the detail of the init aggModel is {"epoch":0,"status":"training","paras":"QmPk9nXE8nmG6BE88qYGKZTzbeaxb1k6Zw81JfmZSqdDGY"} ! ***
+
+The query result of the device00005 is  {"taskID":"task3153","epoch":1,"paras":"QmdkKeGr1Za6pXu1DDJWTnrURih3SuTkKeQfunRfwN21Lt"}
+The query result of the device00076 is  {"taskID":"task3153","epoch":1,"paras":"QmNsLUtGJxmVqYZvV4L7QEGPTwEZQoGw85gYHNPG4U5Ez4"}
+The query result of the device00056 is  {"taskID":"task3153","epoch":1,"paras":"QmNafLSgQSNhDcy2kPoSnz4HwxrkkBWebugThud4xvTqWM"}
+The query result of the device00078 is  {"taskID":"task3153","epoch":1,"paras":"QmWTyLutz9SjM6F4ZamiR2t6rnsV79SzRNYQAybgk55Pw4"}
+The query result of the device00068 is  {"taskID":"task3153","epoch":1,"paras":"Qmbx3W4tDNn8Np3vfikFMDmpcaw2UivLKrUzt5wbkAAy6c"}
+The query result of the device00025 is  {"taskID":"task3153","epoch":1,"paras":"QmT8EmcgzTgPMBiC5GcTqfyUtFCVMkBjLu9GbrRzsZkeVk"}
+The query result of the device00047 is  {"taskID":"task3153","epoch":1,"paras":"QmfK8QRxR5U3mD9UueXjoo87C5gAyHPKfYtYZ6iq85HvxS"}
+The query result of the device00015 is  {"taskID":"task3153","epoch":1,"paras":"QmZiPPxhRNPCG9ff7izZNqTxsCVHRmCniS3Gouc7T7XF7h"}
+The query result of the device00061 is  {"taskID":"task3153","epoch":1,"paras":"QmXZ5cPJi1oAsHjuK2ViMiSVhiNabaezofvvJtqg2z5J5m"}
+The query result of the device00055 is  {"taskID":"task3153","epoch":1,"paras":"Qme2Xd7yAPAH9WKJy6DBEmMVGWAmw1iZ5gYMVCVvDD5V5s"}
+Test acc of the model trained by device00005 is 25.059999465942383
+Test acc of the model trained by device00056 is 24.809999465942383
+Test acc of the model trained by device00076 is 22.100000381469727
+Test acc of the model trained by device00078 is 20.31999969482422
+Test acc of the model trained by device00068 is 16.43000030517578
+Test acc of the model trained by device00025 is 27.809999465942383
+Test acc of the model trained by device00047 is 22.459999084472656
+Test acc of the model trained by device00015 is 16.59000015258789
+Test acc of the model trained by device00061 is 26.479999542236328
+Test acc of the model trained by device00055 is 21.389999389648438
+
+************************************
+Acc of the agg model of Round 1 in iteration 21 is 59.5099983215332
+************************************
+
+*************************
+The aggregated parasfile ./clientS/paras/aggModel-iter-21-epoch-1.pkl has been uploaded!
+And the fileHash is QmcusdA23wfzJWgCn8usN9BoPVbZixvk1jxHzh2UdEKuZZ!
+*************************
+
+
+******************
+The info of task task3153 is {"epoch":1,"status":"done","paras":"QmcusdA23wfzJWgCn8usN9BoPVbZixvk1jxHzh2UdEKuZZ"}
+The model aggregated in epoch 1 for task3153 has been published!
+******************
+
+You've connected, wait for command...
+
+******************************* Transaction upload *******************************
+The details of this trans are {"apv_trans": ["node1_1756631797.115594", "node1_1756631380.364558"], "model_acc": 59.5099983215332, "model_para": "QmcusdA23wfzJWgCn8usN9BoPVbZixvk1jxHzh2UdEKuZZ", "src_node": 1, "timestamp": 1756631896.0773811}
+The trans generated in the iteration #21 had been uploaded!
+*************************************************************************************
+
+
+
+
+**************************** Iteration 22 *****************************
+You've connected, wait for command...
+File name is tip_list.json, filesize is 142
+Start receiving...
+End receive...
+
+************************* Select Candidates Tips *****************************
+The candidates tips are  ['node1_1756629238.5583389', 'node1_1756631380.364558', 'node1_1756631896.0773811']
+********************************************************************************
+
+You've connected, wait for command...
+File name is node1_1756629238.5583389.json, filesize is 176
+Start receiving...
+End receive...
+{"apv_trans": ["GenesisBlock"], "model_acc": 10.100000381469727, "model_para": "QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT", "src_node": 1, "timestamp": 1756629238.5583389} ./clientS/paras/apvTrans/iteration-22-node1_1756629238.5583389.pkl
+The filehash of this approved trans is QmZ6VXMgjuNxBhFzqejCUi9NMPpe7VQAtaJB1NraS9cGeT, and the file is ./clientS/paras/apvTrans/iteration-22-node1_1756629238.5583389.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-22-node1_1756629238.5583389.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-22-node1_1756629238.5583389.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756631380.364558.json, filesize is 214
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756631175.6076264", "node1_1756631268.7006965"], "model_acc": 57.36000061035156, "model_para": "Qmc8gv7Y5vCVWABtpfaRu75ATQX3t9vDMH8Z6h1fWV7bkH", "src_node": 1, "timestamp": 1756631380.364558} ./clientS/paras/apvTrans/iteration-22-node1_1756631380.364558.pkl
+The filehash of this approved trans is Qmc8gv7Y5vCVWABtpfaRu75ATQX3t9vDMH8Z6h1fWV7bkH, and the file is ./clientS/paras/apvTrans/iteration-22-node1_1756631380.364558.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-22-node1_1756631380.364558.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-22-node1_1756631380.364558.pkl has been downloaded!
+
+You've connected, wait for command...
+File name is node1_1756631896.0773811.json, filesize is 212
+Start receiving...
+End receive...
+{"apv_trans": ["node1_1756631797.115594", "node1_1756631380.364558"], "model_acc": 59.5099983215332, "model_para": "QmcusdA23wfzJWgCn8usN9BoPVbZixvk1jxHzh2UdEKuZZ", "src_node": 1, "timestamp": 1756631896.0773811} ./clientS/paras/apvTrans/iteration-22-node1_1756631896.0773811.pkl
+The filehash of this approved trans is QmcusdA23wfzJWgCn8usN9BoPVbZixvk1jxHzh2UdEKuZZ, and the file is ./clientS/paras/apvTrans/iteration-22-node1_1756631896.0773811.pkl!
+Saving file(s) to ./clientS/paras/apvTrans/iteration-22-node1_1756631896.0773811.pkl
+The apv parasfile ./clientS/paras/apvTrans/iteration-22-node1_1756631896.0773811.pkl has been downloaded!
+
+
+************************************
+Acc of the basic model in iteration 22 is 58.560001373291016
+************************************
+
+The base mode parasfile ./clientS/paras/baseModel.pkl has been uploaded!
+And the fileHash is QmZ11gMs5ETfB9Za6eaWyZV9tQ5zAaY8gUZ4fM1yk8Pj34
+
+2025-08-31 09:18:25.805 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 001 Chaincode invoke successful. result: status:200 
+
+{"taskID":"task1182","epoch":1,"status":"start","usersFrac":0.1}
+
+*** task1182 has been released! ***
+*** And the detail of this task is {"taskID":"task1182","epoch":1,"status":"start","usersFrac":0.1}! ***
+
+*** The init aggModel of task1182 has been published! ***
+*** And the detail of the init aggModel is {"epoch":0,"status":"training","paras":"QmZ11gMs5ETfB9Za6eaWyZV9tQ5zAaY8gUZ4fM1yk8Pj34"} ! ***
+
+The query result of the device00005 is  {"taskID":"task1182","epoch":1,"paras":"QmSf4BcsrG8vyjRiUg7RT7JBwSgrYGB22C7Um6dCekEGc9"}
+

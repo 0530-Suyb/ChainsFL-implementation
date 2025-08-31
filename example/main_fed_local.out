@@ -1,0 +1,2466 @@
+(base) vm2@ubuntu:~/Desktop/ChainFL/ChainsFL-implementation/federatedLearning$ python main_fed_local.py --epochs 1 --frac 0.1 --gpu -1 --model cnn --num_channels 1
+/home/vm2/miniconda3/lib/python3.13/site-packages/torchvision/datasets/mnist.py:66: UserWarning: train_labels has been renamed targets
+  warnings.warn("train_labels has been renamed targets")
+The para of iid is False
+********************************
+CNNMnist(
+  (conv1): Conv2d(1, 10, kernel_size=(5, 5), stride=(1, 1))
+  (conv2): Conv2d(10, 20, kernel_size=(5, 5), stride=(1, 1))
+  (conv2_drop): Dropout2d(p=0.5, inplace=False)
+  (fc1): Linear(in_features=320, out_features=50, bias=True)
+  (fc2): Linear(in_features=50, out_features=10, bias=True)
+)
+********************************
+taskRelQue is  {"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task2791
+Latest task info is {"epoch":0,"status":"training","paras":"QmX7hfXntYx5dwS8wqVXzsvRCF3yPDjhn5umnXeuyVLUoq"}!
+*************************************************************************************
+
+
+******************************* Iteration #0 starting ********************************
+
+Iteration 0 starting!
+
+*************************************************************************************
+
+
+****************************** Latest status of task2791 ******************************
+(In loop) Latest task info is 
+ {"epoch":0,"status":"training","paras":"QmX7hfXntYx5dwS8wqVXzsvRCF3yPDjhn5umnXeuyVLUoq"}!
+*************************************************************************************
+
+
+The paras file of aggregated model for epoch 1 training has been downloaded!
+
+./data/local/task2791-device00005-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmVULZFkoXNXxjEcM1CHuqNAQfywAnK9EU8gCeWC2fY24u
+*** Local model train in epoch 1 of device00005 has been uploaded! ***
+
+./data/local/task2791-device00056-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmWMcEDDPYVe38e5Z2upJ7qyhQNiT9pczJLAKNDE1a9GLt
+*** Local model train in epoch 1 of device00056 has been uploaded! ***
+
+./data/local/task2791-device00076-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is Qmaxe4Bw3X7C2hprAhrhGPE3uMB7zRSJdL4TpHALa17ifx
+*** Local model train in epoch 1 of device00076 has been uploaded! ***
+
+./data/local/task2791-device00078-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmcvUPzb4ctmcy7ziFrLfaMrtBQyt9ZWRVzn4uMGEzuUF3
+*** Local model train in epoch 1 of device00078 has been uploaded! ***
+
+./data/local/task2791-device00068-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmT4EBPRGzqXT6sbXx7Zumxfd1oVB2ekJnukWeyc97ggf8
+*** Local model train in epoch 1 of device00068 has been uploaded! ***
+
+./data/local/task2791-device00025-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmTJKBgUULMiAuerJeaphuYsu7go2nEmVaeKeiMC79nyyq
+*** Local model train in epoch 1 of device00025 has been uploaded! ***
+
+./data/local/task2791-device00047-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmTLJfnnky5iahXQWyzsivgvsMmagnDJRtuDhnjMPcySL6
+*** Local model train in epoch 1 of device00047 has been uploaded! ***
+
+./data/local/task2791-device00015-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmWWhY4DTsXbooAzYrQ91JZn7jZMa7tsLYnEZDe9Lo8AHZ
+*** Local model train in epoch 1 of device00015 has been uploaded! ***
+
+./data/local/task2791-device00061-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmecyeirjYGkZ7gMWgnxkPuHq12weZbyFFoYDzuB7SCYSd
+*** Local model train in epoch 1 of device00061 has been uploaded! ***
+
+./data/local/task2791-device00055-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmZjm8NZniJeQUWYtVzcwkHg5hKD9cWKdVGBhNwr2VWR6H
+*** Local model train in epoch 1 of device00055 has been uploaded! ***
+
+Epoch   1, Average loss 0.070
+
+*********************************** Iteration #0 ***********************************
+
+Current iteration 0 has been completed!
+
+*************************************************************************************
+
+taskRelQue is  {"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task2791
+Latest task info is {"epoch":0,"status":"training","paras":"QmX7hfXntYx5dwS8wqVXzsvRCF3yPDjhn5umnXeuyVLUoq"}!
+*************************************************************************************
+
+*** task2791 has been completed! ***
+
+taskRelQue is  {"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task2791
+Latest task info is {"epoch":0,"status":"training","paras":"QmX7hfXntYx5dwS8wqVXzsvRCF3yPDjhn5umnXeuyVLUoq"}!
+*************************************************************************************
+
+*** task2791 has been completed! ***
+
+taskRelQue is  {"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task2791
+Latest task info is {"epoch":0,"status":"training","paras":"QmX7hfXntYx5dwS8wqVXzsvRCF3yPDjhn5umnXeuyVLUoq"}!
+*************************************************************************************
+
+*** task2791 has been completed! ***
+
+taskRelQue is  {"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task2791
+Latest task info is {"epoch":0,"status":"training","paras":"QmX7hfXntYx5dwS8wqVXzsvRCF3yPDjhn5umnXeuyVLUoq"}!
+*************************************************************************************
+
+*** task2791 has been completed! ***
+
+taskRelQue is  {"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task2791
+Latest task info is {"epoch":0,"status":"training","paras":"QmX7hfXntYx5dwS8wqVXzsvRCF3yPDjhn5umnXeuyVLUoq"}!
+*************************************************************************************
+
+*** task2791 has been completed! ***
+
+taskRelQue is  {"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task2791
+Latest task info is {"epoch":0,"status":"training","paras":"QmX7hfXntYx5dwS8wqVXzsvRCF3yPDjhn5umnXeuyVLUoq"}!
+*************************************************************************************
+
+*** task2791 has been completed! ***
+
+taskRelQue is  {"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task2791
+Latest task info is {"epoch":0,"status":"training","paras":"QmX7hfXntYx5dwS8wqVXzsvRCF3yPDjhn5umnXeuyVLUoq"}!
+*************************************************************************************
+
+*** task2791 has been completed! ***
+
+taskRelQue is  {"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task2791
+Latest task info is {"epoch":0,"status":"training","paras":"QmX7hfXntYx5dwS8wqVXzsvRCF3yPDjhn5umnXeuyVLUoq"}!
+*************************************************************************************
+
+*** task2791 has been completed! ***
+
+taskRelQue is  {"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task2791
+Latest task info is {"epoch":1,"status":"done","paras":"QmSvfRxhghxvMep5RMkfHcDxgm9FkGHsQYPQ7BeVqM1kBp"}!
+*************************************************************************************
+
+*** task2791 has been completed! ***
+
+taskRelQue is  {"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task2791
+Latest task info is {"epoch":1,"status":"done","paras":"QmSvfRxhghxvMep5RMkfHcDxgm9FkGHsQYPQ7BeVqM1kBp"}!
+*************************************************************************************
+
+*** task2791 has been completed! ***
+
+taskRelQue is  {"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task2791","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task2791
+Latest task info is {"epoch":1,"status":"done","paras":"QmSvfRxhghxvMep5RMkfHcDxgm9FkGHsQYPQ7BeVqM1kBp"}!
+*************************************************************************************
+
+*** task2791 has been completed! ***
+
+taskRelQue is  {"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task2593
+Latest task info is {"epoch":0,"status":"training","paras":"Qma7BnD9mCpFc8Pm9rerDpa2VSvNzLdJ51t5eLpwkxMmjg"}!
+*************************************************************************************
+
+
+******************************* Iteration #1 starting ********************************
+
+Iteration 1 starting!
+
+*************************************************************************************
+
+
+****************************** Latest status of task2593 ******************************
+(In loop) Latest task info is 
+ {"epoch":0,"status":"training","paras":"Qma7BnD9mCpFc8Pm9rerDpa2VSvNzLdJ51t5eLpwkxMmjg"}!
+*************************************************************************************
+
+
+The paras file of aggregated model for epoch 1 training has been downloaded!
+
+./data/local/task2593-device00005-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmPPgFVDLwsZP8UisHjJshyrTHwZ4yzXwTem4EWP21j5pn
+*** Local model train in epoch 1 of device00005 has been uploaded! ***
+
+./data/local/task2593-device00056-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmVwkBN1MMF3xosejins2BFGXLeY31j2nFj8S6o6hU5yeJ
+*** Local model train in epoch 1 of device00056 has been uploaded! ***
+
+./data/local/task2593-device00076-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is Qmaizeamn4U59EzkjchpfgZe2tnHSuJBi5mY838zXV9xdi
+*** Local model train in epoch 1 of device00076 has been uploaded! ***
+
+./data/local/task2593-device00078-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmaNb4WCdrh8fbSSrEUE8eCFyXiGPq2bYmcryxDg4VzNT2
+*** Local model train in epoch 1 of device00078 has been uploaded! ***
+
+./data/local/task2593-device00068-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmZk3ZXNTv61uUKq7w4DWWLkjAXUsntW1zHTN2RJS8opjD
+*** Local model train in epoch 1 of device00068 has been uploaded! ***
+
+./data/local/task2593-device00025-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmYRgWb5GHRf9F3gYH65XtYa8EoJDik1LF32g4jGAmqsDx
+*** Local model train in epoch 1 of device00025 has been uploaded! ***
+
+./data/local/task2593-device00047-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmcTadYKHxk2zcdKXhd9t6tS4kbXdBGgTz1wCkUao3WeXW
+*** Local model train in epoch 1 of device00047 has been uploaded! ***
+
+./data/local/task2593-device00015-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmThcvuW9AG8jz5SyUSRedchvm7ZHPjr4vfBvP5t4Re8d9
+*** Local model train in epoch 1 of device00015 has been uploaded! ***
+
+./data/local/task2593-device00061-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmZMQj2ykNj6pyGP56TxXjJSFHgaq4VXmv4oPcXvHDKBTz
+*** Local model train in epoch 1 of device00061 has been uploaded! ***
+
+./data/local/task2593-device00055-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmXFd2sgPrke77suuE2uTGM31SAEozXVqPYsBzs99r3gLB
+*** Local model train in epoch 1 of device00055 has been uploaded! ***
+
+Epoch   1, Average loss 0.064
+
+*********************************** Iteration #1 ***********************************
+
+Current iteration 1 has been completed!
+
+*************************************************************************************
+
+taskRelQue is  {"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task2593
+Latest task info is {"epoch":0,"status":"training","paras":"Qma7BnD9mCpFc8Pm9rerDpa2VSvNzLdJ51t5eLpwkxMmjg"}!
+*************************************************************************************
+
+*** task2593 has been completed! ***
+
+taskRelQue is  {"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task2593
+Latest task info is {"epoch":0,"status":"training","paras":"Qma7BnD9mCpFc8Pm9rerDpa2VSvNzLdJ51t5eLpwkxMmjg"}!
+*************************************************************************************
+
+*** task2593 has been completed! ***
+
+taskRelQue is  {"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task2593
+Latest task info is {"epoch":0,"status":"training","paras":"Qma7BnD9mCpFc8Pm9rerDpa2VSvNzLdJ51t5eLpwkxMmjg"}!
+*************************************************************************************
+
+*** task2593 has been completed! ***
+
+taskRelQue is  {"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task2593
+Latest task info is {"epoch":0,"status":"training","paras":"Qma7BnD9mCpFc8Pm9rerDpa2VSvNzLdJ51t5eLpwkxMmjg"}!
+*************************************************************************************
+
+*** task2593 has been completed! ***
+
+taskRelQue is  {"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task2593
+Latest task info is {"epoch":0,"status":"training","paras":"Qma7BnD9mCpFc8Pm9rerDpa2VSvNzLdJ51t5eLpwkxMmjg"}!
+*************************************************************************************
+
+*** task2593 has been completed! ***
+
+taskRelQue is  {"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task2593
+Latest task info is {"epoch":0,"status":"training","paras":"Qma7BnD9mCpFc8Pm9rerDpa2VSvNzLdJ51t5eLpwkxMmjg"}!
+*************************************************************************************
+
+*** task2593 has been completed! ***
+
+taskRelQue is  {"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task2593
+Latest task info is {"epoch":0,"status":"training","paras":"Qma7BnD9mCpFc8Pm9rerDpa2VSvNzLdJ51t5eLpwkxMmjg"}!
+*************************************************************************************
+
+*** task2593 has been completed! ***
+
+taskRelQue is  {"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task2593
+Latest task info is {"epoch":0,"status":"training","paras":"Qma7BnD9mCpFc8Pm9rerDpa2VSvNzLdJ51t5eLpwkxMmjg"}!
+*************************************************************************************
+
+*** task2593 has been completed! ***
+
+taskRelQue is  {"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task2593
+Latest task info is {"epoch":0,"status":"training","paras":"Qma7BnD9mCpFc8Pm9rerDpa2VSvNzLdJ51t5eLpwkxMmjg"}!
+*************************************************************************************
+
+*** task2593 has been completed! ***
+
+taskRelQue is  {"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task2593
+Latest task info is {"epoch":1,"status":"done","paras":"QmNchxFbLYj4twDZzCj43Zm8N9srcueRi6D4zwwhDVoKKz"}!
+*************************************************************************************
+
+*** task2593 has been completed! ***
+
+taskRelQue is  {"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task2593","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task2593
+Latest task info is {"epoch":1,"status":"done","paras":"QmNchxFbLYj4twDZzCj43Zm8N9srcueRi6D4zwwhDVoKKz"}!
+*************************************************************************************
+
+*** task2593 has been completed! ***
+
+taskRelQue is  {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task42210
+Latest task info is {"epoch":0,"status":"training","paras":"QmTVJZgd4CLjji8htmcXPjR9t1CJHWNGVc1Eps76XZJiMY"}!
+*************************************************************************************
+
+
+******************************* Iteration #2 starting ********************************
+
+Iteration 2 starting!
+
+*************************************************************************************
+
+
+****************************** Latest status of task42210 ******************************
+(In loop) Latest task info is 
+ {"epoch":0,"status":"training","paras":"QmTVJZgd4CLjji8htmcXPjR9t1CJHWNGVc1Eps76XZJiMY"}!
+*************************************************************************************
+
+
+The paras file of aggregated model for epoch 1 training has been downloaded!
+
+./data/local/task42210-device00005-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmcNr7fCVm5ZRbHKxvQu5czGusHbUxkStfHjSTtZtBaMGd
+*** Local model train in epoch 1 of device00005 has been uploaded! ***
+
+./data/local/task42210-device00056-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmadBkMZhhhAQw9mxQNGuj8QAUeoCnARZufptD9GdsRQXP
+*** Local model train in epoch 1 of device00056 has been uploaded! ***
+
+./data/local/task42210-device00076-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmWCkkTPXp3SddUuDUMqXJUj5sh1WSH83b3Y35erwQxEW2
+*** Local model train in epoch 1 of device00076 has been uploaded! ***
+
+./data/local/task42210-device00078-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmcUU3NXAJeSK2Av9oHB8L1PTrrLuRR232ERWBwNfFLvAu
+*** Local model train in epoch 1 of device00078 has been uploaded! ***
+
+./data/local/task42210-device00068-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is Qmep2Xw81vuFUaFBVFYSZoiM9H6pyvjyUufyQ3bHB7JDmc
+*** Local model train in epoch 1 of device00068 has been uploaded! ***
+
+./data/local/task42210-device00025-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmczHSSU8SkXi9RuzAhUN3KP2CBqjStd2eHxeZstBxtLz4
+*** Local model train in epoch 1 of device00025 has been uploaded! ***
+
+./data/local/task42210-device00047-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmPv3khc8JYzEy8qyM6nkhK8uLDGJUeE4AnsGKt2Z6Jx8D
+*** Local model train in epoch 1 of device00047 has been uploaded! ***
+
+./data/local/task42210-device00015-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmU9cXRShPULg6ZgwyjJuj2QyJJuDMJ8XN3kzuGidgMGKV
+*** Local model train in epoch 1 of device00015 has been uploaded! ***
+
+./data/local/task42210-device00061-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmXz4vajj8vQeSbcPeC62NpAfwzyKLU1N77isxafBFR3fb
+*** Local model train in epoch 1 of device00061 has been uploaded! ***
+
+./data/local/task42210-device00055-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmYRDpsaa88KHR6hYSYfvVkbv3HJh1hXwkJCxFiSfbJUfJ
+*** Local model train in epoch 1 of device00055 has been uploaded! ***
+
+Epoch   1, Average loss 0.063
+
+*********************************** Iteration #2 ***********************************
+
+Current iteration 2 has been completed!
+
+*************************************************************************************
+
+taskRelQue is  {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task42210
+Latest task info is {"epoch":0,"status":"training","paras":"QmTVJZgd4CLjji8htmcXPjR9t1CJHWNGVc1Eps76XZJiMY"}!
+*************************************************************************************
+
+*** task42210 has been completed! ***
+
+taskRelQue is  {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task42210
+Latest task info is {"epoch":0,"status":"training","paras":"QmTVJZgd4CLjji8htmcXPjR9t1CJHWNGVc1Eps76XZJiMY"}!
+*************************************************************************************
+
+*** task42210 has been completed! ***
+
+taskRelQue is  {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task42210
+Latest task info is {"epoch":0,"status":"training","paras":"QmTVJZgd4CLjji8htmcXPjR9t1CJHWNGVc1Eps76XZJiMY"}!
+*************************************************************************************
+
+*** task42210 has been completed! ***
+
+taskRelQue is  {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task42210
+Latest task info is {"epoch":0,"status":"training","paras":"QmTVJZgd4CLjji8htmcXPjR9t1CJHWNGVc1Eps76XZJiMY"}!
+*************************************************************************************
+
+*** task42210 has been completed! ***
+
+taskRelQue is  {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task42210
+Latest task info is {"epoch":0,"status":"training","paras":"QmTVJZgd4CLjji8htmcXPjR9t1CJHWNGVc1Eps76XZJiMY"}!
+*************************************************************************************
+
+*** task42210 has been completed! ***
+
+taskRelQue is  {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task42210
+Latest task info is {"epoch":0,"status":"training","paras":"QmTVJZgd4CLjji8htmcXPjR9t1CJHWNGVc1Eps76XZJiMY"}!
+*************************************************************************************
+
+*** task42210 has been completed! ***
+
+taskRelQue is  {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task42210
+Latest task info is {"epoch":0,"status":"training","paras":"QmTVJZgd4CLjji8htmcXPjR9t1CJHWNGVc1Eps76XZJiMY"}!
+*************************************************************************************
+
+*** task42210 has been completed! ***
+
+taskRelQue is  {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task42210
+Latest task info is {"epoch":0,"status":"training","paras":"QmTVJZgd4CLjji8htmcXPjR9t1CJHWNGVc1Eps76XZJiMY"}!
+*************************************************************************************
+
+*** task42210 has been completed! ***
+
+taskRelQue is  {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task42210
+Latest task info is {"epoch":0,"status":"training","paras":"QmTVJZgd4CLjji8htmcXPjR9t1CJHWNGVc1Eps76XZJiMY"}!
+*************************************************************************************
+
+*** task42210 has been completed! ***
+
+taskRelQue is  {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task42210
+Latest task info is {"epoch":1,"status":"done","paras":"QmNY4k51yQNKd5HK1SqBGXadhmVAtPKXpxtSmh5e5jRZ1e"}!
+*************************************************************************************
+
+*** task42210 has been completed! ***
+
+taskRelQue is  {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task42210
+Latest task info is {"epoch":1,"status":"done","paras":"QmNY4k51yQNKd5HK1SqBGXadhmVAtPKXpxtSmh5e5jRZ1e"}!
+*************************************************************************************
+
+*** task42210 has been completed! ***
+
+taskRelQue is  {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task42210","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task42210
+Latest task info is {"epoch":1,"status":"done","paras":"QmNY4k51yQNKd5HK1SqBGXadhmVAtPKXpxtSmh5e5jRZ1e"}!
+*************************************************************************************
+
+*** task42210 has been completed! ***
+
+taskRelQue is  {"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task8145
+Latest task info is {"epoch":0,"status":"training","paras":"QmVFrWRnt2ZxGGbZvqTBpSf8tzGgVDgFGtXJyxxJ4TdjPi"}!
+*************************************************************************************
+
+
+******************************* Iteration #3 starting ********************************
+
+Iteration 3 starting!
+
+*************************************************************************************
+
+
+****************************** Latest status of task8145 ******************************
+(In loop) Latest task info is 
+ {"epoch":0,"status":"training","paras":"QmVFrWRnt2ZxGGbZvqTBpSf8tzGgVDgFGtXJyxxJ4TdjPi"}!
+*************************************************************************************
+
+
+The paras file of aggregated model for epoch 1 training has been downloaded!
+
+./data/local/task8145-device00005-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmTBtwj85qRvYUUUwwg6QzjGeBAV6Hw76o28wPDxvcG31X
+*** Local model train in epoch 1 of device00005 has been uploaded! ***
+
+./data/local/task8145-device00056-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmcDno7KXsLB7V8wnguAjyQbwbR79FsiCiUmoTFcFZSrJE
+*** Local model train in epoch 1 of device00056 has been uploaded! ***
+
+./data/local/task8145-device00076-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmPieAscwbT9NCPk2whXvXcjHUU77gAwyBPQGzm1tjwhhx
+*** Local model train in epoch 1 of device00076 has been uploaded! ***
+
+./data/local/task8145-device00078-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmdpsVsJvoaqSe1EJkGE8HD33uyYrBLGfJiHDxSkJjXShK
+*** Local model train in epoch 1 of device00078 has been uploaded! ***
+
+./data/local/task8145-device00068-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmaF3TZjcpxGj7i8qVg58gRqFNvrc8HWWVbeoeLCGWjBZZ
+*** Local model train in epoch 1 of device00068 has been uploaded! ***
+
+./data/local/task8145-device00025-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is Qma1jvvGzL4pZpnEioq4u4STEAVxJrca1SFfAfRV78gUGq
+*** Local model train in epoch 1 of device00025 has been uploaded! ***
+
+./data/local/task8145-device00047-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmPK3v3HLDBm9bYPTibvRmmuaZvHV75PA1BWGCJJfM3t84
+*** Local model train in epoch 1 of device00047 has been uploaded! ***
+
+./data/local/task8145-device00015-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmUTgb5APzQC8hzZ4YvD6cSZZRPAHWNcmJoNnM5zJ1edZK
+*** Local model train in epoch 1 of device00015 has been uploaded! ***
+
+./data/local/task8145-device00061-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmXzLyAZLDNvQ66hJQzyRvBdsXENpR9s6t3o3SZZt934na
+*** Local model train in epoch 1 of device00061 has been uploaded! ***
+
+./data/local/task8145-device00055-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmTqm6Wm7ffjm4UTVHyL5tFuys7qaxt6DC362uUCig6ztS
+*** Local model train in epoch 1 of device00055 has been uploaded! ***
+
+Epoch   1, Average loss 0.058
+
+*********************************** Iteration #3 ***********************************
+
+Current iteration 3 has been completed!
+
+*************************************************************************************
+
+taskRelQue is  {"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task8145
+Latest task info is {"epoch":0,"status":"training","paras":"QmVFrWRnt2ZxGGbZvqTBpSf8tzGgVDgFGtXJyxxJ4TdjPi"}!
+*************************************************************************************
+
+*** task8145 has been completed! ***
+
+taskRelQue is  {"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task8145
+Latest task info is {"epoch":0,"status":"training","paras":"QmVFrWRnt2ZxGGbZvqTBpSf8tzGgVDgFGtXJyxxJ4TdjPi"}!
+*************************************************************************************
+
+*** task8145 has been completed! ***
+
+taskRelQue is  {"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task8145
+Latest task info is {"epoch":0,"status":"training","paras":"QmVFrWRnt2ZxGGbZvqTBpSf8tzGgVDgFGtXJyxxJ4TdjPi"}!
+*************************************************************************************
+
+*** task8145 has been completed! ***
+
+taskRelQue is  {"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task8145
+Latest task info is {"epoch":0,"status":"training","paras":"QmVFrWRnt2ZxGGbZvqTBpSf8tzGgVDgFGtXJyxxJ4TdjPi"}!
+*************************************************************************************
+
+*** task8145 has been completed! ***
+
+taskRelQue is  {"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task8145
+Latest task info is {"epoch":0,"status":"training","paras":"QmVFrWRnt2ZxGGbZvqTBpSf8tzGgVDgFGtXJyxxJ4TdjPi"}!
+*************************************************************************************
+
+*** task8145 has been completed! ***
+
+taskRelQue is  {"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task8145
+Latest task info is {"epoch":0,"status":"training","paras":"QmVFrWRnt2ZxGGbZvqTBpSf8tzGgVDgFGtXJyxxJ4TdjPi"}!
+*************************************************************************************
+
+*** task8145 has been completed! ***
+
+taskRelQue is  {"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task8145
+Latest task info is {"epoch":0,"status":"training","paras":"QmVFrWRnt2ZxGGbZvqTBpSf8tzGgVDgFGtXJyxxJ4TdjPi"}!
+*************************************************************************************
+
+*** task8145 has been completed! ***
+
+taskRelQue is  {"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task8145
+Latest task info is {"epoch":0,"status":"training","paras":"QmVFrWRnt2ZxGGbZvqTBpSf8tzGgVDgFGtXJyxxJ4TdjPi"}!
+*************************************************************************************
+
+*** task8145 has been completed! ***
+
+taskRelQue is  {"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task8145
+Latest task info is {"epoch":0,"status":"training","paras":"QmVFrWRnt2ZxGGbZvqTBpSf8tzGgVDgFGtXJyxxJ4TdjPi"}!
+*************************************************************************************
+
+*** task8145 has been completed! ***
+
+taskRelQue is  {"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task8145
+Latest task info is {"epoch":1,"status":"done","paras":"QmYEuBA6uBmNiBggbjknEc9YkcejNpZHKJwYEQqhvcd5uF"}!
+*************************************************************************************
+
+*** task8145 has been completed! ***
+
+taskRelQue is  {"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task8145","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task8145
+Latest task info is {"epoch":1,"status":"done","paras":"QmYEuBA6uBmNiBggbjknEc9YkcejNpZHKJwYEQqhvcd5uF"}!
+*************************************************************************************
+
+*** task8145 has been completed! ***
+
+taskRelQue is  {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3435
+Latest task info is {"epoch":0,"status":"training","paras":"QmPVB97DiQ8Ku7mXu5Em1wEJ2EQQodDmx4NUMDEQ7nSyfq"}!
+*************************************************************************************
+
+
+******************************* Iteration #4 starting ********************************
+
+Iteration 4 starting!
+
+*************************************************************************************
+
+
+****************************** Latest status of task3435 ******************************
+(In loop) Latest task info is 
+ {"epoch":0,"status":"training","paras":"QmPVB97DiQ8Ku7mXu5Em1wEJ2EQQodDmx4NUMDEQ7nSyfq"}!
+*************************************************************************************
+
+
+The paras file of aggregated model for epoch 1 training has been downloaded!
+
+./data/local/task3435-device00005-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmaTfRwVqM8gQcY7cqeb3SrehaE7miwHGh86m4ZpUzDwdy
+*** Local model train in epoch 1 of device00005 has been uploaded! ***
+
+./data/local/task3435-device00056-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmNcLdjfxrH3KtTePk4mHMrkU7dJCcD2owBG3PfVqgYNsk
+*** Local model train in epoch 1 of device00056 has been uploaded! ***
+
+./data/local/task3435-device00076-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmZdUantuWKKeyNtaVBV9K4tAqGyAdQwhfNT79DaH157tg
+*** Local model train in epoch 1 of device00076 has been uploaded! ***
+
+./data/local/task3435-device00078-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmWoaUop4mxxrLL6sFL21KX4X9NP1duSMdgn4m2WxbhBZU
+*** Local model train in epoch 1 of device00078 has been uploaded! ***
+
+./data/local/task3435-device00068-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmcwfgZe6rUm1cwxHe1AEFzmbkwjjT3P2wUmiyCgvgGHD7
+*** Local model train in epoch 1 of device00068 has been uploaded! ***
+
+./data/local/task3435-device00025-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmfYYrAuBj1ZSHEsc4oCDS7RjTqUSP8nPUWwygNWH6PdgX
+*** Local model train in epoch 1 of device00025 has been uploaded! ***
+
+./data/local/task3435-device00047-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is Qmc1QAsYjwPo1ZtpjXiAjmz1oRYQsLokAQ6LMLpCtBeXg3
+*** Local model train in epoch 1 of device00047 has been uploaded! ***
+
+./data/local/task3435-device00015-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmYUs9jmxWGJ2BHxzdkxn3igS36916CDQtoRT2y2XgrPR6
+*** Local model train in epoch 1 of device00015 has been uploaded! ***
+
+./data/local/task3435-device00061-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is Qmb3e65uwMCRRhoMhFhvqXQkgbZzyHCAVJrH1cK5dvV2yn
+*** Local model train in epoch 1 of device00061 has been uploaded! ***
+
+./data/local/task3435-device00055-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmdftRwsWQxvs4fSjH81cYzqZaXNUZTMqSUH5ypXU1xpQS
+*** Local model train in epoch 1 of device00055 has been uploaded! ***
+
+Epoch   1, Average loss 0.060
+
+*********************************** Iteration #4 ***********************************
+
+Current iteration 4 has been completed!
+
+*************************************************************************************
+
+taskRelQue is  {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3435
+Latest task info is {"epoch":0,"status":"training","paras":"QmPVB97DiQ8Ku7mXu5Em1wEJ2EQQodDmx4NUMDEQ7nSyfq"}!
+*************************************************************************************
+
+*** task3435 has been completed! ***
+
+taskRelQue is  {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3435
+Latest task info is {"epoch":0,"status":"training","paras":"QmPVB97DiQ8Ku7mXu5Em1wEJ2EQQodDmx4NUMDEQ7nSyfq"}!
+*************************************************************************************
+
+*** task3435 has been completed! ***
+
+taskRelQue is  {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3435
+Latest task info is {"epoch":0,"status":"training","paras":"QmPVB97DiQ8Ku7mXu5Em1wEJ2EQQodDmx4NUMDEQ7nSyfq"}!
+*************************************************************************************
+
+*** task3435 has been completed! ***
+
+taskRelQue is  {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3435
+Latest task info is {"epoch":0,"status":"training","paras":"QmPVB97DiQ8Ku7mXu5Em1wEJ2EQQodDmx4NUMDEQ7nSyfq"}!
+*************************************************************************************
+
+*** task3435 has been completed! ***
+
+taskRelQue is  {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3435
+Latest task info is {"epoch":0,"status":"training","paras":"QmPVB97DiQ8Ku7mXu5Em1wEJ2EQQodDmx4NUMDEQ7nSyfq"}!
+*************************************************************************************
+
+*** task3435 has been completed! ***
+
+taskRelQue is  {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3435
+Latest task info is {"epoch":0,"status":"training","paras":"QmPVB97DiQ8Ku7mXu5Em1wEJ2EQQodDmx4NUMDEQ7nSyfq"}!
+*************************************************************************************
+
+*** task3435 has been completed! ***
+
+taskRelQue is  {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3435
+Latest task info is {"epoch":0,"status":"training","paras":"QmPVB97DiQ8Ku7mXu5Em1wEJ2EQQodDmx4NUMDEQ7nSyfq"}!
+*************************************************************************************
+
+*** task3435 has been completed! ***
+
+taskRelQue is  {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3435
+Latest task info is {"epoch":0,"status":"training","paras":"QmPVB97DiQ8Ku7mXu5Em1wEJ2EQQodDmx4NUMDEQ7nSyfq"}!
+*************************************************************************************
+
+*** task3435 has been completed! ***
+
+taskRelQue is  {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3435
+Latest task info is {"epoch":0,"status":"training","paras":"QmPVB97DiQ8Ku7mXu5Em1wEJ2EQQodDmx4NUMDEQ7nSyfq"}!
+*************************************************************************************
+
+*** task3435 has been completed! ***
+
+taskRelQue is  {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3435
+Latest task info is {"epoch":0,"status":"training","paras":"QmPVB97DiQ8Ku7mXu5Em1wEJ2EQQodDmx4NUMDEQ7nSyfq"}!
+*************************************************************************************
+
+*** task3435 has been completed! ***
+
+taskRelQue is  {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3435
+Latest task info is {"epoch":0,"status":"training","paras":"QmPVB97DiQ8Ku7mXu5Em1wEJ2EQQodDmx4NUMDEQ7nSyfq"}!
+*************************************************************************************
+
+*** task3435 has been completed! ***
+
+taskRelQue is  {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3435
+Latest task info is {"epoch":1,"status":"done","paras":"QmQ2hBgit75RxTCWTWEvYXcNTmvT58BCweXSnnZ6f1NRnU"}!
+*************************************************************************************
+
+*** task3435 has been completed! ***
+
+taskRelQue is  {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3435
+Latest task info is {"epoch":1,"status":"done","paras":"QmQ2hBgit75RxTCWTWEvYXcNTmvT58BCweXSnnZ6f1NRnU"}!
+*************************************************************************************
+
+*** task3435 has been completed! ***
+
+taskRelQue is  {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3435","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3435
+Latest task info is {"epoch":1,"status":"done","paras":"QmQ2hBgit75RxTCWTWEvYXcNTmvT58BCweXSnnZ6f1NRnU"}!
+*************************************************************************************
+
+*** task3435 has been completed! ***
+
+taskRelQue is  {"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task53410
+Latest task info is {"epoch":0,"status":"training","paras":"QmWJJvnggzFkVXV9gz2pPu1wmgam9tksHfPdj6KPjFjPEH"}!
+*************************************************************************************
+
+
+******************************* Iteration #5 starting ********************************
+
+Iteration 5 starting!
+
+*************************************************************************************
+
+
+****************************** Latest status of task53410 ******************************
+(In loop) Latest task info is 
+ {"epoch":0,"status":"training","paras":"QmWJJvnggzFkVXV9gz2pPu1wmgam9tksHfPdj6KPjFjPEH"}!
+*************************************************************************************
+
+
+The paras file of aggregated model for epoch 1 training has been downloaded!
+
+./data/local/task53410-device00005-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmTsc83jWBLBHgyxYLfLpnVyhKMwNKjsRMaQfQ7YQci9U8
+*** Local model train in epoch 1 of device00005 has been uploaded! ***
+
+./data/local/task53410-device00056-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmdGiVCnRYpizhXquhJ5dDmqBZCrUc7x7kyBSFQDNSBEPM
+*** Local model train in epoch 1 of device00056 has been uploaded! ***
+
+./data/local/task53410-device00076-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmTj4LWb2UMeRUJ7b5PEvV3y8DPfX6LqhTXrc6VvxJhTFe
+*** Local model train in epoch 1 of device00076 has been uploaded! ***
+
+./data/local/task53410-device00078-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmabzsEVoeenoCrhHjPYngZtpQdVv8cVMTEVxDD2riCHLi
+*** Local model train in epoch 1 of device00078 has been uploaded! ***
+
+./data/local/task53410-device00068-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmWr8hgRwi7cLd1PP2Tqg3ESDwyoqkCRecXe3f5Joz8suU
+*** Local model train in epoch 1 of device00068 has been uploaded! ***
+
+./data/local/task53410-device00025-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmVMPtnQssJtq8N1HGj4YDJmYzCVdcCYCZj7C52XoxLggN
+*** Local model train in epoch 1 of device00025 has been uploaded! ***
+
+./data/local/task53410-device00047-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmUPsdwNgwWUJ74WZDLv2vVKpNHrMY4QhdrPAKe7FkRkub
+*** Local model train in epoch 1 of device00047 has been uploaded! ***
+
+./data/local/task53410-device00015-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmaafEYT9g3nedKLFirAMGqNNiMTwd97D4NG5dQp3DFY6U
+*** Local model train in epoch 1 of device00015 has been uploaded! ***
+
+./data/local/task53410-device00061-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmVfq8PpcoFMYPnGuAdGTqF5xYzcjxDEeZ5K2MFkXCGAFB
+*** Local model train in epoch 1 of device00061 has been uploaded! ***
+
+./data/local/task53410-device00055-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmZfpPmSULyN8GZCYCkBoQLk6mBG4jsjD4fgzU7qLPukiS
+*** Local model train in epoch 1 of device00055 has been uploaded! ***
+
+Epoch   1, Average loss 0.062
+
+*********************************** Iteration #5 ***********************************
+
+Current iteration 5 has been completed!
+
+*************************************************************************************
+
+taskRelQue is  {"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task53410
+Latest task info is {"epoch":0,"status":"training","paras":"QmWJJvnggzFkVXV9gz2pPu1wmgam9tksHfPdj6KPjFjPEH"}!
+*************************************************************************************
+
+*** task53410 has been completed! ***
+
+taskRelQue is  {"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task53410
+Latest task info is {"epoch":0,"status":"training","paras":"QmWJJvnggzFkVXV9gz2pPu1wmgam9tksHfPdj6KPjFjPEH"}!
+*************************************************************************************
+
+*** task53410 has been completed! ***
+
+taskRelQue is  {"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task53410
+Latest task info is {"epoch":0,"status":"training","paras":"QmWJJvnggzFkVXV9gz2pPu1wmgam9tksHfPdj6KPjFjPEH"}!
+*************************************************************************************
+
+*** task53410 has been completed! ***
+
+taskRelQue is  {"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task53410
+Latest task info is {"epoch":0,"status":"training","paras":"QmWJJvnggzFkVXV9gz2pPu1wmgam9tksHfPdj6KPjFjPEH"}!
+*************************************************************************************
+
+*** task53410 has been completed! ***
+
+taskRelQue is  {"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task53410
+Latest task info is {"epoch":0,"status":"training","paras":"QmWJJvnggzFkVXV9gz2pPu1wmgam9tksHfPdj6KPjFjPEH"}!
+*************************************************************************************
+
+*** task53410 has been completed! ***
+
+taskRelQue is  {"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task53410
+Latest task info is {"epoch":0,"status":"training","paras":"QmWJJvnggzFkVXV9gz2pPu1wmgam9tksHfPdj6KPjFjPEH"}!
+*************************************************************************************
+
+*** task53410 has been completed! ***
+
+taskRelQue is  {"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task53410
+Latest task info is {"epoch":0,"status":"training","paras":"QmWJJvnggzFkVXV9gz2pPu1wmgam9tksHfPdj6KPjFjPEH"}!
+*************************************************************************************
+
+*** task53410 has been completed! ***
+
+taskRelQue is  {"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task53410
+Latest task info is {"epoch":0,"status":"training","paras":"QmWJJvnggzFkVXV9gz2pPu1wmgam9tksHfPdj6KPjFjPEH"}!
+*************************************************************************************
+
+*** task53410 has been completed! ***
+
+taskRelQue is  {"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task53410
+Latest task info is {"epoch":0,"status":"training","paras":"QmWJJvnggzFkVXV9gz2pPu1wmgam9tksHfPdj6KPjFjPEH"}!
+*************************************************************************************
+
+*** task53410 has been completed! ***
+
+taskRelQue is  {"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task53410
+Latest task info is {"epoch":1,"status":"done","paras":"QmaEcpbX1kpafB1rVwumSDCGh4YriBHQk4dBsoarEtbmkA"}!
+*************************************************************************************
+
+*** task53410 has been completed! ***
+
+taskRelQue is  {"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task53410","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task53410
+Latest task info is {"epoch":1,"status":"done","paras":"QmaEcpbX1kpafB1rVwumSDCGh4YriBHQk4dBsoarEtbmkA"}!
+*************************************************************************************
+
+*** task53410 has been completed! ***
+
+taskRelQue is  {"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task10141
+Latest task info is {"epoch":0,"status":"training","paras":"Qmc3hpvndm6qX6m8ZShd4zPSBDrPimQhGnzTenjsiM4H8w"}!
+*************************************************************************************
+
+
+******************************* Iteration #6 starting ********************************
+
+Iteration 6 starting!
+
+*************************************************************************************
+
+
+****************************** Latest status of task10141 ******************************
+(In loop) Latest task info is 
+ {"epoch":0,"status":"training","paras":"Qmc3hpvndm6qX6m8ZShd4zPSBDrPimQhGnzTenjsiM4H8w"}!
+*************************************************************************************
+
+
+The paras file of aggregated model for epoch 1 training has been downloaded!
+
+./data/local/task10141-device00005-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is Qmbz42oGGpvpLfR6iNFdusm44DQMRQdT2mfNznw59itPMK
+*** Local model train in epoch 1 of device00005 has been uploaded! ***
+
+./data/local/task10141-device00056-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmZePnWZMQU5gyx5LtoSv7fzxLo1bpuSqs8WMXwLnComrX
+*** Local model train in epoch 1 of device00056 has been uploaded! ***
+
+./data/local/task10141-device00076-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmVssfQrk7tepJ78ucxNNnUKk9dRt8ZWKbxkFZoL6w7aWW
+*** Local model train in epoch 1 of device00076 has been uploaded! ***
+
+./data/local/task10141-device00078-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmZPQG8DX8CJ3z1VPfRDrbLXCYeyQPGt9aU1qd4tqFJTcw
+*** Local model train in epoch 1 of device00078 has been uploaded! ***
+
+./data/local/task10141-device00068-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmZwfqamf5r2JC9Hi22yzbPrBsdnW3CwX9KankKT9wf7br
+*** Local model train in epoch 1 of device00068 has been uploaded! ***
+
+./data/local/task10141-device00025-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmeGcuDsRk4siR7DT9Kbk8kZumBor41nj7RYU55JSemKDP
+*** Local model train in epoch 1 of device00025 has been uploaded! ***
+
+./data/local/task10141-device00047-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmZUQNGPKpAhVwqEBx54Dx499X79Dd4UtyPE8xirmoAGuD
+*** Local model train in epoch 1 of device00047 has been uploaded! ***
+
+./data/local/task10141-device00015-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmUHvMkGZSqJ8yNDCnVZury5UeQs4pW5vbCAdHRvup5Lq8
+*** Local model train in epoch 1 of device00015 has been uploaded! ***
+
+./data/local/task10141-device00061-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmYNTnrhbWPVUcwF1LvJyXVtzov1vPgi4Sczj2N3qdSfgi
+*** Local model train in epoch 1 of device00061 has been uploaded! ***
+
+./data/local/task10141-device00055-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmXpssygP5qfVat1kXqdLsS3kvyWrxVz5dJR7nuY2GNKQP
+*** Local model train in epoch 1 of device00055 has been uploaded! ***
+
+Epoch   1, Average loss 0.060
+
+*********************************** Iteration #6 ***********************************
+
+Current iteration 6 has been completed!
+
+*************************************************************************************
+
+taskRelQue is  {"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task10141
+Latest task info is {"epoch":0,"status":"training","paras":"Qmc3hpvndm6qX6m8ZShd4zPSBDrPimQhGnzTenjsiM4H8w"}!
+*************************************************************************************
+
+*** task10141 has been completed! ***
+
+taskRelQue is  {"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task10141
+Latest task info is {"epoch":0,"status":"training","paras":"Qmc3hpvndm6qX6m8ZShd4zPSBDrPimQhGnzTenjsiM4H8w"}!
+*************************************************************************************
+
+*** task10141 has been completed! ***
+
+taskRelQue is  {"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task10141
+Latest task info is {"epoch":0,"status":"training","paras":"Qmc3hpvndm6qX6m8ZShd4zPSBDrPimQhGnzTenjsiM4H8w"}!
+*************************************************************************************
+
+*** task10141 has been completed! ***
+
+taskRelQue is  {"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task10141
+Latest task info is {"epoch":0,"status":"training","paras":"Qmc3hpvndm6qX6m8ZShd4zPSBDrPimQhGnzTenjsiM4H8w"}!
+*************************************************************************************
+
+*** task10141 has been completed! ***
+
+taskRelQue is  {"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task10141
+Latest task info is {"epoch":0,"status":"training","paras":"Qmc3hpvndm6qX6m8ZShd4zPSBDrPimQhGnzTenjsiM4H8w"}!
+*************************************************************************************
+
+*** task10141 has been completed! ***
+
+taskRelQue is  {"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task10141
+Latest task info is {"epoch":0,"status":"training","paras":"Qmc3hpvndm6qX6m8ZShd4zPSBDrPimQhGnzTenjsiM4H8w"}!
+*************************************************************************************
+
+*** task10141 has been completed! ***
+
+taskRelQue is  {"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task10141
+Latest task info is {"epoch":0,"status":"training","paras":"Qmc3hpvndm6qX6m8ZShd4zPSBDrPimQhGnzTenjsiM4H8w"}!
+*************************************************************************************
+
+*** task10141 has been completed! ***
+
+taskRelQue is  {"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task10141
+Latest task info is {"epoch":0,"status":"training","paras":"Qmc3hpvndm6qX6m8ZShd4zPSBDrPimQhGnzTenjsiM4H8w"}!
+*************************************************************************************
+
+*** task10141 has been completed! ***
+
+taskRelQue is  {"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task10141
+Latest task info is {"epoch":0,"status":"training","paras":"Qmc3hpvndm6qX6m8ZShd4zPSBDrPimQhGnzTenjsiM4H8w"}!
+*************************************************************************************
+
+*** task10141 has been completed! ***
+
+taskRelQue is  {"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task10141
+Latest task info is {"epoch":1,"status":"done","paras":"QmZLcnoV1V6QUqN6c2dHZ2vCsrXkzDqodkC8eCL4hK6LRn"}!
+*************************************************************************************
+
+*** task10141 has been completed! ***
+
+taskRelQue is  {"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task10141","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task10141
+Latest task info is {"epoch":1,"status":"done","paras":"QmZLcnoV1V6QUqN6c2dHZ2vCsrXkzDqodkC8eCL4hK6LRn"}!
+*************************************************************************************
+
+*** task10141 has been completed! ***
+
+taskRelQue is  {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task9329
+Latest task info is {"epoch":0,"status":"training","paras":"QmU1mAUTrYh1BiCTEPenaCqcYVRhmXP1TTB9Cg6YHk1cwc"}!
+*************************************************************************************
+
+
+******************************* Iteration #7 starting ********************************
+
+Iteration 7 starting!
+
+*************************************************************************************
+
+
+****************************** Latest status of task9329 ******************************
+(In loop) Latest task info is 
+ {"epoch":0,"status":"training","paras":"QmU1mAUTrYh1BiCTEPenaCqcYVRhmXP1TTB9Cg6YHk1cwc"}!
+*************************************************************************************
+
+
+The paras file of aggregated model for epoch 1 training has been downloaded!
+
+./data/local/task9329-device00005-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmeTCHdGU1nU7MXkomQEcopVYf2FrveL1jmZsFgeNyWmai
+*** Local model train in epoch 1 of device00005 has been uploaded! ***
+
+./data/local/task9329-device00056-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmTdCLbSP6RsRdNyb2QYEVZkpKBVVp6PTk3Tbn3MyF1w5H
+*** Local model train in epoch 1 of device00056 has been uploaded! ***
+
+./data/local/task9329-device00076-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmZNdeu8W655oK6CujPgicAs8dfwmrnKrzi5CTpPn7NQPG
+*** Local model train in epoch 1 of device00076 has been uploaded! ***
+
+./data/local/task9329-device00078-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmZbjpAcjfmrJQ4NFZf581me84J8BKTzEfMa92UDEvmAPL
+*** Local model train in epoch 1 of device00078 has been uploaded! ***
+
+./data/local/task9329-device00068-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmV17NExhbx3oAyVvYmBheRLCB7uvsLBcMAWhUHV4y8XJ2
+*** Local model train in epoch 1 of device00068 has been uploaded! ***
+
+./data/local/task9329-device00025-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is Qmd9cS7ysRgfDhnAuXxfwNQ363P7nw8zP6vaER5QHjycS3
+*** Local model train in epoch 1 of device00025 has been uploaded! ***
+
+./data/local/task9329-device00047-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmY9rcXswP7eSdFW2zveiczFf2ibfZ7q8LGYo2kwtq4Uc6
+*** Local model train in epoch 1 of device00047 has been uploaded! ***
+
+./data/local/task9329-device00015-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmcmPQiy1MyLR3HP6EC6y7XJ9JpM9Fw2fQG8exK6gPUKrc
+*** Local model train in epoch 1 of device00015 has been uploaded! ***
+
+./data/local/task9329-device00061-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmaSYJ7qX5LU36hG4NLi3HibUaqYaDVh3HmTiom1PGJ55f
+*** Local model train in epoch 1 of device00061 has been uploaded! ***
+
+./data/local/task9329-device00055-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmbW1F8idzzwkY9GMZNxzgW96E2Abrn5LDH9fmiJTAz9Dp
+*** Local model train in epoch 1 of device00055 has been uploaded! ***
+
+Epoch   1, Average loss 0.058
+
+*********************************** Iteration #7 ***********************************
+
+Current iteration 7 has been completed!
+
+*************************************************************************************
+
+taskRelQue is  {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task9329
+Latest task info is {"epoch":0,"status":"training","paras":"QmU1mAUTrYh1BiCTEPenaCqcYVRhmXP1TTB9Cg6YHk1cwc"}!
+*************************************************************************************
+
+*** task9329 has been completed! ***
+
+taskRelQue is  {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task9329
+Latest task info is {"epoch":0,"status":"training","paras":"QmU1mAUTrYh1BiCTEPenaCqcYVRhmXP1TTB9Cg6YHk1cwc"}!
+*************************************************************************************
+
+*** task9329 has been completed! ***
+
+taskRelQue is  {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task9329
+Latest task info is {"epoch":0,"status":"training","paras":"QmU1mAUTrYh1BiCTEPenaCqcYVRhmXP1TTB9Cg6YHk1cwc"}!
+*************************************************************************************
+
+*** task9329 has been completed! ***
+
+taskRelQue is  {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task9329
+Latest task info is {"epoch":0,"status":"training","paras":"QmU1mAUTrYh1BiCTEPenaCqcYVRhmXP1TTB9Cg6YHk1cwc"}!
+*************************************************************************************
+
+*** task9329 has been completed! ***
+
+taskRelQue is  {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task9329
+Latest task info is {"epoch":0,"status":"training","paras":"QmU1mAUTrYh1BiCTEPenaCqcYVRhmXP1TTB9Cg6YHk1cwc"}!
+*************************************************************************************
+
+*** task9329 has been completed! ***
+
+taskRelQue is  {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task9329
+Latest task info is {"epoch":0,"status":"training","paras":"QmU1mAUTrYh1BiCTEPenaCqcYVRhmXP1TTB9Cg6YHk1cwc"}!
+*************************************************************************************
+
+*** task9329 has been completed! ***
+
+taskRelQue is  {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task9329
+Latest task info is {"epoch":0,"status":"training","paras":"QmU1mAUTrYh1BiCTEPenaCqcYVRhmXP1TTB9Cg6YHk1cwc"}!
+*************************************************************************************
+
+*** task9329 has been completed! ***
+
+taskRelQue is  {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task9329
+Latest task info is {"epoch":0,"status":"training","paras":"QmU1mAUTrYh1BiCTEPenaCqcYVRhmXP1TTB9Cg6YHk1cwc"}!
+*************************************************************************************
+
+*** task9329 has been completed! ***
+
+taskRelQue is  {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task9329
+Latest task info is {"epoch":0,"status":"training","paras":"QmU1mAUTrYh1BiCTEPenaCqcYVRhmXP1TTB9Cg6YHk1cwc"}!
+*************************************************************************************
+
+*** task9329 has been completed! ***
+
+taskRelQue is  {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task9329
+Latest task info is {"epoch":0,"status":"training","paras":"QmU1mAUTrYh1BiCTEPenaCqcYVRhmXP1TTB9Cg6YHk1cwc"}!
+*************************************************************************************
+
+*** task9329 has been completed! ***
+
+taskRelQue is  {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task9329
+Latest task info is {"epoch":1,"status":"done","paras":"Qmc8gv7Y5vCVWABtpfaRu75ATQX3t9vDMH8Z6h1fWV7bkH"}!
+*************************************************************************************
+
+*** task9329 has been completed! ***
+
+taskRelQue is  {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task9329","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task9329
+Latest task info is {"epoch":1,"status":"done","paras":"Qmc8gv7Y5vCVWABtpfaRu75ATQX3t9vDMH8Z6h1fWV7bkH"}!
+*************************************************************************************
+
+*** task9329 has been completed! ***
+
+taskRelQue is  {"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task4791
+Latest task info is {"epoch":0,"status":"training","paras":"Qme8T2FrTieXozgDZY8SXC6KDhL9b1Jyf9nLLjmuDbSpJH"}!
+*************************************************************************************
+
+
+******************************* Iteration #8 starting ********************************
+
+Iteration 8 starting!
+
+*************************************************************************************
+
+
+****************************** Latest status of task4791 ******************************
+(In loop) Latest task info is 
+ {"epoch":0,"status":"training","paras":"Qme8T2FrTieXozgDZY8SXC6KDhL9b1Jyf9nLLjmuDbSpJH"}!
+*************************************************************************************
+
+
+The paras file of aggregated model for epoch 1 training has been downloaded!
+
+./data/local/task4791-device00005-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmbU22kQ83kUhjn7y8A1LTrot8pxEht25yhv11RVKF4H9K
+*** Local model train in epoch 1 of device00005 has been uploaded! ***
+
+./data/local/task4791-device00056-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmTdry9F1AsFUN49odYVkENRNwubYsNMD5iGUExZ2aDa4N
+*** Local model train in epoch 1 of device00056 has been uploaded! ***
+
+./data/local/task4791-device00076-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmeT7WdX28YxLZHnqbYfanaLgPNZd3PXZvCr742cche81E
+*** Local model train in epoch 1 of device00076 has been uploaded! ***
+
+./data/local/task4791-device00078-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmbJjngTm6xqcgxYBRsBM8UiQDvvuNj2x2V7DKA7h31jh6
+*** Local model train in epoch 1 of device00078 has been uploaded! ***
+
+./data/local/task4791-device00068-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmW8A1xB5BYfwDoo8bmMYCNuA6QedXcvkKAxE3Ez264k5n
+*** Local model train in epoch 1 of device00068 has been uploaded! ***
+
+./data/local/task4791-device00025-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmeKgViDj6TR6HabJgQMqGLd53GrAPR3sdLNwMQWznXMrF
+*** Local model train in epoch 1 of device00025 has been uploaded! ***
+
+./data/local/task4791-device00047-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmVC2Vf91CmgHUm32de3dZvRg9yVobtnrRs9awhXiNG1eD
+*** Local model train in epoch 1 of device00047 has been uploaded! ***
+
+./data/local/task4791-device00015-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmZ9KQHWPYH6UQSh8Uwc8ZwKb5YjZdtDBcqUBN9XadSutZ
+*** Local model train in epoch 1 of device00015 has been uploaded! ***
+
+./data/local/task4791-device00061-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmS9qJT9n3vFUE4xFrwRAQaAw7f7PdwLYhLmekX3c8LNyg
+*** Local model train in epoch 1 of device00061 has been uploaded! ***
+
+./data/local/task4791-device00055-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmcVZa2bnBe7ur7ppvtzmCxoKebfLZ1xJzi489ciBuaYob
+*** Local model train in epoch 1 of device00055 has been uploaded! ***
+
+Epoch   1, Average loss 0.054
+
+*********************************** Iteration #8 ***********************************
+
+Current iteration 8 has been completed!
+
+*************************************************************************************
+
+taskRelQue is  {"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task4791
+Latest task info is {"epoch":0,"status":"training","paras":"Qme8T2FrTieXozgDZY8SXC6KDhL9b1Jyf9nLLjmuDbSpJH"}!
+*************************************************************************************
+
+*** task4791 has been completed! ***
+
+taskRelQue is  {"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task4791
+Latest task info is {"epoch":0,"status":"training","paras":"Qme8T2FrTieXozgDZY8SXC6KDhL9b1Jyf9nLLjmuDbSpJH"}!
+*************************************************************************************
+
+*** task4791 has been completed! ***
+
+taskRelQue is  {"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task4791
+Latest task info is {"epoch":0,"status":"training","paras":"Qme8T2FrTieXozgDZY8SXC6KDhL9b1Jyf9nLLjmuDbSpJH"}!
+*************************************************************************************
+
+*** task4791 has been completed! ***
+
+taskRelQue is  {"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task4791
+Latest task info is {"epoch":0,"status":"training","paras":"Qme8T2FrTieXozgDZY8SXC6KDhL9b1Jyf9nLLjmuDbSpJH"}!
+*************************************************************************************
+
+*** task4791 has been completed! ***
+
+taskRelQue is  {"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task4791
+Latest task info is {"epoch":0,"status":"training","paras":"Qme8T2FrTieXozgDZY8SXC6KDhL9b1Jyf9nLLjmuDbSpJH"}!
+*************************************************************************************
+
+*** task4791 has been completed! ***
+
+taskRelQue is  {"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task4791
+Latest task info is {"epoch":0,"status":"training","paras":"Qme8T2FrTieXozgDZY8SXC6KDhL9b1Jyf9nLLjmuDbSpJH"}!
+*************************************************************************************
+
+*** task4791 has been completed! ***
+
+taskRelQue is  {"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task4791
+Latest task info is {"epoch":0,"status":"training","paras":"Qme8T2FrTieXozgDZY8SXC6KDhL9b1Jyf9nLLjmuDbSpJH"}!
+*************************************************************************************
+
+*** task4791 has been completed! ***
+
+taskRelQue is  {"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task4791
+Latest task info is {"epoch":0,"status":"training","paras":"Qme8T2FrTieXozgDZY8SXC6KDhL9b1Jyf9nLLjmuDbSpJH"}!
+*************************************************************************************
+
+*** task4791 has been completed! ***
+
+taskRelQue is  {"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task4791
+Latest task info is {"epoch":0,"status":"training","paras":"Qme8T2FrTieXozgDZY8SXC6KDhL9b1Jyf9nLLjmuDbSpJH"}!
+*************************************************************************************
+
+*** task4791 has been completed! ***
+
+taskRelQue is  {"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task4791
+Latest task info is {"epoch":1,"status":"done","paras":"QmVtX1R9zuzZV41gyb6RhGfbeKuibxn2v2xQnmqfdB1C3L"}!
+*************************************************************************************
+
+*** task4791 has been completed! ***
+
+taskRelQue is  {"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task4791","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task4791
+Latest task info is {"epoch":1,"status":"done","paras":"QmVtX1R9zuzZV41gyb6RhGfbeKuibxn2v2xQnmqfdB1C3L"}!
+*************************************************************************************
+
+*** task4791 has been completed! ***
+
+taskRelQue is  {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task43110
+Latest task info is {"epoch":0,"status":"training","paras":"QmSvEbF6GhJyrAZN9REcWTPZmBTNoK5TANMaeNF9strNS1"}!
+*************************************************************************************
+
+
+******************************* Iteration #9 starting ********************************
+
+Iteration 9 starting!
+
+*************************************************************************************
+
+
+****************************** Latest status of task43110 ******************************
+(In loop) Latest task info is 
+ {"epoch":0,"status":"training","paras":"QmSvEbF6GhJyrAZN9REcWTPZmBTNoK5TANMaeNF9strNS1"}!
+*************************************************************************************
+
+
+The paras file of aggregated model for epoch 1 training has been downloaded!
+
+./data/local/task43110-device00005-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmYMouSa9TZL25i5zcwtQTMkdMCAcJo7ZjcxsSzsQmo2z4
+*** Local model train in epoch 1 of device00005 has been uploaded! ***
+
+./data/local/task43110-device00056-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmcqUbrAD7T5RSjDihvem1YJTjXtNx6ZFuWYhzMTk2nDyD
+*** Local model train in epoch 1 of device00056 has been uploaded! ***
+
+./data/local/task43110-device00076-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmUAvK8iEB4JzMJJ44kd9fb5BM5cTFHYFmeuxVoDD284w2
+*** Local model train in epoch 1 of device00076 has been uploaded! ***
+
+./data/local/task43110-device00078-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is Qmdu7RAsW9Gb7ce8kUyN6fYfyV184oLFtcgz4ichAiNe6X
+*** Local model train in epoch 1 of device00078 has been uploaded! ***
+
+./data/local/task43110-device00068-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmeM5LMU5tsgBKhbNDNbLNfH7DzPYt3eSQ39X9NiJ9vxpA
+*** Local model train in epoch 1 of device00068 has been uploaded! ***
+
+./data/local/task43110-device00025-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmfYSC1qkDH12j1TNbnw4cs2wSp1uhQaGZUHDMsSELyoe7
+*** Local model train in epoch 1 of device00025 has been uploaded! ***
+
+./data/local/task43110-device00047-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmZSfoxbZEHtgymKZa1EdV85NGwrkDekXfWHJXVq7T7Kft
+*** Local model train in epoch 1 of device00047 has been uploaded! ***
+
+./data/local/task43110-device00015-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmQekXc6GJyZWw8Y7Anjgw57faRmhEybHyZSJDpwyyX6qY
+*** Local model train in epoch 1 of device00015 has been uploaded! ***
+
+./data/local/task43110-device00061-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmNceGxgroURCX6FVZwsjnNYT3qoA8s8UKAER6Nndbyunc
+*** Local model train in epoch 1 of device00061 has been uploaded! ***
+
+./data/local/task43110-device00055-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmdppFELWMD1iZKmUVHNNdy14RpCKY7qnzWKoPCNWs9qbv
+*** Local model train in epoch 1 of device00055 has been uploaded! ***
+
+Epoch   1, Average loss 0.051
+
+*********************************** Iteration #9 ***********************************
+
+Current iteration 9 has been completed!
+
+*************************************************************************************
+
+taskRelQue is  {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task43110
+Latest task info is {"epoch":0,"status":"training","paras":"QmSvEbF6GhJyrAZN9REcWTPZmBTNoK5TANMaeNF9strNS1"}!
+*************************************************************************************
+
+*** task43110 has been completed! ***
+
+taskRelQue is  {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task43110
+Latest task info is {"epoch":0,"status":"training","paras":"QmSvEbF6GhJyrAZN9REcWTPZmBTNoK5TANMaeNF9strNS1"}!
+*************************************************************************************
+
+*** task43110 has been completed! ***
+
+taskRelQue is  {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task43110
+Latest task info is {"epoch":0,"status":"training","paras":"QmSvEbF6GhJyrAZN9REcWTPZmBTNoK5TANMaeNF9strNS1"}!
+*************************************************************************************
+
+*** task43110 has been completed! ***
+
+taskRelQue is  {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task43110
+Latest task info is {"epoch":0,"status":"training","paras":"QmSvEbF6GhJyrAZN9REcWTPZmBTNoK5TANMaeNF9strNS1"}!
+*************************************************************************************
+
+*** task43110 has been completed! ***
+
+taskRelQue is  {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task43110
+Latest task info is {"epoch":0,"status":"training","paras":"QmSvEbF6GhJyrAZN9REcWTPZmBTNoK5TANMaeNF9strNS1"}!
+*************************************************************************************
+
+*** task43110 has been completed! ***
+
+taskRelQue is  {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task43110
+Latest task info is {"epoch":0,"status":"training","paras":"QmSvEbF6GhJyrAZN9REcWTPZmBTNoK5TANMaeNF9strNS1"}!
+*************************************************************************************
+
+*** task43110 has been completed! ***
+
+taskRelQue is  {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task43110
+Latest task info is {"epoch":0,"status":"training","paras":"QmSvEbF6GhJyrAZN9REcWTPZmBTNoK5TANMaeNF9strNS1"}!
+*************************************************************************************
+
+*** task43110 has been completed! ***
+
+taskRelQue is  {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task43110
+Latest task info is {"epoch":0,"status":"training","paras":"QmSvEbF6GhJyrAZN9REcWTPZmBTNoK5TANMaeNF9strNS1"}!
+*************************************************************************************
+
+*** task43110 has been completed! ***
+
+taskRelQue is  {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task43110
+Latest task info is {"epoch":0,"status":"training","paras":"QmSvEbF6GhJyrAZN9REcWTPZmBTNoK5TANMaeNF9strNS1"}!
+*************************************************************************************
+
+*** task43110 has been completed! ***
+
+taskRelQue is  {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task43110
+Latest task info is {"epoch":1,"status":"done","paras":"QmVAvjLfpVrxftiyx6ECo2UCG3XhFyz8aFfie5aNeYZLn1"}!
+*************************************************************************************
+
+*** task43110 has been completed! ***
+
+taskRelQue is  {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task43110
+Latest task info is {"epoch":1,"status":"done","paras":"QmVAvjLfpVrxftiyx6ECo2UCG3XhFyz8aFfie5aNeYZLn1"}!
+*************************************************************************************
+
+*** task43110 has been completed! ***
+
+taskRelQue is  {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task43110","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task43110
+Latest task info is {"epoch":1,"status":"done","paras":"QmVAvjLfpVrxftiyx6ECo2UCG3XhFyz8aFfie5aNeYZLn1"}!
+*************************************************************************************
+
+*** task43110 has been completed! ***
+
+taskRelQue is  {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task71096
+Latest task info is {"epoch":0,"status":"training","paras":"QmR4Y54UCD3gn1thikktppaXhdjMNWsQPp9fpotuziV5Ck"}!
+*************************************************************************************
+
+
+******************************* Iteration #10 starting ********************************
+
+Iteration 10 starting!
+
+*************************************************************************************
+
+
+****************************** Latest status of task71096 ******************************
+(In loop) Latest task info is 
+ {"epoch":0,"status":"training","paras":"QmR4Y54UCD3gn1thikktppaXhdjMNWsQPp9fpotuziV5Ck"}!
+*************************************************************************************
+
+
+The paras file of aggregated model for epoch 1 training has been downloaded!
+
+./data/local/task71096-device00005-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmeAhBVnsuh1DKyNEpJELn5Xy5BsFskEdComp8UuAo3UcD
+*** Local model train in epoch 1 of device00005 has been uploaded! ***
+
+./data/local/task71096-device00056-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmQ1UyUB8dDAcbn8bSrkFKZ3tjPN1MA3FC3yfgv9uavXv1
+*** Local model train in epoch 1 of device00056 has been uploaded! ***
+
+./data/local/task71096-device00076-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmSZgPWrpfLv7GpF5i9wr4TMCsQ6QNko7cfGbLqqJGSRui
+*** Local model train in epoch 1 of device00076 has been uploaded! ***
+
+./data/local/task71096-device00078-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmV26U2UQyFxWUUBQRFHaM4nQDZQ4EMQVe4kwN9mQjaNac
+*** Local model train in epoch 1 of device00078 has been uploaded! ***
+
+./data/local/task71096-device00068-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmVALsSSFXHRULt7amMQsjZZW63Ug3mL9yi8fyZCHon7Xs
+*** Local model train in epoch 1 of device00068 has been uploaded! ***
+
+./data/local/task71096-device00025-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmZWtUcSLXn6KeeygCPwEh6DqhTLrL5sREQCznDo9aGKUx
+*** Local model train in epoch 1 of device00025 has been uploaded! ***
+
+./data/local/task71096-device00047-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is Qmd31cGzaC7z7FoiHESY6kyFz748EeBncMsow2Bq62wp1f
+*** Local model train in epoch 1 of device00047 has been uploaded! ***
+
+./data/local/task71096-device00015-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmfUJXNj9x6EThmZHQ2FMEyo5b3jxPqznkW4j1LFMdnTwU
+*** Local model train in epoch 1 of device00015 has been uploaded! ***
+
+./data/local/task71096-device00061-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmYPpKD1bua4QZvCi3CUTrmPL4EEWvPwJ7CPmwdc4Fyaxa
+*** Local model train in epoch 1 of device00061 has been uploaded! ***
+
+./data/local/task71096-device00055-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmafXZiXiPwF1iDtqDYp1h9sxYJ3PcYf9Jr8fjWVCBeYYM
+*** Local model train in epoch 1 of device00055 has been uploaded! ***
+
+Epoch   1, Average loss 0.050
+
+*********************************** Iteration #10 ***********************************
+
+Current iteration 10 has been completed!
+
+*************************************************************************************
+
+taskRelQue is  {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task71096
+Latest task info is {"epoch":0,"status":"training","paras":"QmR4Y54UCD3gn1thikktppaXhdjMNWsQPp9fpotuziV5Ck"}!
+*************************************************************************************
+
+*** task71096 has been completed! ***
+
+taskRelQue is  {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task71096
+Latest task info is {"epoch":0,"status":"training","paras":"QmR4Y54UCD3gn1thikktppaXhdjMNWsQPp9fpotuziV5Ck"}!
+*************************************************************************************
+
+*** task71096 has been completed! ***
+
+taskRelQue is  {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task71096
+Latest task info is {"epoch":0,"status":"training","paras":"QmR4Y54UCD3gn1thikktppaXhdjMNWsQPp9fpotuziV5Ck"}!
+*************************************************************************************
+
+*** task71096 has been completed! ***
+
+taskRelQue is  {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task71096
+Latest task info is {"epoch":0,"status":"training","paras":"QmR4Y54UCD3gn1thikktppaXhdjMNWsQPp9fpotuziV5Ck"}!
+*************************************************************************************
+
+*** task71096 has been completed! ***
+
+taskRelQue is  {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task71096
+Latest task info is {"epoch":0,"status":"training","paras":"QmR4Y54UCD3gn1thikktppaXhdjMNWsQPp9fpotuziV5Ck"}!
+*************************************************************************************
+
+*** task71096 has been completed! ***
+
+taskRelQue is  {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task71096
+Latest task info is {"epoch":0,"status":"training","paras":"QmR4Y54UCD3gn1thikktppaXhdjMNWsQPp9fpotuziV5Ck"}!
+*************************************************************************************
+
+*** task71096 has been completed! ***
+
+taskRelQue is  {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task71096
+Latest task info is {"epoch":0,"status":"training","paras":"QmR4Y54UCD3gn1thikktppaXhdjMNWsQPp9fpotuziV5Ck"}!
+*************************************************************************************
+
+*** task71096 has been completed! ***
+
+taskRelQue is  {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task71096
+Latest task info is {"epoch":0,"status":"training","paras":"QmR4Y54UCD3gn1thikktppaXhdjMNWsQPp9fpotuziV5Ck"}!
+*************************************************************************************
+
+*** task71096 has been completed! ***
+
+taskRelQue is  {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task71096
+Latest task info is {"epoch":0,"status":"training","paras":"QmR4Y54UCD3gn1thikktppaXhdjMNWsQPp9fpotuziV5Ck"}!
+*************************************************************************************
+
+*** task71096 has been completed! ***
+
+taskRelQue is  {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task71096
+Latest task info is {"epoch":0,"status":"training","paras":"QmR4Y54UCD3gn1thikktppaXhdjMNWsQPp9fpotuziV5Ck"}!
+*************************************************************************************
+
+*** task71096 has been completed! ***
+
+taskRelQue is  {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task71096
+Latest task info is {"epoch":1,"status":"done","paras":"QmNbkoBHAJjTW4QNUtZt1AADB8Qmtpachr54QsbXKrbrQq"}!
+*************************************************************************************
+
+*** task71096 has been completed! ***
+
+taskRelQue is  {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task71096","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task71096
+Latest task info is {"epoch":1,"status":"done","paras":"QmNbkoBHAJjTW4QNUtZt1AADB8Qmtpachr54QsbXKrbrQq"}!
+*************************************************************************************
+
+*** task71096 has been completed! ***
+
+taskRelQue is  {"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task95104
+Latest task info is {"epoch":0,"status":"training","paras":"QmUUGuymyKnSrMo9HL2KDWRasGmkDCaozMeXAPHCU7jsPu"}!
+*************************************************************************************
+
+
+******************************* Iteration #11 starting ********************************
+
+Iteration 11 starting!
+
+*************************************************************************************
+
+
+****************************** Latest status of task95104 ******************************
+(In loop) Latest task info is 
+ {"epoch":0,"status":"training","paras":"QmUUGuymyKnSrMo9HL2KDWRasGmkDCaozMeXAPHCU7jsPu"}!
+*************************************************************************************
+
+
+The paras file of aggregated model for epoch 1 training has been downloaded!
+
+./data/local/task95104-device00005-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmdhpndS11dURqQCXds7dyQMLJbmk5FRi85zdaD98XY639
+*** Local model train in epoch 1 of device00005 has been uploaded! ***
+
+./data/local/task95104-device00056-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmaLKDEd9foVPGQwGXYe8ge5sJEKyDsnHW86T5jJFsysHX
+*** Local model train in epoch 1 of device00056 has been uploaded! ***
+
+./data/local/task95104-device00076-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmZ78d4uYwLFAUf2kePTEuzj8ev93cWSNfyUP9ai9Wp7e2
+*** Local model train in epoch 1 of device00076 has been uploaded! ***
+
+./data/local/task95104-device00078-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmXp8GSsxRy1kw7YM9rH58DzecfhT8Pp9uSwqSDoYvEXxF
+*** Local model train in epoch 1 of device00078 has been uploaded! ***
+
+./data/local/task95104-device00068-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmeTYZJLyvSkZYAFPFPrDrLWFYHM5gS2PW1gvZ9Wk11WBf
+*** Local model train in epoch 1 of device00068 has been uploaded! ***
+
+./data/local/task95104-device00025-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmYcUoHj6DpHSyeZAMtD26W7r5hJE3UUbYPVZAUzJVQfb4
+*** Local model train in epoch 1 of device00025 has been uploaded! ***
+
+./data/local/task95104-device00047-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is Qma5KkAURZcSE1L6QCs6EsGzFB64Wxcafm8mY1VGAi5y3K
+*** Local model train in epoch 1 of device00047 has been uploaded! ***
+
+./data/local/task95104-device00015-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmTK3a1wUdsgGvNuVfqbdwD3KoDhdurm63VjiHcZxoBnTj
+*** Local model train in epoch 1 of device00015 has been uploaded! ***
+
+./data/local/task95104-device00061-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmRkwPMW2B4fqZQD6F2V2X2oKyPxUuJJzTYiTnw2svRgaE
+*** Local model train in epoch 1 of device00061 has been uploaded! ***
+
+./data/local/task95104-device00055-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is Qmb3kJuQEjYkhJpfGT6W3X2gd3DguWHQX6XEWyifL2pAjh
+*** Local model train in epoch 1 of device00055 has been uploaded! ***
+
+Epoch   1, Average loss 0.051
+
+*********************************** Iteration #11 ***********************************
+
+Current iteration 11 has been completed!
+
+*************************************************************************************
+
+taskRelQue is  {"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task95104
+Latest task info is {"epoch":0,"status":"training","paras":"QmUUGuymyKnSrMo9HL2KDWRasGmkDCaozMeXAPHCU7jsPu"}!
+*************************************************************************************
+
+*** task95104 has been completed! ***
+
+taskRelQue is  {"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task95104
+Latest task info is {"epoch":0,"status":"training","paras":"QmUUGuymyKnSrMo9HL2KDWRasGmkDCaozMeXAPHCU7jsPu"}!
+*************************************************************************************
+
+*** task95104 has been completed! ***
+
+taskRelQue is  {"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task95104
+Latest task info is {"epoch":0,"status":"training","paras":"QmUUGuymyKnSrMo9HL2KDWRasGmkDCaozMeXAPHCU7jsPu"}!
+*************************************************************************************
+
+*** task95104 has been completed! ***
+
+taskRelQue is  {"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task95104
+Latest task info is {"epoch":0,"status":"training","paras":"QmUUGuymyKnSrMo9HL2KDWRasGmkDCaozMeXAPHCU7jsPu"}!
+*************************************************************************************
+
+*** task95104 has been completed! ***
+
+taskRelQue is  {"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task95104
+Latest task info is {"epoch":0,"status":"training","paras":"QmUUGuymyKnSrMo9HL2KDWRasGmkDCaozMeXAPHCU7jsPu"}!
+*************************************************************************************
+
+*** task95104 has been completed! ***
+
+taskRelQue is  {"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task95104
+Latest task info is {"epoch":0,"status":"training","paras":"QmUUGuymyKnSrMo9HL2KDWRasGmkDCaozMeXAPHCU7jsPu"}!
+*************************************************************************************
+
+*** task95104 has been completed! ***
+
+taskRelQue is  {"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task95104
+Latest task info is {"epoch":0,"status":"training","paras":"QmUUGuymyKnSrMo9HL2KDWRasGmkDCaozMeXAPHCU7jsPu"}!
+*************************************************************************************
+
+*** task95104 has been completed! ***
+
+taskRelQue is  {"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task95104
+Latest task info is {"epoch":0,"status":"training","paras":"QmUUGuymyKnSrMo9HL2KDWRasGmkDCaozMeXAPHCU7jsPu"}!
+*************************************************************************************
+
+*** task95104 has been completed! ***
+
+taskRelQue is  {"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task95104
+Latest task info is {"epoch":0,"status":"training","paras":"QmUUGuymyKnSrMo9HL2KDWRasGmkDCaozMeXAPHCU7jsPu"}!
+*************************************************************************************
+
+*** task95104 has been completed! ***
+
+taskRelQue is  {"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task95104
+Latest task info is {"epoch":1,"status":"done","paras":"QmPNtry3cKC4yZHX1fKV7MVw2vQfpYKzE63QTxzb2QbJ3d"}!
+*************************************************************************************
+
+*** task95104 has been completed! ***
+
+taskRelQue is  {"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task95104","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task95104
+Latest task info is {"epoch":1,"status":"done","paras":"QmPNtry3cKC4yZHX1fKV7MVw2vQfpYKzE63QTxzb2QbJ3d"}!
+*************************************************************************************
+
+*** task95104 has been completed! ***
+
+taskRelQue is  {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3153
+Latest task info is {"epoch":0,"status":"training","paras":"QmPk9nXE8nmG6BE88qYGKZTzbeaxb1k6Zw81JfmZSqdDGY"}!
+*************************************************************************************
+
+
+******************************* Iteration #12 starting ********************************
+
+Iteration 12 starting!
+
+*************************************************************************************
+
+
+****************************** Latest status of task3153 ******************************
+(In loop) Latest task info is 
+ {"epoch":0,"status":"training","paras":"QmPk9nXE8nmG6BE88qYGKZTzbeaxb1k6Zw81JfmZSqdDGY"}!
+*************************************************************************************
+
+
+The paras file of aggregated model for epoch 1 training has been downloaded!
+
+./data/local/task3153-device00005-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmdkKeGr1Za6pXu1DDJWTnrURih3SuTkKeQfunRfwN21Lt
+*** Local model train in epoch 1 of device00005 has been uploaded! ***
+
+./data/local/task3153-device00056-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmNafLSgQSNhDcy2kPoSnz4HwxrkkBWebugThud4xvTqWM
+*** Local model train in epoch 1 of device00056 has been uploaded! ***
+
+./data/local/task3153-device00076-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmNsLUtGJxmVqYZvV4L7QEGPTwEZQoGw85gYHNPG4U5Ez4
+*** Local model train in epoch 1 of device00076 has been uploaded! ***
+
+./data/local/task3153-device00078-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmWTyLutz9SjM6F4ZamiR2t6rnsV79SzRNYQAybgk55Pw4
+*** Local model train in epoch 1 of device00078 has been uploaded! ***
+
+./data/local/task3153-device00068-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is Qmbx3W4tDNn8Np3vfikFMDmpcaw2UivLKrUzt5wbkAAy6c
+*** Local model train in epoch 1 of device00068 has been uploaded! ***
+
+./data/local/task3153-device00025-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmT8EmcgzTgPMBiC5GcTqfyUtFCVMkBjLu9GbrRzsZkeVk
+*** Local model train in epoch 1 of device00025 has been uploaded! ***
+
+./data/local/task3153-device00047-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmfK8QRxR5U3mD9UueXjoo87C5gAyHPKfYtYZ6iq85HvxS
+*** Local model train in epoch 1 of device00047 has been uploaded! ***
+
+./data/local/task3153-device00015-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmZiPPxhRNPCG9ff7izZNqTxsCVHRmCniS3Gouc7T7XF7h
+*** Local model train in epoch 1 of device00015 has been uploaded! ***
+
+./data/local/task3153-device00061-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is QmXZ5cPJi1oAsHjuK2ViMiSVhiNabaezofvvJtqg2z5J5m
+*** Local model train in epoch 1 of device00061 has been uploaded! ***
+
+./data/local/task3153-device00055-epoch-1.pkl has been added to the IPFS network!
+And the hash value of this file is Qme2Xd7yAPAH9WKJy6DBEmMVGWAmw1iZ5gYMVCVvDD5V5s
+*** Local model train in epoch 1 of device00055 has been uploaded! ***
+
+Epoch   1, Average loss 0.052
+
+*********************************** Iteration #12 ***********************************
+
+Current iteration 12 has been completed!
+
+*************************************************************************************
+
+taskRelQue is  {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3153
+Latest task info is {"epoch":0,"status":"training","paras":"QmPk9nXE8nmG6BE88qYGKZTzbeaxb1k6Zw81JfmZSqdDGY"}!
+*************************************************************************************
+
+*** task3153 has been completed! ***
+
+taskRelQue is  {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3153
+Latest task info is {"epoch":0,"status":"training","paras":"QmPk9nXE8nmG6BE88qYGKZTzbeaxb1k6Zw81JfmZSqdDGY"}!
+*************************************************************************************
+
+*** task3153 has been completed! ***
+
+taskRelQue is  {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3153
+Latest task info is {"epoch":0,"status":"training","paras":"QmPk9nXE8nmG6BE88qYGKZTzbeaxb1k6Zw81JfmZSqdDGY"}!
+*************************************************************************************
+
+*** task3153 has been completed! ***
+
+taskRelQue is  {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3153
+Latest task info is {"epoch":0,"status":"training","paras":"QmPk9nXE8nmG6BE88qYGKZTzbeaxb1k6Zw81JfmZSqdDGY"}!
+*************************************************************************************
+
+*** task3153 has been completed! ***
+
+taskRelQue is  {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3153
+Latest task info is {"epoch":0,"status":"training","paras":"QmPk9nXE8nmG6BE88qYGKZTzbeaxb1k6Zw81JfmZSqdDGY"}!
+*************************************************************************************
+
+*** task3153 has been completed! ***
+
+taskRelQue is  {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3153
+Latest task info is {"epoch":0,"status":"training","paras":"QmPk9nXE8nmG6BE88qYGKZTzbeaxb1k6Zw81JfmZSqdDGY"}!
+*************************************************************************************
+
+*** task3153 has been completed! ***
+
+taskRelQue is  {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3153
+Latest task info is {"epoch":0,"status":"training","paras":"QmPk9nXE8nmG6BE88qYGKZTzbeaxb1k6Zw81JfmZSqdDGY"}!
+*************************************************************************************
+
+*** task3153 has been completed! ***
+
+taskRelQue is  {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3153
+Latest task info is {"epoch":0,"status":"training","paras":"QmPk9nXE8nmG6BE88qYGKZTzbeaxb1k6Zw81JfmZSqdDGY"}!
+*************************************************************************************
+
+*** task3153 has been completed! ***
+
+taskRelQue is  {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3153
+Latest task info is {"epoch":0,"status":"training","paras":"QmPk9nXE8nmG6BE88qYGKZTzbeaxb1k6Zw81JfmZSqdDGY"}!
+*************************************************************************************
+
+*** task3153 has been completed! ***
+
+taskRelQue is  {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3153
+Latest task info is {"epoch":1,"status":"done","paras":"QmcusdA23wfzJWgCn8usN9BoPVbZixvk1jxHzh2UdEKuZZ"}!
+*************************************************************************************
+
+*** task3153 has been completed! ***
+
+taskRelQue is  {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3153
+Latest task info is {"epoch":1,"status":"done","paras":"QmcusdA23wfzJWgCn8usN9BoPVbZixvk1jxHzh2UdEKuZZ"}!
+*************************************************************************************
+
+*** task3153 has been completed! ***
+
+taskRelQue is  {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task3153","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task3153
+Latest task info is {"epoch":1,"status":"done","paras":"QmcusdA23wfzJWgCn8usN9BoPVbZixvk1jxHzh2UdEKuZZ"}!
+*************************************************************************************
+
+*** task3153 has been completed! ***
+
+taskRelQue is  {"taskID":"task1182","epoch":1,"status":"start","usersFrac":0.1}  and taskRelQueStt is  0
+
+*************************************************************************************
+Latest task release status is {"taskID":"task1182","epoch":1,"status":"start","usersFrac":0.1}!
+Current task is task1182
+Latest task info is {"epoch":0,"status":"training","paras":"QmZ11gMs5ETfB9Za6eaWyZV9tQ5zAaY8gUZ4fM1yk8Pj34"}!
+*************************************************************************************

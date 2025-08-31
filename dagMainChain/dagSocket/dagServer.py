@@ -14,13 +14,14 @@ def socket_service(local_addr, dag_pool, beta):
 
     :param local_addr: 服务器本地地址
     :param dag_pool: DAG实例，用于处理交易
-    :param beta: 保持的最小尖端交易数量
+    :param beta: 保持的最小tips交易数量
     """
     try:
         # 创建TCP套接字并设置端口复用
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        s.bind("", 6666)  # 绑定到所有网络接口的6666端口
+        # 注意此次一定是以元组形式传入
+        s.bind(("", 6666))  # 绑定到所有网络接口的6666端口
         s.listen(5)       # 开始监听，最多允许5个连接排队
         print('DAG_socket starts...')
     except socket.error as msg:
@@ -64,7 +65,7 @@ def deal_data(conn, addr, dag_pool, beta):
     :param conn: 与客户端的连接套接字
     :param addr: 客户端地址
     :param dag_pool: DAG实例
-    :param beta: 保持的最小尖端交易数量
+    :param beta: 保持的最小tips交易数量
     """
     print('Accept new connection from {0}'.format(addr))
     conn.send("You've connected, wait for command...".encode())
@@ -94,7 +95,7 @@ def deal_data(conn, addr, dag_pool, beta):
             require_trans_file = './dagSS/dagPool/'+msg_t+'.json'
             send_file(conn, require_trans_file)
         elif msg == 'requireTips':
-            # 客户端请求尖端交易列表
+            # 客户端请求tips交易列表
             conn.send('ok'.encode())
             data_t = conn.recv(1024)
             msg_t = data_t.decode()
