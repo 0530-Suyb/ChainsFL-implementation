@@ -18,6 +18,12 @@ Implementation of ChainsFL.
 
 另外注意，有的fabric test-network里把密钥相关文件夹命名为crypto，有的则为organizations
 
+I have used fabric 2.2.14 to test it
+
+## IPFS
+
+start IPFS `ipfs daemon`
+
 ## Deployment of DAG
 
 The DAG could be deployed on a personal computer or the cloud server.
